@@ -916,8 +916,8 @@ button.addEventListener("click", function (event) {
   const mobile = document.getElementById("mobile");  
   const sectionAll = document.getElementById("section_all");
 
-
-  const viewportWidth = window.visualViewport.width;      
+  section0.style.display = "none";
+  const viewportWidth = window.innerWidth;      
   if (viewportWidth  <= 768) {
      
     if (viewportWidth  >  window.innerHeight) {
@@ -930,7 +930,7 @@ button.addEventListener("click", function (event) {
     
       mobile.style.display = "flex";
       sectionAll.style.display = "none";
-      section0.style.display = "none";
+      
     }
   } else {
   
@@ -1114,7 +1114,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const cards = document.querySelectorAll(".card_box_4");
-
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -1128,7 +1127,6 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(card);
   });
 });
-
 
 
 
