@@ -916,16 +916,12 @@ button.addEventListener("click", function (event) {
   const mobile = document.getElementById("mobile");  
   const sectionAll = document.getElementById("section_all");
 
-  // Hide section0 initially
-  section0.style.display = "none";
-  const viewportWidth = window.visualViewport.width;
-console.log(window.visualViewport.width)
+
+  const viewportWidth = window.visualViewport.width;      
   if (viewportWidth  <= 768) {
-    console.log("Landscape orientation");
- 
+     
     if (viewportWidth  >  window.innerHeight) {
-      console.log("Landscape orientation");
-      
+      console.log("Landscape orientation");      
   
       sectionAll.style.display = "block";
       mobile.style.display = "none";
@@ -934,6 +930,7 @@ console.log(window.visualViewport.width)
     
       mobile.style.display = "flex";
       sectionAll.style.display = "none";
+      section0.style.display = "none";
     }
   } else {
   
@@ -970,7 +967,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   };
 
-
   window.addEventListener("scroll", () => {
     isScrolling = true;
     clearTimeout(scrollTimeout);
@@ -983,11 +979,8 @@ document.addEventListener("DOMContentLoaded", function () {
     handleVideoPlayPause();
   });
 
-
   handleVideoPlayPause();
 });
-
-
 
 
 
@@ -1302,6 +1295,6 @@ window.addEventListener('scroll', () => {
   parallaxedItems.forEach(item => {
     const s = 0 - window.scrollY / 3;
     const halfPart = -window.innerHeight / 2;
-    item.style.transform = `translate3d(-50%,${halfPart + s}px,0)`
+    item.style.transform = `translate3d(-50%, ${halfPart + s}px, 0)`
    })
 })

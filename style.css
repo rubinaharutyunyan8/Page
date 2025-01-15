@@ -121,10 +121,11 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: black;
-  overflow-x: hidden;
+ 
 }
 .main {
   background-color: black;
+  overflow-x: hidden;
 }
 .flex_center {
   display: flex;
@@ -862,11 +863,11 @@ body {
   background-size: contain;
   z-index: -1;
   animation: none;
-  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in;
 }
 
 .cont2.animate-background {
-  animation: rotateBackground 1s ease-in-out forwards;
+  animation: rotateBackground 1s ease-in;
 }
 
 .cont2 .header_5,
@@ -2377,10 +2378,10 @@ height: auto; */
 }
   }
   .card_3 {
-    width: 100%;
+    /* width: 100%; */
   }
   .text_box {
-     height: calc(100% - 550px);
+     height: calc(100% - 300px);
 }
   .text3 {  
     font-size: 30px;
@@ -2388,7 +2389,7 @@ height: auto; */
   }
   .text1 {
     font-size: 60px;
-    line-height: 80px;
+    line-height: 60px;
   }
   .block_video_18 {
     left: 43%; 
