@@ -993,6 +993,7 @@ document.addEventListener("DOMContentLoaded", function () {
     videos.forEach((video) => {
       if (video.getAttribute('id') === 'video') return video.play();
        if (video.getAttribute('id') === 'video_last') return video.play();
+       if (video.getAttribute('id') === 'video_mobile') return video.play();
       const videoRect = video.getBoundingClientRect();
       const isInViewport = videoRect.top < window.innerHeight && videoRect.bottom > 0; 
 
