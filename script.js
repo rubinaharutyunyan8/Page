@@ -96,6 +96,8 @@ const container3 = document.getElementById("fourth_block_box");
 third_block_data2.map((item) => {
   const itemDiv1 = document.createElement("div");
   itemDiv1.classList.add("card_3");
+  itemDiv1.style.padding = "30px 30px 0px 30px";
+
 
   const box1 = document.createElement("div");
   box1.classList.add("box4");
@@ -137,7 +139,7 @@ third_block_data2.map((item) => {
 const third_block_data3 = [
   {
     header: "WIZ",
-    disc: "WIZ CO-FOUNDER & GP",
+    disc: "CO-FOUNDER & GP",
 
     header1: "2x VC-BACKED FOUNDER",
     disc1: `Rise: Modern \n Payroll & HR`,
@@ -553,7 +555,7 @@ const container_7 = document.getElementById("seven_block_box");
 data_section_7.map((item, index) => {
   const itemDiv = document.createElement("div");
   itemDiv.classList.add("card_3");
-  itemDiv.style.padding= "0px";
+  itemDiv.style.padding= "0px 5px 10px 5px";
   itemDiv.classList.add("add_box_7");
   itemDiv.style.justifyContent = "space-evenly";
 
@@ -770,11 +772,11 @@ caseStudies.map((study) => {
               </div>
             </div>
           </div>
-          <div class="box_images">
+           <div class="box_images">
             ${study.images
               .map(
-                (image) =>
-                  `<div class="image" style="background-image: url(${image});"></div>`
+                (image, index) =>
+                  `<div class="${index === 0 ? "image_one" : "image_two"}" style="background-image: url(${image});"></div>`
               )
               .join("")}
           </div>
@@ -801,8 +803,10 @@ const fundDetailsData = [
   { title: "1%", description: "GP Commit" },
   {
     title: "",
-    description:
-      "Fund Formation:<br>Wilson Sonsini<br>Fund Admin:<br>AngelList",
+    description: [
+      { title: "Fund Formation", description: "Wilson Sonsini" },
+      { title: "Fund Admin", description: "AngelList" },
+    ],
   },
 ];
 
@@ -816,17 +820,34 @@ fundDetailsData.map((item, index) => {
     detailDiv.style.borderBottom = "none";
   }
 
-  const headingTag = item.class === "high" ? "h1" : "h2";
+  const isArray = Array.isArray(item.description)
+  const headingTag = item.class === "high" ? "h1" : "h2"
+
+  let descriptionContent = "";
+  if (Array.isArray(item.description)) { 
+    descriptionContent = item.description
+      .map(
+        (desc) => {
+          return `<h4> 
+            ${desc.title}
+          </h4>
+          <p> ${desc.description}</p> </br> </br>`  
+        }
+      )
+      .join("");
+  } else {
+    descriptionContent = `<p>${item.description}</p>`;
+  }
 
   detailDiv.innerHTML = `
     ${item.title ? `<${headingTag}>${item.title}</${headingTag}>` : ""}
-    <p>${item.description}</p>
+    ${descriptionContent}
   `;
 
   fundDetailsContainer.appendChild(detailDiv);
 });
-// 17 section
 
+// 17 section
 document.addEventListener('DOMContentLoaded', () => {
   const galleryItems = document.querySelectorAll('.gallery-item');
   const totalItems = galleryItems.length;
@@ -836,43 +857,78 @@ document.addEventListener('DOMContentLoaded', () => {
     galleryItems.forEach((item, index) => {
       const position = (index - currentIndex + totalItems) % totalItems;
 
-      item.style.height = '550px';
-      item.style.width = '422px';
-      item.style.left = '10%';
-      item.style.transform = 'translateX(-50%) scale(0.8)';
-      item.style.opacity = '0.4';
-      item.style.zIndex = '1';
 
-      if (position === 0) { 
-        item.style.height = '682px';
-        item.style.width = '522px';
-        item.style.left = '28%';
-        item.style.transform = 'translateX(-50%) scale(0.9)';
-        item.style.opacity = '0.7';
-        item.style.zIndex = '2';
-      } else if (position === 1) { 
-        item.style.height = '778px';
-        item.style.width = '596px';
-        item.style.left = '50%';
-        item.style.transform = 'translateX(-50%) scale(1)';
-        item.style.opacity = '1';
-        item.style.zIndex = '3';
-      } else if (position === 2) { 
-        item.style.height = '682px';
-        item.style.width = '522px';
-        item.style.left = '72%';
-        item.style.transform = 'translateX(-50%) scale(0.9)';
-        item.style.opacity = '0.7';
-        item.style.zIndex = '2';
-      } else if (position === 3) { 
-        item.style.height = '550px';
-        item.style.width = '422px';
-        item.style.left = '90%';
-        item.style.transform = 'translateX(-50%) scale(0.8)';
-        item.style.opacity = '0.4';
-        item.style.zIndex = '1';
-      }
+if( window.innerWidth < 1200 ){
+  item.style.height = '350px';
+  item.style.width = '422px';
+  item.style.left = '10%';
+  item.style.transform = 'translateX(-50%) scale(0.8)';
+  item.style.zIndex = '1';
+
+  if (position === 0) { 
+    item.style.height = '382px';
+    item.style.width = '300px';
+    item.style.left = '28%';
+    item.style.transform = 'translateX(-50%) scale(0.9)';     
+    item.style.zIndex = '2';
+  } else if (position === 1) { 
+    item.style.height = '450px';
+    item.style.width = '296px';
+    item.style.left = '50%';
+    item.style.transform = 'translateX(-50%) scale(1)';
+    item.style.opacity = '1';
+    item.style.zIndex = '3';
+  } else if (position === 2) { 
+    item.style.height = '382px';
+    item.style.width = '300px';
+    item.style.left = '72%';
+    item.style.transform = 'translateX(-50%) scale(0.9)';     
+    item.style.zIndex = '2';
+  } else if (position === 3) { 
+    item.style.height = '350px';
+    item.style.width = '222px';
+    item.style.left = '90%';
+    item.style.transform = 'translateX(-50%) scale(0.8)';    
+    item.style.zIndex = '1';
+  }
+}else  if (window.innerWidth>=1200) {
+
+  item.style.height = '550px';
+  item.style.width = '422px';
+  item.style.left = '10%';
+  item.style.transform = 'translateX(-50%) scale(0.8)';
+  item.style.zIndex = '1';
+
+  if (position === 0) { 
+    item.style.height = '682px';
+    item.style.width = '522px';
+    item.style.left = '28%';
+    item.style.transform = 'translateX(-50%) scale(0.9)';     
+    item.style.zIndex = '2';
+  } else if (position === 1) { 
+    item.style.height = '778px';
+    item.style.width = '596px';
+    item.style.left = '50%';
+    item.style.transform = 'translateX(-50%) scale(1)';
+    item.style.opacity = '1';
+    item.style.zIndex = '3';
+  } else if (position === 2) { 
+    item.style.height = '682px';
+    item.style.width = '522px';
+    item.style.left = '72%';
+    item.style.transform = 'translateX(-50%) scale(0.9)';     
+    item.style.zIndex = '2';
+  } else if (position === 3) { 
+    item.style.height = '550px';
+    item.style.width = '422px';
+    item.style.left = '90%';
+    item.style.transform = 'translateX(-50%) scale(0.8)';    
+    item.style.zIndex = '1';
+  }
+}     
+
     });
+
   }
 
   function moveNext() {
@@ -896,7 +952,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   galleryItems.forEach((item, index) => {
     item.addEventListener('click', () => {
-      currentIndex = index; 
+      currentIndex = index-1; 
       updateGallery();
     });
   });
@@ -907,44 +963,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
 //Navigation
 
-const button = document.getElementById("button");
+// const button = document.getElementById("button");
 
-button.addEventListener("click", function (event) {
-  const section0 = document.getElementById("section_0");
-  const mobile = document.getElementById("mobile");  
-  const sectionAll = document.getElementById("section_all");
+// button.addEventListener("click", function (event) {
+//   const section0 = document.getElementById("section_0");
+//   const mobile = document.getElementById("mobile");  
+//   const sectionAll = document.getElementById("section_all");
 
-  section0.style.display = "none";
-  const viewportWidth = window.innerWidth;      
-  if (viewportWidth  <= 768) {
+//   section0.style.display = "none";
+//   const viewportWidth = window.in;      
+//   if (viewportWidth  <= 768) {
      
-    if (viewportWidth  >  window.innerHeight) {
-      console.log("Landscape orientation");      
+//     if (viewportWidth  >  window.innerHeight) {
+//       console.log("Landscape orientation");      
   
-      sectionAll.style.display = "block";
-      mobile.style.display = "none";
-    } else {
-      console.log("Portrait orientation");
+//       sectionAll.style.display = "block";
+//       mobile.style.display = "none";
+//     } else {
+//       console.log("Portrait orientation");
     
-      mobile.style.display = "flex";
-      sectionAll.style.display = "none";
+//       mobile.style.display = "flex";
+//       sectionAll.style.display = "none";
       
-    }
-  } else {
+//     }
+//   } else {
   
-    sectionAll.style.display = "block";
-    mobile.style.display = "none";
-  }
-});
+//     sectionAll.style.display = "block";
+//     mobile.style.display = "none";
+//   }
+// });
 
 
 
 
 
 // Video animations
-
 document.addEventListener("DOMContentLoaded", function () {
   const videos = document.querySelectorAll(".video video"); 
   let isScrolling = false; 
@@ -952,6 +1008,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const handleVideoPlayPause = () => {
     videos.forEach((video) => {
       if (video.getAttribute('id') === 'video') return video.play();
+       if (video.getAttribute('id') === 'video_last') return video.play();
       const videoRect = video.getBoundingClientRect();
       const isInViewport = videoRect.top < window.innerHeight && videoRect.bottom > 0; 
 
@@ -983,13 +1040,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-
-
-
 // Hedaers Animation
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const paragraphs = document.querySelectorAll(".second_block_header");
   const observer = new IntersectionObserver(
@@ -1007,8 +1058,6 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(p);
   });
 });
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
    const paragraphs = document.querySelectorAll(".header5");
@@ -1055,8 +1104,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // 2 section animations
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const cards = document.querySelectorAll(".card_1");
   const observer = new IntersectionObserver((entries, observer) => {
@@ -1146,8 +1193,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // 8 section animations
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const cards = document.querySelectorAll(".cont_box .card_5_box");
 
@@ -1167,7 +1212,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // 9 section animations
-
 document.addEventListener("DOMContentLoaded", function () {
   const cards = document.querySelectorAll(".card_9");
 
@@ -1188,7 +1232,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // 10 section animations
-
 document.addEventListener("DOMContentLoaded", function () {
   const rows = document.querySelectorAll(".row");
 
@@ -1207,7 +1250,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // 14 section animation 
-
 document.addEventListener("DOMContentLoaded", function () {
   const rows = document.querySelectorAll(".card_box_14");
 
@@ -1227,7 +1269,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // 16 section animation
-
 document.addEventListener("DOMContentLoaded", function () {
   const rows = document.querySelectorAll(".content-wrapper");
 
@@ -1248,7 +1289,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // 18 section animations
-
 document.addEventListener("DOMContentLoaded", function () {
   const boxes = document.querySelectorAll(".box_18");
 
@@ -1267,7 +1307,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // 15 section animations
-
 document.addEventListener("DOMContentLoaded", function () {
   const details = document.querySelectorAll(".fund-details .detail");
 
@@ -1287,7 +1326,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // PARALLAX EFFECT
-
 window.addEventListener('scroll', () => {
   const parallaxedItems = document.querySelectorAll('.parallax');
   parallaxedItems.forEach(item => {
@@ -1296,3 +1334,4 @@ window.addEventListener('scroll', () => {
     item.style.transform = `translate3d(-50%, ${halfPart + s}px, 0)`
    })
 })
+
