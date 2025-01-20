@@ -1488,29 +1488,29 @@ window.addEventListener('scroll', () => {
 
 
 
-function updateViewportMeta() {
-  console.log(navigator.userAgent); // For debugging purposes
+// function updateViewportMeta() {
+//   console.log(navigator.userAgent); // For debugging purposes
 
-  if (navigator.userAgent.includes("Android")) {
-      var viewportWidth = 1920; // Your design width
-      var scale = window.innerWidth / viewportWidth;
+//   if (navigator.userAgent.includes("Android")) {
+//       var viewportWidth = 1920; // Your design width
+//       var scale = window.innerWidth / viewportWidth;
+//   console.log(scale)
+//       // Remove any existing viewport meta tag
+//       var existingMeta = document.querySelector('meta[name="viewport"]');
+//       if (existingMeta) {
+//           existingMeta.remove();
+//       }
 
-      // Remove any existing viewport meta tag
-      var existingMeta = document.querySelector('meta[name="viewport"]');
-      if (existingMeta) {
-          existingMeta.remove();
-      }
+//       // Create and add a new viewport meta tag
+//       var meta = document.createElement('meta');
+//       meta.name = "viewport";
+//       meta.content = `width=${viewportWidth}, initial-scale=0, maximum-scale=${scale}, user-scalable=no`;
+//       document.head.appendChild(meta);
+//   }
+// }
 
-      // Create and add a new viewport meta tag
-      var meta = document.createElement('meta');
-      meta.name = "viewport";
-      meta.content = `width=${viewportWidth}, initial-scale=0, maximum-scale=${scale}, user-scalable=no`;
-      document.head.appendChild(meta);
-  }
-}
-
-// Ensure the function runs after DOM content is fully loaded
-window.addEventListener('DOMContentLoaded', updateViewportMeta);
+// // Ensure the function runs after DOM content is fully loaded
+// window.addEventListener('DOMContentLoaded', updateViewportMeta);
 
 
 
