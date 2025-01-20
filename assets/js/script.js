@@ -1436,3 +1436,12 @@ window.addEventListener('scroll', () => {
    })
 })
 
+//meta tags
+const setViewportWidth = () => {
+  let width = Math.max(window.innerWidth, 1920); // Enforce 1920px if screen is smaller
+  document.querySelector('meta[name="viewport"]').setAttribute('content', `width=${width}, initial-scale=0, maximum-scale=1, user-scalable=no`);
+};
+
+window.addEventListener('resize', setViewportWidth);
+setViewportWidth(); 
+
