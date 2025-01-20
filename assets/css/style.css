@@ -121,13 +121,20 @@ video {
   margin: 0 auto;
   padding: 0 70px;
 }
+
+
+
+
+
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   background-color: black;
+
  
 }
+
 .main {
   background-color: black;
   overflow-x: hidden;
@@ -2401,12 +2408,7 @@ padding: 30px;
 }
 
 
-@media (max-width: 767px) {
-  body {
-      width: 1920px; 
-      margin: 0 auto; 
-  }
-}
+/* 
 
 @media screen and (max-width: 1890px){
   .card_box_4 {
@@ -2568,4 +2570,4 @@ img {width: 80%;}
   }
   
 }
-
+ */
