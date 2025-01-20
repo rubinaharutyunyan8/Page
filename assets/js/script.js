@@ -1437,11 +1437,52 @@ window.addEventListener('scroll', () => {
 })
 
 //meta tags
-const setViewportWidth = () => {
-  let width = Math.max(window.innerWidth, 1920); // Enforce 1920px if screen is smaller
-  document.querySelector('meta[name="viewport"]').setAttribute('content', `width=${width}, initial-scale=0, maximum-scale=1, user-scalable=no`);
-};
+// const setViewportWidth = () => {
+//   let width = Math.max(window.innerWidth, 1920); // Enforce 1920px if screen is smaller
+//   document.querySelector('meta[name="viewport"]').setAttribute('content', `width=${width}, initial-scale=0, maximum-scale=1, user-scalable=no`);
+// };
 
-window.addEventListener('resize', setViewportWidth);
-setViewportWidth(); 
+// window.addEventListener('resize', setViewportWidth);
+// setViewportWidth(); 
+
+
+function writeViewPort() {
+  var ua = navigator.userAgent;
+  var viewportChanged = false;
+  var scale = 0;
+
+  if (ua.indexOf("Android") >= 0 && ua.indexOf("AppleWebKit") >= 0) {
+      var webkitVersion = parseFloat(ua.slice(ua.indexOf("AppleWebKit") + 12));
+      // targets android browser, not chrome browser (http://jimbergman.net/webkit-version-in-android-version/)
+      if (webkitVersion < 535) {
+          viewportChanged = true;
+          scale = getScaleWithScreenwidth();
+          document.write('<meta name="viewport" content="width=1920, initial-scale=' + scale + ', minimum-scale=' + scale + ', maximum-scale=' + scale + '" />');
+      }
+  }
+
+  if (ua.indexOf("Firefox") >= 0) {
+      viewportChanged = true;
+      scale = (getScaleWithScreenwidth() / 2);
+      document.write('<meta name="viewport" content="width=1920, user-scalable=false, initial-scale=' + scale + '" />');
+  }
+
+  if (!viewportChanged) {
+      document.write('<meta name="viewport" content="width=1920, user-scalable=false" />');
+  }
+
+  if (ua.indexOf("IEMobile") >= 0) {
+      document.write('<meta name="MobileOptimized" content="640" />');
+  }
+
+  document.write('<meta name="HandheldFriendly" content="true"/>');
+}
+
+function getScaleWithScreenwidth() {
+  var viewportWidth = 1920;
+  var screenWidth = window.innerWidth;
+  return (screenWidth / viewportWidth);
+}
+
+writeViewPort();
 
