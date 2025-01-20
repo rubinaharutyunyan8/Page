@@ -1446,43 +1446,74 @@ window.addEventListener('scroll', () => {
 // setViewportWidth(); 
 
 
-function writeViewPort() {
-  var ua = navigator.userAgent;
-  var viewportChanged = false;
-  var scale = 0;
+// function writeViewPort() {
+//   var ua = navigator.userAgent;
+//   var viewportChanged = false;
+//   var scale = 0;
 
-  if (ua.indexOf("Android") >= 0 && ua.indexOf("AppleWebKit") >= 0) {
-      var webkitVersion = parseFloat(ua.slice(ua.indexOf("AppleWebKit") + 12));
-      // targets android browser, not chrome browser (http://jimbergman.net/webkit-version-in-android-version/)
-      if (webkitVersion < 535) {
-          viewportChanged = true;
-          scale = getScaleWithScreenwidth();
-          document.write('<meta name="viewport" content="width=1920, initial-scale=' + scale + ', minimum-scale=' + scale + ', maximum-scale=' + scale + '" />');
+//   if (ua.indexOf("Android") >= 0 && ua.indexOf("AppleWebKit") >= 0) {
+//       var webkitVersion = parseFloat(ua.slice(ua.indexOf("AppleWebKit") + 12));
+//       // targets android browser, not chrome browser (http://jimbergman.net/webkit-version-in-android-version/)
+
+//           viewportChanged = true;
+//           scale = getScaleWithScreenwidth();
+//           document.write('<meta name="viewport" content="width=1920, initial-scale=0,  maximum-scale=1" />');
+      
+//   }
+
+//   if (ua.indexOf("Firefox") >= 0) {
+//       viewportChanged = true;
+//       scale = (getScaleWithScreenwidth() / 2);
+//       document.write('<meta name="viewport" content="width=1920, user-scalable=false, initial-scale=' + scale + '" />');
+//   }
+
+//   if (!viewportChanged) {
+//       document.write('<meta name="viewport" content="width=1920,initial-scale=0, user-scalable=false" />');
+//   }
+
+//   if (ua.indexOf("IEMobile") >= 0) {
+//       document.write('<meta name="MobileOptimized" content="1920" />');
+//   }
+
+//   document.write('<meta name="HandheldFriendly" content="true"/>');
+// }
+
+// function getScaleWithScreenwidth() {
+//   var viewportWidth = 1920;
+//   var screenWidth = window.innerWidth;
+//   return (screenWidth / viewportWidth);
+// }
+
+// writeViewPort();
+
+
+
+function updateViewportMeta() {
+  console.log(navigator.userAgent); // For debugging purposes
+
+  if (navigator.userAgent.includes("Android")) {
+      var viewportWidth = 1920; // Your design width
+      var scale = window.innerWidth / viewportWidth;
+
+      // Remove any existing viewport meta tag
+      var existingMeta = document.querySelector('meta[name="viewport"]');
+      if (existingMeta) {
+          existingMeta.remove();
       }
-  }
 
-  if (ua.indexOf("Firefox") >= 0) {
-      viewportChanged = true;
-      scale = (getScaleWithScreenwidth() / 2);
-      document.write('<meta name="viewport" content="width=1920, user-scalable=false, initial-scale=' + scale + '" />');
+      // Create and add a new viewport meta tag
+      var meta = document.createElement('meta');
+      meta.name = "viewport";
+      meta.content = `width=${viewportWidth}, initial-scale=0, maximum-scale=${scale}, user-scalable=no`;
+      document.head.appendChild(meta);
   }
-
-  if (!viewportChanged) {
-      document.write('<meta name="viewport" content="width=1920, user-scalable=false" />');
-  }
-
-  if (ua.indexOf("IEMobile") >= 0) {
-      document.write('<meta name="MobileOptimized" content="640" />');
-  }
-
-  document.write('<meta name="HandheldFriendly" content="true"/>');
 }
 
-function getScaleWithScreenwidth() {
-  var viewportWidth = 1920;
-  var screenWidth = window.innerWidth;
-  return (screenWidth / viewportWidth);
-}
+// Ensure the function runs after DOM content is fully loaded
+window.addEventListener('DOMContentLoaded', updateViewportMeta);
 
-writeViewPort();
+
+
+
+
 
