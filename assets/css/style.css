@@ -158,13 +158,11 @@ body {
   position: relative;
 }
 .text1 {
-  font-family: "Druk Wide Bold";
+  font-family: "Druk Wide";
   font-size: 100px;
   margin: 0;
   line-height: 100px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: var(--text-color);
   text-transform: uppercase;
 
@@ -2400,6 +2398,14 @@ body {
 .add_padding{
 
 padding: 30px;
+}
+
+
+@media (max-width: 767px) {
+  body {
+      width: 1920px; 
+      margin: 0 auto; 
+  }
 }
 
 @media screen and (max-width: 1890px){
