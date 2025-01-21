@@ -990,7 +990,7 @@ const orientationEvent = () => {
   if (availWidth  <= 768) {
      
     if (angle === 90) {
-      
+
       var viewport = document.querySelector("meta[name=viewport]");
       if (viewport) {
         viewport.parentNode.removeChild(viewport);
@@ -1516,8 +1516,6 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 
 observer.observe(boxSubmit);
-
-
 
 });
 
