@@ -2419,7 +2419,6 @@ padding: 30px;
 
 
 
-
 @media screen and (max-width: 1890px){
   .card_box_4 {
     .text:last-child {
@@ -2582,10 +2581,7 @@ img {width: 80%;}
 }
 
 
-@media (max-width: 1280px) {
-  body {
-      width: 100%; /* Adapts to smaller screen widths */
-  }
-}
+
+
 
 
