@@ -1515,18 +1515,18 @@ window.addEventListener('scroll', () => {
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  if (navigator.userAgent.indexOf('Android') > -1) {
-    var viewport = document.querySelector("meta[name=viewport]");
-    if (viewport) {
-      viewport.parentNode.removeChild(viewport);
-    }
-    var newViewport = document.createElement('meta');
-    newViewport.name = "viewport";
-    newViewport.content = "width=1280, initial-scale=0, maximum-scale=1, user-scalable=no";
-    document.head.appendChild(newViewport);
-  }
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//   if (navigator.userAgent.indexOf('Android') > -1) {
+//     var viewport = document.querySelector("meta[name=viewport]");
+//     if (viewport) {
+//       viewport.parentNode.removeChild(viewport);
+//     }
+//     var newViewport = document.createElement('meta');
+//     newViewport.name = "viewport";
+//     newViewport.content = "width=1280, initial-scale=0, maximum-scale=1, user-scalable=no";
+//     document.head.appendChild(newViewport);
+//   }
+// });
 
 
 
