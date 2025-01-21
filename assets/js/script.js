@@ -991,6 +991,9 @@ const orientationEvent = () => {
      
     if (angle === 90) {
 
+      sectionAll.style.display = "block";
+      mobile.style.display = "none";
+
       var viewport = document.querySelector("meta[name=viewport]");
       if (viewport) {
         viewport.parentNode.removeChild(viewport);
@@ -1001,26 +1004,30 @@ const orientationEvent = () => {
       // newViewport.content = "width=device-width, initial-scale=1";
       document.head.appendChild(newViewport);
   
-      sectionAll.style.display = "block";
-      mobile.style.display = "none";
 
 
     } else {
+
+      mobile.style.display = "flex";
+      sectionAll.style.display = "none";
+
       var viewport = document.querySelector("meta[name=viewport]");
       if (viewport) {
         viewport.parentNode.removeChild(viewport);
       }
       var newViewport = document.createElement('meta');
       newViewport.name = "viewport";
-      newViewport.content = "width=device-width, initial-scale=1, maximum-scale=1";
+      newViewport.content = "width=device-width, initial-scale=1, maximum-scale=1, interactive-widget=resizes-content";
       // newViewport.content = "width=device-width, initial-scale=1";
       document.head.appendChild(newViewport);
     
-      mobile.style.display = "flex";
-      sectionAll.style.display = "none";
+    
       
     }
   } else {
+    sectionAll.style.display = "block";
+    mobile.style.display = "none";
+    
     var viewport = document.querySelector("meta[name=viewport]");
     if (viewport) {
       viewport.parentNode.removeChild(viewport);
@@ -1031,11 +1038,8 @@ const orientationEvent = () => {
     // newViewport.content = "width=device-width, initial-scale=1";
     document.head.appendChild(newViewport);
 
-    sectionAll.style.display = "block";
-    mobile.style.display = "none";
-  
-    sectionAll.style.display = "block";
-    mobile.style.display = "none";
+
+
   }
 }
 
