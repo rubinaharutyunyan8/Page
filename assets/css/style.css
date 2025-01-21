@@ -2356,10 +2356,10 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background-image: url("../images/Mobile_Block/1.webp");
+  /* background-image: url("../images/Mobile_Block/1.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   width: 100vw;
   height: 100vh;
 
@@ -2389,9 +2389,9 @@ body {
     background-size: contain;
     animation: rotateBackground infinite linear 12s;
     z-index: 0;
-    width: 80vw;
-    height: 80vw;
-    margin-top: -90px;
+    width: 80%;
+    height: 1000px;
+    margin-top: -159px;
   } 
 
 
@@ -2404,7 +2404,7 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 40px;
     object-fit: cover;
-    /* width: 100%; */
+    width: 100%;
   
     } 
 

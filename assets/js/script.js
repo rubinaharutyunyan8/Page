@@ -1424,6 +1424,8 @@ document.addEventListener("DOMContentLoaded", function () {
   details.forEach(detail => {
     observer.observe(detail); 
   });
+
+
 });
 
 
@@ -1515,18 +1517,42 @@ window.addEventListener('scroll', () => {
 
 
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   if (navigator.userAgent.indexOf('Android') > -1) {
-//     var viewport = document.querySelector("meta[name=viewport]");
-//     if (viewport) {
-//       viewport.parentNode.removeChild(viewport);
-//     }
-//     var newViewport = document.createElement('meta');
-//     newViewport.name = "viewport";
-//     newViewport.content = "width=1280, initial-scale=0, maximum-scale=1, user-scalable=no";
-//     document.head.appendChild(newViewport);
-//   }
-// });
+document.addEventListener("DOMContentLoaded", function() {
+  const { orientation: { angle }, availWidth } = screen;  
+
+  if (availWidth <=768) {
+    var viewport = document.querySelector("meta[name=viewport]");
+    if (viewport) {
+      viewport.parentNode.removeChild(viewport);
+    }
+    var newViewport = document.createElement('meta');
+    newViewport.name = "viewport";
+    newViewport.content = "width=1280, initial-scale=0.1, maximum-scale=1, user-scalable=no";
+    document.head.appendChild(newViewport);
+  }
+
+  const boxSubmit= document.getElementById("section_0");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {   
+
+        var newViewport = document.createElement('meta');
+        newViewport.name = "viewport";
+        newViewport.content = "width=1280, initial-scale=0.1, maximum-scale=1, user-scalable=no";
+        document.head.appendChild(newViewport);
+
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, { threshold: 0.1 }); 
+
+ boxSubmit.forEach(detail => {
+    observer.observe(detail); 
+  });
+
+
+});
 
 
 
