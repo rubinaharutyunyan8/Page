@@ -2582,6 +2582,56 @@ img {width: 80%;}
 
 
 
+@media (max-width: 930px) {
 
+  .content_0 {
+    width: 90%;
+    height: 350px;
+  
+    .box_icons {
+      margin-top: 57px;
+      margin-left: 48px;
+  }
+}
+.header{
+  align-self: none;
+  /* margin-left:30px; */
+
+}
+      
+  }
+  .mobile_flex{
+    margin-left:30px;
+    .header {
+      font-size: 18px;
+    }
+  }
+  .box_0 {
+    input{
+      width: 65%;
+      height: 50px;
+    }
+
+    .button{
+width: max-content;
+padding: 10px;
+font-size: 20px;
+height: 50px;
+    }
+  }
+  .box_icons {
+    .icon2 {
+      width: 142.88px;
+      height: 15.45px;
+  }
+  }
+  .mobile_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;  
+   
+  }
+  
+  }
 
 

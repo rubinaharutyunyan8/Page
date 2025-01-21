@@ -1521,35 +1521,48 @@ document.addEventListener("DOMContentLoaded", function() {
   const { orientation: { angle }, availWidth } = screen;  
 
   if (availWidth <=768) {
+    console.log(availWidth)
     var viewport = document.querySelector("meta[name=viewport]");
     if (viewport) {
       viewport.parentNode.removeChild(viewport);
     }
     var newViewport = document.createElement('meta');
     newViewport.name = "viewport";
-    newViewport.content = "width=1280, initial-scale=0.1, maximum-scale=1, user-scalable=no";
+    newViewport.content = "width=device-width, initial-scale=0.1, maximum-scale=1, user-scalable=no";
+    // newViewport.content = "width=device-width, initial-scale=1";
     document.head.appendChild(newViewport);
   }
 
-  const boxSubmit= document.getElementById("section_0");
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {   
+});
 
-        var newViewport = document.createElement('meta');
-        newViewport.name = "viewport";
-        newViewport.content = "width=1280, initial-scale=0.1, maximum-scale=1, user-scalable=no";
-        document.head.appendChild(newViewport);
 
-        observer.unobserve(entry.target); 
-      }
-    });
-  }, { threshold: 0.1 }); 
 
- boxSubmit.forEach(detail => {
-    observer.observe(detail); 
+document.addEventListener("DOMContentLoaded", function() {
+
+const boxSubmit = document.getElementById("section_0");
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {   
+      // var viewport = document.querySelector("meta[name=viewport]");
+      // if (viewport) {
+      //   viewport.parentNode.removeChild(viewport);
+      // }
+      // console.log(777777777777777777777777);
+      // var newViewport = document.createElement('meta');
+      // newViewport.name = "viewport";
+      // // newViewport.content = "width=device-width, initial-scale=1";
+      // document.head.appendChild(newViewport);
+
+      observer.unobserve(entry.target); 
+    }
   });
+}, { threshold: 0.1 }); 
+
+
+observer.observe(boxSubmit);
+
 
 
 });
