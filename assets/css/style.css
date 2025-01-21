@@ -2365,17 +2365,17 @@ body {
 
   .header {
     font-family: "Druk Wide";
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 47px;
+    line-height: 45px;
     text-align: center;
-    margin: 61px;
+    margin: 50px;
     z-index: 0;
   }
   .text {
     font-family: "RM Mono";
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 20px;
     text-align: center;
     margin-bottom: 68px;
     z-index: 0;
@@ -2389,7 +2389,7 @@ body {
     background-size: contain;
     animation: rotateBackground infinite linear 12s;
     z-index: 0;
-    width: 80%;
+    width: 70%;
     height: 1000px;
     margin-top: -159px;
   } 
@@ -2402,7 +2402,6 @@ body {
     height: 100%;
     z-index: 0;
     transform: translate(-50%, -50%);
-    border-radius: 40px;
     object-fit: cover;
     width: 100%;
   
