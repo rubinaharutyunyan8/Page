@@ -10,9 +10,9 @@ video {
   pointer-events: none !important;
 }
 
-html {
+/* html {
   -webkit-text-size-adjust: 100%; 
-}
+} */
 
 /* ------------------------------- FONTS -------------------------------  */
 
@@ -2580,4 +2580,6 @@ img {width: 80%;}
   }
   
 }
+
+
 
