@@ -2584,6 +2584,7 @@ img {width: 80%;}
 
 @media (max-width: 930px) {
 
+  
   .content_0 {
     width: 90%;
     height: 350px;
@@ -2593,15 +2594,19 @@ img {width: 80%;}
       margin-left: 48px;
   }
 }
+
 .header{
   align-self: none;
   /* margin-left:30px; */
 
 }
       
-  }
+  
   .mobile_flex{
     margin-left:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;  
     .header {
       font-size: 18px;
     }
@@ -2624,14 +2629,10 @@ height: 50px;
       width: 142.88px;
       height: 15.45px;
   }
+
   }
-  .mobile_flex {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;  
-   
-  }
-  
-  }
+
+}
+
 
 
