@@ -966,7 +966,7 @@ const orientationEvent = () => {
     }
     var newViewport = document.createElement('meta');
     newViewport.name = "viewport";
-    newViewport.content = "width=1280, initial-scale=0.1, maximum-scale=1, user-scalable=no";
+    newViewport.content = "width=1280, initial-scale=0.1, maximum-scale=0.4, user-scalable=no";
     // newViewport.content = "width=device-width, initial-scale=1";
     document.head.appendChild(newViewport);
   }
@@ -979,7 +979,7 @@ const orientationEvent = () => {
     }
     var newViewport = document.createElement('meta');
     newViewport.name = "viewport";
-    newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=1, user-scalable=no";
+    newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";
     // newViewport.content = "width=device-width, initial-scale=1";
     document.head.appendChild(newViewport);
   }
