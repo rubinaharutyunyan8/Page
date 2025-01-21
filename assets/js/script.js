@@ -958,18 +958,18 @@ const orientationEvent = () => {
   section0.style.display = "none";
   const { orientation: { angle }, availWidth } = screen;   
   
-  if (availWidth <=768) {
-    console.log(availWidth)
-    var viewport = document.querySelector("meta[name=viewport]");
-    if (viewport) {
-      viewport.parentNode.removeChild(viewport);
-    }
-    var newViewport = document.createElement('meta');
-    newViewport.name = "viewport";
-    newViewport.content = "width=1280, initial-scale=0.1, maximum-scale=0.4, user-scalable=no";
-    // newViewport.content = "width=device-width, initial-scale=1";
-    document.head.appendChild(newViewport);
-  }
+  // if (availWidth <=768) {
+  //   console.log(availWidth)
+  //   var viewport = document.querySelector("meta[name=viewport]");
+  //   if (viewport) {
+  //     viewport.parentNode.removeChild(viewport);
+  //   }
+  //   var newViewport = document.createElement('meta');
+  //   newViewport.name = "viewport";
+  //   newViewport.content = "width=1280, initial-scale=0.1, maximum-scale=0.4, user-scalable=no";
+  //   // newViewport.content = "width=device-width, initial-scale=1";
+  //   document.head.appendChild(newViewport);
+  // }
 
   if (availWidth > 768) {
     console.log(availWidth)
@@ -990,10 +990,31 @@ const orientationEvent = () => {
   if (availWidth  <= 768) {
      
     if (angle === 90) {
+      
+      var viewport = document.querySelector("meta[name=viewport]");
+      if (viewport) {
+        viewport.parentNode.removeChild(viewport);
+      }
+      var newViewport = document.createElement('meta');
+      newViewport.name = "viewport";
+      newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";
+      // newViewport.content = "width=device-width, initial-scale=1";
+      document.head.appendChild(newViewport);
   
       sectionAll.style.display = "block";
       mobile.style.display = "none";
+
+
     } else {
+      var viewport = document.querySelector("meta[name=viewport]");
+      if (viewport) {
+        viewport.parentNode.removeChild(viewport);
+      }
+      var newViewport = document.createElement('meta');
+      newViewport.name = "viewport";
+      newViewport.content = "width=1280, initial-scale=0.1, maximum-scale=0.4, user-scalable=no";
+      // newViewport.content = "width=device-width, initial-scale=1";
+      document.head.appendChild(newViewport);
     
       mobile.style.display = "flex";
       sectionAll.style.display = "none";
