@@ -995,13 +995,14 @@ body {
 }
 .pic_6 {
 
-  border-radius: 15px;
   height: 100%;
   margin: 30px;
   min-width: 316px;
   img {
     height: 100%;
     width:  100%;
+    object-fit: cover;    
+  border-radius: 15px;
   }
 }
 .add_box_7 {
@@ -2330,7 +2331,7 @@ body {
   }
 }
 .icon_6_box {
-  height: 40%;
+  height: 23%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -2439,6 +2440,17 @@ body {
 padding: 30px;
 }
 
+
+
+
+
+@media screen and (max-width: 1766px) {
+  .flex_box:first-child {
+    margin-bottom: 7px;
+  }
+  
+}
+
 @media screen and (max-width: 1800px) {
   .portfolio-survey {  
       height: 884px;
@@ -2494,6 +2506,19 @@ padding: 30px;
 }
 
 @media  screen and (max-width: 1500px) {
+  .text_box_2 {
+    font-size: 20px;
+  
+  }
+
+  .text1 {
+    font-size: 65px;
+    line-height: 65px;
+  }
+  .text3 {
+    font-size: 41px;
+    line-height: 41px;
+  }
   .icon_6{
     width: 340px;
   }

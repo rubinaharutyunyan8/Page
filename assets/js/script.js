@@ -958,21 +958,8 @@ const orientationEvent = () => {
   section0.style.display = "none";
   const { orientation: { angle }, availWidth } = screen;   
   
-  // if (availWidth <=768) {
-  //   console.log(availWidth)
-  //   var viewport = document.querySelector("meta[name=viewport]");
-  //   if (viewport) {
-  //     viewport.parentNode.removeChild(viewport);
-  //   }
-  //   var newViewport = document.createElement('meta');
-  //   newViewport.name = "viewport";
-  //   newViewport.content = "width=1280, initial-scale=0.1, maximum-scale=0.4, user-scalable=no";
-  //   // newViewport.content = "width=device-width, initial-scale=1";
-  //   document.head.appendChild(newViewport);
-  // }
+  if (availWidth > 768 ) {
 
-  if (availWidth > 768) {
-    console.log(availWidth)
     var viewport = document.querySelector("meta[name=viewport]");
     if (viewport) {
       viewport.parentNode.removeChild(viewport);
@@ -980,11 +967,9 @@ const orientationEvent = () => {
     var newViewport = document.createElement('meta');
     newViewport.name = "viewport";
     newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";
-    // newViewport.content = "width=device-width, initial-scale=1";
+    
     document.head.appendChild(newViewport);
   }
-
-
 
 
   if (availWidth  <= 768) {
@@ -1000,8 +985,7 @@ const orientationEvent = () => {
       }
       var newViewport = document.createElement('meta');
       newViewport.name = "viewport";
-      newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";
-      // newViewport.content = "width=device-width, initial-scale=1";
+      newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";     
       document.head.appendChild(newViewport);
   
 
@@ -1018,10 +1002,8 @@ const orientationEvent = () => {
       var newViewport = document.createElement('meta');
       newViewport.name = "viewport";
       newViewport.content = "width=device-width, initial-scale=1, maximum-scale=1, interactive-widget=resizes-content";
-      // newViewport.content = "width=device-width, initial-scale=1";
       document.head.appendChild(newViewport);
-    
-    
+        
       
     }
   } else {
@@ -1035,7 +1017,6 @@ const orientationEvent = () => {
     var newViewport = document.createElement('meta');
     newViewport.name = "viewport";
     newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";
-    // newViewport.content = "width=device-width, initial-scale=1";
     document.head.appendChild(newViewport);
 
 
