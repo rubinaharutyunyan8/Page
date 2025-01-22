@@ -115,6 +115,7 @@ video {
   0% {
     transform: rotateZ(0deg);
   }
+
   100% {
     transform: rotateZ(360deg);
   }
@@ -142,13 +143,14 @@ body {
   box-sizing: border-box;
   background-color: black;
 
- 
+
 }
 
 .main {
   background-color: black;
   overflow-x: hidden;
 }
+
 .flex_center {
   display: flex;
   justify-content: center;
@@ -166,6 +168,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .first_block {
   width: calc(100% - 80px);
   left: 0;
@@ -174,6 +177,7 @@ body {
   margin: 0 40px;
   position: relative;
 }
+
 .text1 {
   font-family: "Druk Wide";
   font-size: 100px;
@@ -187,6 +191,7 @@ body {
   transform: translateY(200px);
   transition: opacity 2s ease-in-out, transform 1s ease-in-out;
 }
+
 #video {
   position: absolute;
   top: 50%;
@@ -217,6 +222,7 @@ body {
   transform: translateY(200px);
   transition: opacity 2s ease-in-out, transform 1s ease-in-out;
 }
+
 .text3 {
   font-family: "Druk Wide Bold";
   font-size: 60px;
@@ -253,6 +259,7 @@ body {
   margin: 75px 0;
   height: calc(100% - 250px);
 }
+
 .layer {
   position: absolute;
   bottom: -80px;
@@ -262,20 +269,22 @@ body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.3) 45%, rgba(255, 255, 255, 0) 100%);
 }
 
-.text_box_1 {
-}
-.text_box_2 {
-}
+.text_box_1 {}
+
+.text_box_2 {}
+
 /*Second section */
 
 .second_block {
   position: relative;
-  
+
 }
+
 .box {
   z-index: 1;
   position: relative;
 }
+
 .second_block_video {
   height: auto;
   z-index: 0;
@@ -285,6 +294,7 @@ body {
   left: 58%;
   top: -6%;
 }
+
 .second_block_video_two {
   height: auto;
   z-index: 0;
@@ -294,8 +304,8 @@ body {
   left: 66%;
   transform: rotate(-74deg);
 }
-.video_box {
-}
+
+.video_box {}
 
 .second_block_header {
   font-family: "Druk Wide";
@@ -315,9 +325,10 @@ body {
 }
 
 .add_pad {
-   margin-top: 0;
-   padding-top: 200px;
+  margin-top: 0;
+  padding-top: 200px;
 }
+
 .back_black {
   background-color: #000;
 }
@@ -342,12 +353,14 @@ body {
   width: 730px;
   margin-bottom: 70px;
 }
+
 .second_block_text_box {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .second_block_box {
   position: relative;
   display: flex;
@@ -355,6 +368,7 @@ body {
   align-items: center;
   gap: 15px;
 }
+
 /* .second_block_box_item .card_3::after {
   content: "";
   position: absolute;
@@ -388,6 +402,7 @@ body {
 .pic_box {
   margin: 0 0 25px 25px;
 }
+
 .card_box {
   display: flex;
   flex-direction: column;
@@ -396,10 +411,12 @@ body {
   height: auto;
   margin: 25px 0 0 25px;
 }
+
 .card_img {
   width: 100%;
   height: 100%;
 }
+
 .card_header {
   font-family: "Druk Wide";
   font-size: 30px;
@@ -409,6 +426,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
 .card_text {
   font-family: "PP Mori";
   font-size: 40px;
@@ -454,7 +472,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;  
+  align-items: center;
   padding: 0px 30px 0px 30px;
   height: 760px;
   max-width: 100%;
@@ -473,6 +491,7 @@ body {
 
 
 }
+
 .card_3.in-view {
   opacity: 1;
   transform: translateY(0);
@@ -481,6 +500,7 @@ body {
 .card_box_3 {
   height: 100px;
   margin-top: 30px;
+
   .header {
     text-transform: uppercase;
   }
@@ -492,9 +512,10 @@ body {
   line-height: 40px;
   text-align: center;
   color: white;
-  text-transform: uppercase; 
-  margin-top:31px;
+  text-transform: uppercase;
+  margin-top: 31px;
 }
+
 .header33 {
   font-family: "Druk Wide";
   font-size: 30px;
@@ -504,6 +525,7 @@ body {
   text-transform: uppercase;
 
 }
+
 .disc33 {
   font-family: "PP Mori";
   font-size: 30px;
@@ -523,6 +545,7 @@ body {
   color: white;
   text-transform: uppercase;
 }
+
 .img_box {
 
   height: 100%;
@@ -562,6 +585,7 @@ body {
   margin: 30px 20px;
   text-transform: uppercase;
 }
+
 .box4 {
   position: absolute;
   z-index: 2;
@@ -571,13 +595,14 @@ body {
   align-items: center;
   height: 100%;
   width: 70%;
+
   .header {
     margin-bottom: 0px;
   }
 }
 
 .card_4 {
-  
+
   height: 939px;
   border-radius: 30px;
   border: 1px solid #bbbbbb;
@@ -598,19 +623,23 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
 .box_4_content {
   width: 450px;
   height: min-content;
   margin-bottom: 25px;
+
   .text_4_diff {
     margin-top: 10px;
   }
 }
+
 .text_box_4 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
+
 .header_4 {
   font-family: "Druk Wide";
   font-size: 40px;
@@ -618,6 +647,7 @@ body {
   color: white;
   text-transform: uppercase;
 }
+
 .disc_4 {
   font-family: "PP Mori Bold";
   font-size: 30px;
@@ -625,20 +655,24 @@ body {
   line-height: 40px;
   color: white;
 }
+
 .text_4 {
   font-family: "PP Mori";
   font-size: 30px;
   line-height: 25px;
   color: white;
 }
+
 .text_4_diff {
   font-family: "RM Mono";
   font-size: 21px;
   color: #999999;
 }
+
 .add_color {
   color: white;
 }
+
 .box_4_bottom {
 
   position: absolute;
@@ -654,6 +688,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   gap: 50px;
 }
+
 .text_box_bottom {
   text-align: center;
 }
@@ -707,7 +742,7 @@ body {
 
   height: 860px;
   border-radius: 30px;
-  border: 1px solid #666666;  
+  border: 1px solid #666666;
   display: flex;
   padding: 30px;
   box-sizing: border-box;
@@ -724,16 +759,18 @@ body {
   .header_big {
     line-height: 90%;
   }
+
   .line {
     margin-bottom: 30px;
   }
+
   .text:last-child {
     margin-bottom: 50px;
   }
-  .flex_box {
 
-  }
+  .flex_box {}
 }
+
 .card_box_4.in-view {
   opacity: 1;
   transform: translateY(0);
@@ -750,9 +787,11 @@ body {
   .header_big {
     line-height: initial;
   }
+
   .flex_box .line {
     margin-top: 50px;
   }
+
   .flex_box:first-child {
     margin-bottom: 6px;
   }
@@ -762,8 +801,9 @@ body {
 .add_top {
   margin-top: 65px;
 }
+
 .card_box_4_big {
- 
+
   height: 860px;
   border-radius: 30px;
   border: 1px solid #666666;
@@ -836,17 +876,20 @@ body {
   margin-top: 20px;
   width: 100%;
 }
+
 .box_flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .line {
   width: 100%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.5);
   align-self: center;
 }
+
 .header_big {
   font-family: "Druk";
   font-size: 200px;
@@ -890,6 +933,7 @@ body {
   transform: translateY(100px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
+
 .in-view1 {
   opacity: 1;
   transform: translateY(0);
@@ -911,6 +955,7 @@ body {
   align-items: center;
   position: relative;
 }
+
 .block_5_content {
   width: 1700px;
   width: 100%;
@@ -920,12 +965,14 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
 .header_5 {
   font-family: "Druk Wide Bold";
   font-size: 40px;
   line-height: 40px;
   color: #ffffff;
 }
+
 .cont2 {
   display: flex;
   flex-direction: column;
@@ -975,43 +1022,46 @@ body {
   z-index: 1;
   animation: none;
 }
+
 .text_cont3 {
   font-family: "PP Mori";
   font-size: 30px;
   line-height: 30px;
   color: white;
 }
+
 .cont3 {
   text-align: right;
 }
+
 .background_cont {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.5),
-    #222222,
-    rgba(0, 0, 0, 0.5)
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.5),
+      #222222,
+      rgba(0, 0, 0, 0.5));
   backdrop-filter: blur(10px);
 }
+
 .cont_6 {
   position: relative;
 
 }
+
 .pic_6 {
 
   height: 100%;
   margin: 30px;
   min-width: 316px;
+
   img {
     height: 100%;
-    width:  100%;
-    object-fit: cover;    
-  border-radius: 15px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
   }
 }
-.add_box_7 {
 
-}
+.add_box_7 {}
 
 /* 8 section */
 
@@ -1029,6 +1079,7 @@ body {
   max-width: 100%;
   padding-bottom: 150px;
 }
+
 .card_5 span:first-child {
   font-family: "Druk Wide";
   font-size: 32px;
@@ -1036,6 +1087,7 @@ body {
   text-transform: uppercase;
   color: white;
 }
+
 .card_5_box {
   display: flex;
   flex-direction: column;
@@ -1048,6 +1100,7 @@ body {
   max-width: 100%;
   margin-bottom: 40px;
 }
+
 .cont_box {
   display: flex;
   flex-wrap: wrap;
@@ -1055,11 +1108,13 @@ body {
   padding: 0 40px;
   margin-bottom: -100px;
 }
+
 .cont_box .card_5_box {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+
 .block_video_8 {
   height: auto;
   z-index: 1;
@@ -1125,13 +1180,14 @@ body {
   position: relative;
   width: auto;
   text-align: left;
-  flex:1;
+  flex: 1;
 
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 
 }
+
 .box_9 {
   .box_flex {
     height: 100%;
@@ -1177,6 +1233,7 @@ body {
   color: white;
   /* width: 670px; */
 }
+
 .text_9 {
   font-family: "PP Mori";
   font-size: 26.2px;
@@ -1188,9 +1245,10 @@ body {
 }
 
 .to_right {
- text-align: right;
+  text-align: right;
   padding: 61px 41px 61px 129px;
 }
+
 .to_right_text {
   text-align: right;
 }
@@ -1204,11 +1262,13 @@ body {
   right: 57%;
   bottom: -35%;
 }
+
 .container_9 {
   max-width: 100%;
   margin: 0 auto;
   align-self: center;
 }
+
 ._9 {
   display: flex;
   align-items: center;
@@ -1240,6 +1300,7 @@ body {
   left: 56%;
   bottom: -45%;
 }
+
 .header_10 {
   font-family: "PP Mori";
   font-size: 30px;
@@ -1248,6 +1309,7 @@ body {
   color: white;
   margin-left: 30px;
 }
+
 .text_10 {
   font-family: "PP Mori Bold";
   font-size: 34px;
@@ -1256,6 +1318,7 @@ body {
   color: white;
   margin-right: 30px;
 }
+
 .card_box_10 {
   width: 784.5px;
   height: auto;
@@ -1269,16 +1332,19 @@ body {
   backdrop-filter: blur(10px);
   max-width: 100%;
   padding: 30px 0 30px 0;
+
   .row {
     width: 724px;
     height: 579px;
   }
+
   .row_box {
     width: 724px;
     height: 579px;
     border: 1.5px solid #D9D9D9;
   }
 }
+
 .header_10_1 {
   font-family: "Druk Wide";
   font-size: 32px;
@@ -1288,6 +1354,7 @@ body {
   text-transform: uppercase;
   margin-top: 30px;
 }
+
 .text_10_1 {
   font-family: "PP Mori";
   font-size: 28px;
@@ -1301,7 +1368,7 @@ body {
 /* 11 section */
 
 .card_box_11 {
- 
+
   height: 824px;
   border-radius: 30px;
   border: 1px solid #666666;
@@ -1320,8 +1387,9 @@ body {
     border: 2px solid #d9d9d9;
     max-width: 100%;
   }
+
   .row {
-  
+
     justify-content: space-around;
     gap: 30px;
     max-width: 100%;
@@ -1335,14 +1403,17 @@ body {
     }
   }
 }
+
 .row:last-child {
- border-bottom: none;
+  border-bottom: none;
 }
+
 .box_111 {
-  width:400px;
+  width: 400px;
   min-width: 100px;
   align-content: center;
 }
+
 .box_11 {
   max-width: 100%;
 }
@@ -1354,6 +1425,7 @@ body {
   color: white;
   line-height: 30px;
 }
+
 .text_11 {
   font-family: "PP Mori";
   font-size: 15px;
@@ -1362,6 +1434,7 @@ body {
   color: white;
   padding: 7px 12px;
 }
+
 .moic {
   font-family: "PP Mori";
   font-size: 34px;
@@ -1372,6 +1445,7 @@ body {
   text-align: right;
   flex: 1;
 }
+
 .entry {
   font-family: "PP Mori";
   font-size: 24px;
@@ -1380,6 +1454,7 @@ body {
   flex: 1;
   margin-left: 50px;
 }
+
 .pic_11_2 {
   flex: 2;
   width: min-content;
@@ -1387,25 +1462,32 @@ body {
   justify-content: flex-end;
   margin-right: 30px;
 }
+
 .pic_11 {
   width: 200px;
   margin-left: 30px;
 }
+
 .add_color_1 {
   border: 1px solid #30b0c7;
 }
+
 .add_color_2 {
   border: 1px solid #c79030;
 }
+
 .add_color_3 {
   border: 1px solid #ff3b30;
 }
+
 .add_color_4 {
   border: 1px solid #34c759;
 }
+
 .add_color_5 {
   border: 1px solid #ff00ee;
 }
+
 .add_color_6 {
   border: 1px solid #30b0c7;
 }
@@ -1415,6 +1497,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   .header {
     font-family: "RM Mono";
     font-size: 20px;
@@ -1424,18 +1507,23 @@ body {
     margin-top: 22px;
   }
 }
+
 .add_1 {
   transform: translateX(30px);
 }
+
 .add_2 {
   transform: translateX(-94px);
 }
+
 .add_3 {
   transform: translateX(89px);
 }
+
 .add_4 {
   transform: translateX(13px);
 }
+
 .add_5 {
   transform: translateX(-35px);
 }
@@ -1443,6 +1531,7 @@ body {
 .add_margin {
   margin-top: 25px;
 }
+
 .no_border {
   border: none;
   height: 777px;
@@ -1470,6 +1559,7 @@ body {
   /* width: 900px; */
   height: 809px;
 }
+
 .back_img2 {
   background-image: url("../images/13_Block/2.webp");
   background-position: left;
@@ -1477,9 +1567,11 @@ body {
   background-repeat: no-repeat;
   height: 809px;
 }
+
 .bottom_box {
   padding: 30px;
 }
+
 .disc_13 {
   font-family: "PP Mori Bold";
   font-size: 30px;
@@ -1488,6 +1580,7 @@ body {
   text-align: left;
   margin-bottom: 20px;
 }
+
 .text_13_center {
   font-family: "Druk Wide Bold";
   font-size: 40px;
@@ -1495,6 +1588,7 @@ body {
   text-align: center;
   color: white;
 }
+
 .text_13_center_1 {
   font-family: "RM Mono";
   font-size: 21px;
@@ -1502,12 +1596,14 @@ body {
   text-align: center;
   color: white;
 }
+
 .text_13 {
   font-family: "PP Mori";
   font-size: 30px;
   color: white;
   text-align: left;
 }
+
 .text_align_right {
   text-align: right;
 }
@@ -1523,8 +1619,8 @@ body {
   backdrop-filter: blur(10px);
   max-width: 100%;
 
-  opacity: 0; 
-  transform: translateY(50px); 
+  opacity: 0;
+  transform: translateY(50px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 
   .investment-section {
@@ -1538,9 +1634,10 @@ body {
   .investment-details,
   .investors,
   .testimonial {
- 
+
     margin-bottom: 20px;
   }
+
   .investment-details {
     border-top: 1px solid white;
   }
@@ -1598,8 +1695,8 @@ body {
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
 
-  opacity: 0; 
-  transform: translateY(50px); 
+  opacity: 0;
+  transform: translateY(50px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 
   .investment-section {
@@ -1607,6 +1704,7 @@ body {
     color: #ffffff;
     width: 100%;
   }
+
   .investment-details,
   .investors,
   .testimonial {
@@ -1620,6 +1718,7 @@ body {
     font-weight: 400;
     line-height: 20px;
   }
+
   .investment-description,
   .investor-list {
     font-family: "PP Mori";
@@ -1647,9 +1746,10 @@ body {
     text-align: left;
   }
 }
+
 .card_box_14.in-view {
   opacity: 1;
-  transform: translateY(0); 
+  transform: translateY(0);
 }
 
 .card_box_14 .box_14 {
@@ -1666,6 +1766,7 @@ body {
     align-items: flex-start;
     width: 100%;
     color: white;
+
     .box_header {
       font-family: "RM Mono";
       font-size: 20px;
@@ -1673,6 +1774,7 @@ body {
       color: #ffffff;
       text-shadow: 0px 0px 55.0435px rgba(0, 0, 0, 0.8);
     }
+
     .box_moic {
       padding: 8px 24px;
       border: 1px solid #666666;
@@ -1683,18 +1785,21 @@ body {
       line-height: 100%;
       text-transform: capitalize;
     }
+
     .box_text1 {
       font-family: "Druk Wide";
       font-size: 60px;
       text-transform: uppercase;
       color: #ffffff;
     }
+
     .box_text2 {
       font-family: "PP Mori";
       font-size: 34px;
       text-transform: uppercase;
       color: #ffffff;
     }
+
     .box_text3 {
       font-family: "RM Mono";
       font-size: 20px;
@@ -1710,21 +1815,23 @@ body {
   gap: 53px;
   align-items: center;
   width: 100%;
+
   .image_one {
     border: 1px solid #666666;
     border-radius: 15px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover;
     height: 460px;
     width: 100%;
   }
+
   .image_two {
     border: 1px solid #666666;
     border-radius: 15px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover;
     height: 513px;
     width: 100%;
   }
@@ -1793,7 +1900,7 @@ body {
   padding-bottom: 12.5px;
 }
 
-.detail > h1 {
+.detail>h1 {
   font-family: "Druk";
   font-weight: 500;
   font-size: 200px;
@@ -1801,14 +1908,14 @@ body {
   color: #ffffff;
 }
 
-.detail > h2 {
+.detail>h2 {
   font-family: "PP Mori";
   font-size: 70px;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.detail > h4 {
+.detail>h4 {
   font-family: "PP Mori";
   font-weight: 800;
   font-size: 30px;
@@ -1816,20 +1923,21 @@ body {
   color: #ffffff;
 }
 
-.detail > p {
+.detail>p {
   font-family: "PP Mori";
   font-size: 30px;
   text-transform: uppercase;
   color: #ffffff;
 
 }
-.detail > p:nth-child(1),
-.detail > p:nth-child(3) {
+
+.detail>p:nth-child(1),
+.detail>p:nth-child(3) {
   font-weight: 900;
 }
 
-.detail > p:nth-child(2),
-.detail > p:nth-child(4) {
+.detail>p:nth-child(2),
+.detail>p:nth-child(4) {
   font-weight: normal;
 }
 
@@ -1850,13 +1958,14 @@ body {
   gap: 20px;
   align-items: flex-start;
 
-  opacity: 0; 
-  transform: translateY(100px); 
+  opacity: 0;
+  transform: translateY(100px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
+
 .content-wrapper.in-view {
   opacity: 1;
-  transform: translateY(0); 
+  transform: translateY(0);
 }
 
 .portfolio-survey,
@@ -1910,9 +2019,11 @@ body {
   text-shadow: 0px 0px 3.4375rem rgba(0, 0, 0, 0.8);
   margin-bottom: 6.25rem;
 }
+
 .border_top {
   border-top: 1px solid #ffff;
 }
+
 .arrow-icon {
   width: auto;
 }
@@ -1999,6 +2110,7 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
+
 .gallery {
   width: 100%;
   overflow: hidden;
@@ -2085,6 +2197,7 @@ body {
   align-content: space-between;
   max-width: 100%;
 }
+
 .box_18 {
   font-family: "PP Mori Medium";
   font-size: 30px;
@@ -2106,8 +2219,8 @@ body {
 }
 
 .box_18.in-view {
-  opacity: 1; 
-  transform: translateY(0); 
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .box_18:nth-child(1) {
@@ -2165,6 +2278,7 @@ body {
   color: white;
   margin-top: 50px;
 }
+
 .block_video_18 {
   height: auto;
   z-index: 1;
@@ -2203,6 +2317,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 45px;
 }
+
 .text_19 {
   font-family: "Druk Wide";
   font-size: 40px;
@@ -2232,17 +2347,18 @@ body {
 
   height: 1080px;
   width: calc(100%);
- position: relative;
- video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 100%;
-  z-index: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 40px;
-  object-fit: cover;
-  width: 100%;
+  position: relative;
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    object-fit: cover;
+    width: 100%;
 
   }
 }
@@ -2263,9 +2379,11 @@ body {
     width: 342.88px;
     height: 45.45px;
   }
+
   .box_icons {
     margin-top: 85px;
     margin-left: 70px;
+
     .icon1 {
       width: 27.62px;
       height: 27.62px;
@@ -2273,6 +2391,7 @@ body {
     }
   }
 }
+
 .content_0 {
   width: 1067px;
   height: 427px;
@@ -2285,6 +2404,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   .header {
     font-family: "PP Mori";
     font-size: 30px;
@@ -2294,14 +2414,16 @@ body {
     text-align: left;
     text-transform: uppercase;
     align-self: flex-start;
-       
+
   }
 }
+
 .box_0 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top:50px;
+  margin-top: 50px;
+
   input {
     width: 639px;
     height: 78px;
@@ -2313,6 +2435,7 @@ body {
     font-family: "PP Mori";
     padding-left: 15px;
   }
+
   input:focus {
     border: 0.920259px solid #ff5c00;
     outline: none;
@@ -2334,6 +2457,7 @@ body {
     cursor: pointer;
   }
 }
+
 .icon_6_box {
   height: 23%;
   display: flex;
@@ -2341,7 +2465,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
 
-  .icon_6{
+  .icon_6 {
     margin-top: -20px;
   }
 
@@ -2349,7 +2473,7 @@ body {
   .mobile_flex {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;    
+    align-items: flex-start;
   }
 }
 
@@ -2367,7 +2491,8 @@ body {
   background-size: cover; */
   width: 100vw;
   /* height: 100vh; */
-  min-height: 100vh; /* Minimum height of the viewport */
+  min-height: 100vh;
+  /* Minimum height of the viewport */
   position: relative;
 
 
@@ -2380,6 +2505,7 @@ body {
     margin: 50px;
     z-index: 0;
   }
+
   .text {
     font-family: "RM Mono";
     font-size: 20px;
@@ -2388,9 +2514,10 @@ body {
     text-align: center;
     margin-bottom: 68px;
     z-index: 0;
-    
-    
+
+
   }
+
   .box {
     background-image: url("../icons/Mobile_Block/icon.svg");
     background-position: center;
@@ -2402,13 +2529,15 @@ body {
     width: 75%;
     /* height: 50%; */
     margin-top: -159px;
-    min-height: 500px; /* Minimum height of the viewport */
+    min-height: 500px;
+    /* Minimum height of the viewport */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 
-  
-  } 
+
+  }
+
   .img {
     animation: rotateBackground infinite linear 12s;
     width: 100%;
@@ -2423,7 +2552,7 @@ body {
   }
 
 
-   video {
+  video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2432,17 +2561,18 @@ body {
     transform: translate(-50%, -50%);
     object-fit: cover;
     width: 100%;
-  
-    } 
 
-  
+  }
+
+
 }
 
 
-.add_padding{
+.add_padding {
 
-padding: 30px;
+  padding: 30px;
 }
+
 /* 
 @media screen and (max-width: 1920px) {
   .flex_box:first-child {
@@ -2461,24 +2591,25 @@ padding: 30px;
 } */
 
 
-  
+
 
 @media screen and (max-width: 2020px) {
-.add_top{
-  margin-top: 40px;
-}
+  .add_top {
+    margin-top: 40px;
+  }
 }
 
 @media screen and (max-width: 1470px) {
-  .add_top{
+  .add_top {
     margin-top: 6px;
   }
-  }
+}
 
 @media screen and (max-width: 1800px) {
-  .portfolio-survey {  
-      height: 884px;
+  .portfolio-survey {
+    height: 884px;
   }
+
   .portfolio-question {
 
     margin-bottom: 0px;
@@ -2487,65 +2618,74 @@ padding: 30px;
 
 
 
-@media screen and (max-width: 1750px){
-  .detail > h1 {
+@media screen and (max-width: 1750px) {
+  .detail>h1 {
     font-size: 170px;
 
-}
-.fund-details {
-  column-gap: 35px;
+  }
 
-}
-}
-@media screen and (max-width: 1280px){
+  .fund-details {
+    column-gap: 35px;
 
-  .portfolio-survey {  
+  }
+}
+
+@media screen and (max-width: 1280px) {
+
+  .portfolio-survey {
     height: 951px;
-}
+  }
 }
 
-@media screen and (max-width: 1890px){
+@media screen and (max-width: 1890px) {
   .card_box_4 {
     .text:last-child {
-        margin-bottom: 20px;
+      margin-bottom: 20px;
     }
-}
+  }
+
   .add_4 {
     transform: translateX(-16px);
-}
+  }
 
   .add_3 {
     transform: translateX(19px);
-}
-.add_2 {
-  transform: translateX(-50px);
-}
-  .box_111 {
-    width:250px;
   }
+
+  .add_2 {
+    transform: translateX(-50px);
+  }
+
+  .box_111 {
+    width: 250px;
+  }
+
   .header_big {
     font-size: 180px;
   }
 
 }
 
-@media  screen and (max-width: 1500px) {
+@media screen and (max-width: 1500px) {
   .text_box_2 {
     font-size: 20px;
-  
+
   }
 
   .text1 {
-    font-size: 65px;
-    line-height: 65px;
+    font-size: 79px;
+    line-height: 79px;
   }
+
   .text3 {
-    font-size: 41px;
-    line-height: 41px;
+    font-size: 50px;
+    line-height: 50px;
   }
-  .icon_6{
+
+  .icon_6 {
     width: 340px;
   }
+
   .icon_6_box {
     margin-bottom: 0px;
   }
@@ -2556,9 +2696,10 @@ padding: 30px;
     height: 100%;
     margin: 30px;
     min-width: 316px;
+
     img {
       height: 100%;
-      width:  100%;
+      width: 100%;
     }
   }
 
@@ -2567,169 +2708,666 @@ padding: 30px;
       font-size: 32px;
     }
   }
+
   .add_4 {
     transform: translateX(-26px);
-}
+  }
+
   .add_3 {
     transform: translateX(-40px);
-}
+  }
+
   .add_2 {
     transform: translateX(-58px);
-}
+  }
 
   .box_4_upper {
- 
+
     padding: 14px 0px;
   }
+
   .flex_box_18 {
-padding: 30px;
+    padding: 30px;
   }
 
   .portfolio-survey {
     align-items: center;
     width: 50%;
     height: 884px;
-  
+
   }
+
   .portfolio-response {
     text-transform: uppercase;
     color: #ff5c00;
-    margin-top: -2.5rem}
+    margin-top: -2.5rem
+  }
 
   .portfolio-question {
     margin-bottom: 0px;
     font-size: 32px;
   }
 
-  .detail > h1 {  
-    font-size: 131px;   
-}
-.box_images{
-  gap:50px;
-  .image_one {
-    height: 600px;
+  .detail>h1 {
+    font-size: 131px;
   }
-}
+
+  .box_images {
+    gap: 50px;
+
+    .image_one {
+      height: 600px;
+    }
+  }
 
 
-.box_images{
-  .image_two{
-    height: 600px;
+  .box_images {
+    .image_two {
+      height: 600px;
+    }
   }
-}
+
   .box_4_bottom {
     width: 84%;
   }
 
   .bottom_box {
-    padding:0 30px;
+    padding: 0 30px;
   }
-  .header_11{
+
+  .header_11 {
     font-size: 20px;
   }
+
   .pic_11 {
     width: auto;
   }
+
   .box_111 {
     width: 150px;
   }
+
   .pic_111 {
     width: 133px;
-}
+  }
 
   .card_box_10 {
     padding: 30px 30px 30px 30px;
+
     .row_box {
- width: 100%;
+      width: 100%;
     }
+
     .row {
       width: 100%;
     }
   }
-.header_big {
-  font-size: 142px;
-}
 
-.pic_4 {
-  img {
-    width: 73%;
+  .header_big {
+    font-size: 142px;
   }
-}
 
-
-    .card_1 {
-   width: 24%;
+  .pic_4 {
+    img {
+      width: 73%;
     }
-    .card_text {
-    
-    
-        min-width: 208px;
   }
-    .card_header {
- 
-      font-size: 23px;
+
+
+  .card_1 {
+    width: 24%;
+  }
+
+  .card_text {
+
+
+    min-width: 208px;
+  }
+
+  .card_header {
+
+    font-size: 23px;
 
   }
+
   .card_1 {
     .pic_box {
-img {width: 80%;}
+      img {
+        width: 80%;
+      }
+    }
   }
-  }
-  
+
 }
 
 
-
-@media (max-width: 930px) {
-
-  
-  .content_0 {
-    width: 90%;
-    height: 350px;
-  
-    .box_icons {
-     margin: 57px auto;
+@media (max-width: 1280px) {
+  .add_4 {
+    transform: translateX(-49px);
   }
-}
 
-.header{
-  align-self: none;
-  /* margin-left:30px; */
+  .add_3 {
+    transform: translateX(-18px);
+  }
 
-}
-      
-  
-  .mobile_flex{
-    margin: 0 16px;
+  .add_2 {
+    transform: translateX(-45px);
+  }
+
+  .add_1 {
+    transform: translateX(14px);
+  }
+
+  .header_10_1 {
+
+    font-size: 25px;
+    line-height: 30px;
+
+    margin-top: 0px;
+  }
+
+  .card_box_11 {
+    .row {
+
+      gap: 19px;
+
+    }
+  }
+
+
+  .mobile_flex {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;  
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content_0 {
     .header {
-      font-size: 18px;
+      font-size: 20px;
+      line-height: 20px;
+      align-self: center;
+      text-align: center;
     }
   }
+
+  .section_0 {
+    .box_icons {
+      align-self: center;
+      margin-left: 0px;
+
+      .icon2 {
+        width: 142.88px;
+        height: 15.45px;
+        margin-left: 0px;
+      }
+
+    }
+  }
+
   .box_0 {
-    input{
-      width: 65%;
+    flex-direction: column;
+
+    .button {
+      width: 92%;
+      padding: 10px;
+      font-size: 20px;
       height: 50px;
-    }
-
-    .button{
-width: max-content;
-padding: 10px;
-font-size: 20px;
-height: 50px;
+      margin-left: 0px;
     }
   }
-  .box_icons {
-    .icon2 {
-      width: 142.88px;
-      height: 15.45px;
+
+  .box_0 {
+    input {
+      width: 89%;
+      height: 50px;
+      margin-bottom: 20px;
+
+    }
   }
 
+  .content_0 {
+    width: 100%;
+    margin: 0 16px;
+
+  }
+
+  .block_video_12 {
+    left: -51%;
+
+  }
+
+  .tag {
+    margin-top: 0;
+
+
+  }
+
+  .investment-header {
+    margin-bottom: 10px;
+  }
+
+  .first_block {
+
+    height: 965px;
+
+  }
+
+  .add_pad_4 {
+    padding-top: 109px;
+  }
+
+  .pic_box {
+    margin: 0 0 14px 14px;
+  }
+
+
+  .card_box {
+
+    margin: 17px 0 0 17px;
+  }
+
+  .card_1 {
+
+    height: 477px;
+  }
+
+  .text_19 {
+
+    font-size: 25px;
+  }
+
+  .header_19 {
+
+    font-size: 71.19px;
+    line-height: 72.67px;
+    margin-bottom: 29px;
+  }
+
+  .card_box_14 .box_14 {
+    & .box_info {
+      .box_moic {
+
+        font-size: 25px;
+        line-height: 25px;
+
+      }
+    }
+  }
+
+  .gallery-container {
+    height: 600px;
+  }
+
+  .last_block {
+    margin-top: 0px;
+
+  }
+
+  .last_block {
+    video {
+
+      height: 62%;
+
+    }
+  }
+
+  .card_18 {
+
+    gap: 39px;
+    width: 935px;
+
+  }
+
+  .box_18 {
+
+    font-size: 24px;
+  }
+
+  .block_video_16 {
+    right: 67%;
+
+  }
+
+  .portfolio-title {
+
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 1rem;
+  }
+
+  .company-name {
+
+    font-size: 33px;
+
+  }
+
+  .detail {
+
+    height: 200px;
+
+  }
+
+  .detail>p {
+
+    font-size: 21px;
+
+  }
+
+  .detail>h2 {
+
+    font-size: 49px;
+
+  }
+
+  .detail>h1 {
+    font-size: 97px;
+  }
+
+
+  .box_images {
+    .image_one {
+      height: 695px;
+    }
+  }
+
+
+
+  .card_box_14 .box_14 {
+    & .box_info {
+      .box_text1 {
+
+        font-size: 40px;
+
+      }
+    }
+  }
+
+  .card_box_4_big {
+
+    min-width: 400px;
+  }
+
+  .box_4_bottom {
+    width: 80%;
+  }
+
+  .text_13_center {
+
+    font-size: 30px;
+    line-height: 30px;
+
+  }
+
+  .text_13 {
+
+    font-size: 25px;
+
+  }
+
+  .disc_13 {
+
+    font-size: 25px;
+    line-height: 25px;
+
+  }
+
+  .card_box_4 {
+    padding: 30px 20px;
+  }
+
+  .entry {
+
+    margin-left: 13px;
+  }
+
+  .box_111 {
+    width: 140px;
+  }
+
+  .header_box {
+    .header {
+
+      font-size: 16px;
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+  }
+
+  .header_11 {
+    font-size: 17px;
+  }
+
+  .text_small {
+
+    font-size: 19px;
+
+  }
+
+  .moic {
+
+    font-size: 23px;
+
+    line-height: 25px;
+
+  }
+
+  .pic_111 {
+    width: 104px;
+  }
+
+  .pic_9_1 {
+    height: 287px;
+    width: 293.05px;
+  }
+
+  .text_9 {
+
+    font-size: 23.2px;
+
+    line-height: 23.2px;
+
+    margin-top: 20px;
+  }
+
+  .header_9 {
+
+    font-size: 35px;
+    line-height: 35.6px;
+
+  }
+
+  .card_5_box {
+
+    height: 184px;
+
+  }
+
+  .block_5 {
+
+    height: 800px;
+
+  }
+
+  .second_block_video_two {
+    left: 40%;
+
+  }
+
+  .second_block_video {
+
+    left: 46%;
+    top: 1%;
+  }
+
+  .card_3 {
+    .header {
+      font-size: 25px;
+      line-height: 25px;
+    }
+  }
+
+  .disc {
+
+    font-size: 20px;
+
+  }
+
+  .icon_6 {
+    width: 253px;
+  }
+
+  .pic_6 {
+
+    min-width: 259px;
+    margin: 18px;
+
+  }
+
+  .header_5 {
+
+    font-size: 30px;
+    line-height: 30px;
+
+  }
+
+  .header5 {
+
+    font-size: 45px;
+    line-height: 45px;
+
+  }
+
+
+  .card_box_4 {
+
+    width: 28%;
+    /* padding: 128px 20px; */
+
+  }
+
+  .header_4 {
+
+    font-size: 34px;
+    line-height: 34px;
+
+  }
+
+
+  .pic_4 {
+    width: 161px;
+    height: 175px;
+  }
+
+  .text {
+
+    font-size: 19px;
+
+  }
+
+  .header_big {
+    font-size: 100px;
+  }
+
+  .box_4_upper {
+
+    width: 300px;
+  }
+
+  .box_4_upper img {
+    width: 82%;
+  }
+
+  .box_4_bottom {
+    gap: 30px;
+  }
+
+  .card_4 {
+    padding: 30px 12px;
+  }
+
+  .disc_4 {
+
+    font-size: 25px;
+    line-height: 34px;
+
+  }
+
+
+  .disc1 {
+
+    font-size: 25px;
+    line-height: 25px;
+
+  }
+
+  .header33 {
+
+    font-size: 25px;
+
+  }
+
+  .disc33 {
+
+    font-size: 23px;
+    line-height: 23px;
+
+    margin-top: 11px;
+
+  }
+
+  .card_3 {
+    ._arrow {
+
+      left: -64px;
+
+      width: 37%;
+    }
+  }
+
+  .img_box {
+
+    min-width: 185px;
+
+  }
+
+  .card_3 {
+    height: 500px;
+  }
+
+  .card_header {
+    font-size: 18px;
+  }
+
+  .card_text {
+    font-size: 20px;
+    line-height: 23.4px;
+    min-width: 166px;
+  }
+
+  .second_block_header {
+    font-size: 45px;
+    line-height: 45px;
+    padding: 0px 50px;
+  }
+
+  .text_box {
+    padding: 0px;
+  }
+
+  .text2 {
+    font-size: 20px;
+
+  }
+
+  .text1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .text3 {
+    font-size: 35px;
+    line-height: 35px;
   }
 
 }
-
-
-

@@ -1079,45 +1079,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const videos = document.querySelectorAll(".video video"); 
-//   let isScrolling = false; 
-//   let scrollTimeout = null; 
-//   const handleVideoPlayPause = () => {
-//     videos.forEach((video) => {
-//       if (video.getAttribute('id') === 'video') return video.play();
-//        if (video.getAttribute('id') === 'video_last') return video.play();
-//        if (video.getAttribute('id') === 'video_mobile') return video.play();
-//       const videoRect = video.getBoundingClientRect();
-//       const isInViewport = videoRect.top < window.innerHeight && videoRect.bottom > 0; 
-
-//       if (isInViewport && isScrolling) {
-//         if (video.paused) {
-//           video.play().catch((err) => console.error("Error playing video:", err));
-//         }
-//       } else {
-//         if (!video.paused) {
-//           video.pause();
-//         }
-//       }
-//     });
-//   };
-
-//   window.addEventListener("scroll", () => {
-//     isScrolling = true;
-//     clearTimeout(scrollTimeout);
-//     scrollTimeout = setTimeout(() => {
-//       isScrolling = false; 
-//       handleVideoPlayPause();
-//     }, 200);
-
-
-//     handleVideoPlayPause();
-//   });
-
-//   handleVideoPlayPause();
-// });
-
 
 // Hedaers Animation
 document.addEventListener("DOMContentLoaded", function () {
