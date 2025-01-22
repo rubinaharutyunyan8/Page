@@ -731,7 +731,7 @@ body {
     margin-bottom: 50px;
   }
   .flex_box {
-  
+
   }
 }
 .card_box_4.in-view {
@@ -754,10 +754,14 @@ body {
     margin-top: 50px;
   }
   .flex_box:first-child {
-    margin-bottom: 40px;
+    margin-bottom: 6px;
   }
 }
 
+
+.add_top {
+  margin-top: 65px;
+}
 .card_box_4_big {
  
   height: 860px;
@@ -2439,8 +2443,13 @@ body {
 
 padding: 30px;
 }
-
-
+/* 
+@media screen and (max-width: 1920px) {
+  .flex_box:first-child {
+    margin-bottom: 7px;
+  }
+  
+}
 
 
 
@@ -2449,7 +2458,22 @@ padding: 30px;
     margin-bottom: 7px;
   }
   
+} */
+
+
+  
+
+@media screen and (max-width: 2020px) {
+.add_top{
+  margin-top: 40px;
 }
+}
+
+@media screen and (max-width: 1470px) {
+  .add_top{
+    margin-top: 6px;
+  }
+  }
 
 @media screen and (max-width: 1800px) {
   .portfolio-survey {  
@@ -2555,7 +2579,7 @@ padding: 30px;
 
   .box_4_upper {
  
-    padding: 23px 20px;
+    padding: 14px 0px;
   }
   .flex_box_18 {
 padding: 30px;

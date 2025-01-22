@@ -538,7 +538,7 @@ const container_7 = document.getElementById("seven_block_box");
 data_section_7.map((item, index) => {
   const itemDiv = document.createElement("div");
   itemDiv.classList.add("card_3");
-  itemDiv.style.padding= "0px 5px 10px 5px";
+  itemDiv.style.padding= "0px 5px 0px";
   itemDiv.classList.add("add_box_7");
   itemDiv.style.justifyContent = "space-evenly";
 
@@ -1033,15 +1033,18 @@ screen.orientation.addEventListener('change', orientationEvent)
 
 
 // Video animations
+
 document.addEventListener("DOMContentLoaded", function () {
   const videos = document.querySelectorAll(".video video"); 
   let isScrolling = false; 
   let scrollTimeout = null; 
+
   const handleVideoPlayPause = () => {
     videos.forEach((video) => {
       if (video.getAttribute('id') === 'video') return video.play();
-       if (video.getAttribute('id') === 'video_last') return video.play();
-       if (video.getAttribute('id') === 'video_mobile') return video.play();
+      if (video.getAttribute('id') === 'video_last') return video.play();
+      if (video.getAttribute('id') === 'video_mobile') return video.play();
+
       const videoRect = video.getBoundingClientRect();
       const isInViewport = videoRect.top < window.innerHeight && videoRect.bottom > 0; 
 
@@ -1051,7 +1054,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       } else {
         if (!video.paused) {
-          video.pause();
+          setTimeout(() => {
+            if (!isScrolling) { // Ensure scrolling hasn't resumed
+              video.pause();
+            }
+          }, 400); // Delay pausing by 400 milliseconds
         }
       }
     });
@@ -1065,12 +1072,51 @@ document.addEventListener("DOMContentLoaded", function () {
       handleVideoPlayPause();
     }, 200);
 
-
     handleVideoPlayPause();
   });
 
   handleVideoPlayPause();
 });
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const videos = document.querySelectorAll(".video video"); 
+//   let isScrolling = false; 
+//   let scrollTimeout = null; 
+//   const handleVideoPlayPause = () => {
+//     videos.forEach((video) => {
+//       if (video.getAttribute('id') === 'video') return video.play();
+//        if (video.getAttribute('id') === 'video_last') return video.play();
+//        if (video.getAttribute('id') === 'video_mobile') return video.play();
+//       const videoRect = video.getBoundingClientRect();
+//       const isInViewport = videoRect.top < window.innerHeight && videoRect.bottom > 0; 
+
+//       if (isInViewport && isScrolling) {
+//         if (video.paused) {
+//           video.play().catch((err) => console.error("Error playing video:", err));
+//         }
+//       } else {
+//         if (!video.paused) {
+//           video.pause();
+//         }
+//       }
+//     });
+//   };
+
+//   window.addEventListener("scroll", () => {
+//     isScrolling = true;
+//     clearTimeout(scrollTimeout);
+//     scrollTimeout = setTimeout(() => {
+//       isScrolling = false; 
+//       handleVideoPlayPause();
+//     }, 200);
+
+
+//     handleVideoPlayPause();
+//   });
+
+//   handleVideoPlayPause();
+// });
 
 
 // Hedaers Animation
@@ -1486,35 +1532,6 @@ window.addEventListener('scroll', () => {
    })
 })
 
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
-
-const boxSubmit = document.getElementById("section_0");
-
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {   
-      // var viewport = document.querySelector("meta[name=viewport]");
-      // if (viewport) {
-      //   viewport.parentNode.removeChild(viewport);
-      // }
-      // console.log(777777777777777777777777);
-      // var newViewport = document.createElement('meta');
-      // newViewport.name = "viewport";
-      // // newViewport.content = "width=device-width, initial-scale=1";
-      // document.head.appendChild(newViewport);
-
-      observer.unobserve(entry.target); 
-    }
-  });
-}, { threshold: 0.1 }); 
-
-
-observer.observe(boxSubmit);
-
-});
 
 
 
