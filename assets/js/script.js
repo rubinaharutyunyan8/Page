@@ -1438,7 +1438,7 @@ if( window.innerWidth < 1200 ){
         observer.unobserve(entry.target); 
       }
     });
-  }, { threshold: 1 }); 
+  }, { threshold: 0.7 }); 
   boxes.forEach(box => {
     observer.observe(box); 
   });
