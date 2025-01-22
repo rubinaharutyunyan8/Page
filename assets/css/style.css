@@ -2841,7 +2841,17 @@ body {
 }
 
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
+
+  #video {
+    height: 90%;
+  }
+  .add_4 {
+    transform: translateX(-49px);
+}
+  .add_4 {
+    transform: translateX(-49px);
+}
   .add_4 {
     transform: translateX(-49px);
   }
@@ -2949,7 +2959,7 @@ body {
 
   .first_block {
 
-    height: 965px;
+    height: 897px;
 
   }
 
@@ -2995,9 +3005,9 @@ body {
     }
   }
 
-  .gallery-container {
+  /* .gallery-container {
     height: 600px;
-  }
+  } */
 
   .last_block {
     margin-top: 0px;
