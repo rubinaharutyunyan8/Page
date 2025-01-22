@@ -1191,7 +1191,7 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.unobserve(entry.target); 
       }
     });
-  }, { threshold: 0.5 }); 
+  }, { threshold: 0.1 }); 
  
   cards.forEach(card => {
     observer.observe(card);
@@ -1209,7 +1209,7 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.unobserve(entry.target); 
       }
     });
-  }, { threshold: 0.5 });  
+  }, { threshold: 0.1 });  
   cards.forEach(card => {
     observer.observe(card);
   });
@@ -1236,7 +1236,7 @@ document.addEventListener("DOMContentLoaded", function () {
         entry.target.classList.add("animate-background");
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.1 });
   observer.observe(cont2);
 });
 
