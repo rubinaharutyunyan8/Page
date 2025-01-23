@@ -251,7 +251,7 @@ body {
 }
 
 .text_box {
-  padding: 0 100px;
+  padding: 0 48px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
