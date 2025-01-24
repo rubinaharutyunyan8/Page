@@ -891,17 +891,16 @@ const orientationEvent = () => {
 
   section0.style.display = "none";
   const { orientation: { angle }, availWidth } = screen;   
-  
-  if (availWidth > 768 ) {
+  const viewport = document.querySelector("meta[name=viewport]");
 
-    var viewport = document.querySelector("meta[name=viewport]");
+  
+  if (availWidth > 768 ) {   
     if (viewport) {
       viewport.parentNode.removeChild(viewport);
     }
     var newViewport = document.createElement('meta');
     newViewport.name = "viewport";
-    newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";
-    
+    newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";    
     document.head.appendChild(newViewport);
   }
 
@@ -909,11 +908,8 @@ const orientationEvent = () => {
   if (availWidth  <= 768) {
      
     if (angle === 90) {
-
       sectionAll.style.display = "block";
-      mobile.style.display = "none";
-
-      var viewport = document.querySelector("meta[name=viewport]");
+      mobile.style.display = "none";      
       if (viewport) {
         viewport.parentNode.removeChild(viewport);
       }
@@ -922,29 +918,21 @@ const orientationEvent = () => {
       newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";     
       document.head.appendChild(newViewport);
   
-
-
     } else {
-
       mobile.style.display = "flex";
-      sectionAll.style.display = "none";
-
-      var viewport = document.querySelector("meta[name=viewport]");
+      sectionAll.style.display = "none";      
       if (viewport) {
         viewport.parentNode.removeChild(viewport);
       }
       var newViewport = document.createElement('meta');
       newViewport.name = "viewport";
       newViewport.content = "width=device-width, initial-scale=1, maximum-scale=1, interactive-widget=resizes-content";
-      document.head.appendChild(newViewport);
-        
+      document.head.appendChild(newViewport);        
       
     }
   } else {
     sectionAll.style.display = "block";
-    mobile.style.display = "none";
-    
-    var viewport = document.querySelector("meta[name=viewport]");
+    mobile.style.display = "none";    
     if (viewport) {
       viewport.parentNode.removeChild(viewport);
     }
@@ -952,16 +940,13 @@ const orientationEvent = () => {
     newViewport.name = "viewport";
     newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";
     document.head.appendChild(newViewport);
-
-
-
   }
 }
 
 button?.addEventListener("click", orientationEvent);
 
-
 screen.orientation.addEventListener('change', orientationEvent)
+
 
 
 
@@ -1076,7 +1061,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 // 2 section animations
 document.addEventListener("DOMContentLoaded", function () {
   const cards = document.querySelectorAll(".card_1");
@@ -1126,7 +1110,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         setTimeout(() => {
           fifthBlockBox.querySelector(".box_4_upper").classList.add("animate-side-by-side");
-        }, 1000); 
+        }, 600); 
         observer.unobserve(entry.target); 
       }
     });
@@ -1153,9 +1137,6 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(card);
   });
 });
-
-
-
 
 
 
@@ -1249,7 +1230,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
 // 16 section animation
 document.addEventListener("DOMContentLoaded", function () {
   const rows = document.querySelectorAll(".content-wrapper");
@@ -1267,116 +1247,6 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(row);
   });
 });
-
-
-
-
-// 17 section animations
-// document.addEventListener("DOMContentLoaded", function () {
-//   const boxes = document.querySelectorAll(".gallery-container");
-
-//   const observer = new IntersectionObserver((entries, observer) => {
-//     entries.forEach(entry => {
-//       if (entry.isIntersecting) {
-//         entry.target.classList.add("in-view"); 
-
-//   const galleryItems = document.querySelectorAll('.gallery-item');
-//   const totalItems = galleryItems.length;
-//   let currentIndex = -1; 
-
-//   function updateGallery() {
-//     galleryItems.forEach((item, index) => {
-//       const position = (index - currentIndex + totalItems) % totalItems;
-
-
-// if( window.innerWidth < 1200 ){
-//   item.style.height = '350px';
-//   item.style.width = '422px';
-//   item.style.left = '10%';
-//   item.style.transform = 'translateX(-50%) scale(0.8)';
-//   item.style.zIndex = '1';
-
-//   if (position === 0) { 
-//     item.style.height = '382px';
-//     item.style.width = '300px';
-//     item.style.left = '28%';
-//     item.style.transform = 'translateX(-50%) scale(0.9)';     
-//     item.style.zIndex = '2';
-//   } else if (position === 1) { 
-//     item.style.height = '450px';
-//     item.style.width = '296px';
-//     item.style.left = '50%';
-//     item.style.transform = 'translateX(-50%) scale(1)';
-//     item.style.opacity = '1';
-//     item.style.zIndex = '3';
-//   } else if (position === 2) { 
-//     item.style.height = '382px';
-//     item.style.width = '300px';
-//     item.style.left = '72%';
-//     item.style.transform = 'translateX(-50%) scale(0.9)';     
-//     item.style.zIndex = '2';
-//   } else if (position === 3) { 
-//     item.style.height = '350px';
-//     item.style.width = '222px';
-//     item.style.left = '90%';
-//     item.style.transform = 'translateX(-50%) scale(0.8)';    
-//     item.style.zIndex = '1';
-//   }
-// }else  if (window.innerWidth>=1200) {
-
-//   item.style.height = '550px';
-//   item.style.width = '422px';
-//   item.style.left = '10%';
-//   item.style.transform = 'translateX(-50%) scale(0.8)';
-//   item.style.zIndex = '1';
-
-//   if (position === 0) { 
-//     item.style.height = '682px';
-//     item.style.width = '522px';
-//     item.style.left = '28%';
-//     item.style.transform = 'translateX(-50%) scale(0.9)';     
-//     item.style.zIndex = '2';
-//   } else if (position === 1) { 
-//     item.style.height = '778px';
-//     item.style.width = '596px';
-//     item.style.left = '50%';
-//     item.style.transform = 'translateX(-50%) scale(1)';
-//     item.style.opacity = '1';
-//     item.style.zIndex = '3';
-//   } else if (position === 2) { 
-//     item.style.height = '682px';
-//     item.style.width = '522px';
-//     item.style.left = '72%';
-//     item.style.transform = 'translateX(-50%) scale(0.9)';     
-//     item.style.zIndex = '2';
-//   } else if (position === 3) { 
-//     item.style.height = '550px';
-//     item.style.width = '422px';
-//     item.style.left = '90%';
-//     item.style.transform = 'translateX(-50%) scale(0.8)';    
-//     item.style.zIndex = '1';
-//   }
-// }     
-
-//     });
-
-//   }
-
-//   function moveNext() {
-//     currentIndex = 1;
-//     updateGallery();
-//   }
-
-//   moveNext()
-//         observer.unobserve(entry.target); 
-//       }
-//     });
-//   }, { threshold: 0.7 }); 
-//   boxes.forEach(box => {
-//     observer.observe(box); 
-//   });
-// });
-
 
 // 18 section animations
 document.addEventListener("DOMContentLoaded", function () {
