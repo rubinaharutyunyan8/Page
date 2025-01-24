@@ -379,16 +379,7 @@ body {
   gap: 15px;
 }
 
-/* .second_block_box_item .card_3::after {
-  content: "";
-  position: absolute;
-  background: url("../icons/Vector.svg") no-repeat fixed;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  height: 100%;
-} */
+
 .card_1 {
   width: 336px;
   height: 653px;
@@ -3310,45 +3301,45 @@ body {
 
   .section_0 {
     .box_icons {
-      align-self: center;
-      margin-left: 0px;
+      align-self: center !important;
+      margin-left: 0px !important;
 
       .icon2 {
-        width: 157.88px;
-        height: 22.45px;
-        margin-left: 0px;    
-        margin-left: 0px;
+        width: 157.88px !important;
+        height: 22.45px !important;
+        margin-left: 0px !important;    
+        margin-left: 0px !important;
       }
 
     }
   }
 
   .box_0 {
-    flex-direction: column;
-      margin: 50px 16px 0;
+    flex-direction: column !important;
+      margin: 50px 16px 0 !important;
 
     .button {
-      width: 100%;
-      padding: 10px;
-      font-size: 20px;
-      height: 50px;
-      margin-left: 0px;
+      width: 100% !important;
+      padding: 10px !important;
+      font-size: 20px !important;
+      height: 50px !important;
+      margin-left: 0px !important;
     }
   }
 
   .box_0 {
     input {
-      width: 100%;
-      height: 50px;
+      width: 100% !important;
+      height: 50px !important;
 
     }
   }
 
   .content_0 {
-    width: 100%;
-    margin: 0 16px;
-    align-items: center;
-    padding-left: 0px;
+    width: 100% !important;
+    margin: 0 16px !important;
+    align-items: center !important;
+    padding-left: 0px !important;
 
   }
 
