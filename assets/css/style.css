@@ -9,6 +9,12 @@
 video {
   pointer-events: none !important;
 }
+input{
+-webkit-appearance: none; 
+-moz-appearance: none;
+appearance: none;
+font: inherit; 
+}
 
 /* html {
   -webkit-text-size-adjust: 100%; 
@@ -3331,7 +3337,7 @@ body {
     input {
       width: 100%;
       height: 50px;
-      font-size: 17px;
+      /* font-size: 17px; */
 
     }
   }
