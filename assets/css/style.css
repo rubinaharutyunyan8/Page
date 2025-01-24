@@ -9,11 +9,12 @@
 video {
   pointer-events: none !important;
 }
+
 input{
 -webkit-appearance: none; 
 -moz-appearance: none;
 appearance: none;
-font: inherit; 
+/* font: inherit;  */
 }
 
 /* html {
