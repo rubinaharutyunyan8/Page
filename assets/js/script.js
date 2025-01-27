@@ -501,6 +501,11 @@ data_section_6.map((item, index) => {
   icon.src = item.pic;
   icon.alt = `icon${index}`;
 
+  if(index === 1){
+    icon.classList.add("add_style_8");
+  }
+
+
   const header = document.createElement("span");
   header.classList.add("header");
   header.textContent = item.header;
@@ -512,6 +517,11 @@ data_section_6.map((item, index) => {
 
     const box = document.createElement("div");
     box.classList.add("icon_6_box");
+
+    if(index === 1){
+      box.classList.add("add_top_6");
+    }
+
     box.appendChild(icon);
     box.appendChild(text);
 
@@ -934,7 +944,7 @@ const orientationEvent = () => {
     sectionAll.style.display = "block";
     mobile.style.display = "none";    
     if (viewport) {
-      viewport.parentNode.removeChild(viewport);
+      viewport.parentNode?.removeChild(viewport);
     }
     var newViewport = document.createElement('meta');
     newViewport.name = "viewport";

@@ -1066,6 +1066,17 @@ body {
 
 .add_box_7 {}
 
+
+.add_style_8
+{
+  width: 129%;
+
+ }
+ .add_top_6 {
+   transform: translateY(10px);
+ }
+
+
 /* 8 section */
 
 .card_5 {
@@ -1244,7 +1255,7 @@ body {
   font-family: "PP Mori";
   font-size: 26.2px;
   font-weight: 500;
-  line-height: 26.2px;
+  line-height: 53px;
   text-align: left;
   color: white;
   margin-top: 20px;
@@ -1622,8 +1633,8 @@ body {
   border-radius: 40px;
   object-fit: contain;
   position: absolute;
-  right: 55%;
-  bottom: 14%;
+  right: 69%;
+  bottom: 15%;
   transform: scaleX(-1);
 }
 
@@ -1974,7 +1985,7 @@ body {
 
 .detail {
   border-bottom: 1px solid #ffffff;
-  height: 300px;
+  height: 315px;
   padding-bottom: 12.5px;
 }
 
@@ -2788,9 +2799,24 @@ body {
 
 @media screen and (max-width: 1280px) {
 
+    .add_style_8 {
+    width: 60%;
+  
+   }
+  
+
   .portfolio-survey {
     height: 951px;
   }
+}
+
+
+@media screen and (max-width: 1815px) {
+
+.disc33 {
+  font-size: 28px;
+}
+
 }
 
 @media screen and (max-width: 1890px) {
@@ -2867,6 +2893,19 @@ body {
 }
 
 @media screen and (max-width: 1500px) {
+
+  .text_9 {
+
+    line-height: 45px;
+
+  }
+
+  .icon_6_box{
+    .add_style_8 {
+    width: 100%;
+  
+   }
+  }
 
   .second_block_video_two {
     left: 52%;
@@ -3171,7 +3210,29 @@ body {
 
 }
 
+@media screen and (max-width: 1350px) {
+
+  .header_9 {
+  font-size: 35px;
+  }
+
+  .text_9 {
+    font-size: 21px;
+  }
+
+}
+
 @media (max-width: 1279px) {
+
+  .icon_6_box {
+    .add_style_8 {
+      width: 80%;
+    
+     }
+    .icon_6 {
+        margin-top: -12px;
+    }
+  }
   .add_2_12 {
     transform: translateX(-40px);
   }
@@ -3338,7 +3399,7 @@ body {
   }
 
   .block_video_12 {
-    right: 27%;
+    right: 38%;
 
   }
   .tag {
@@ -3427,7 +3488,7 @@ body {
   }
 
   .detail {
-    height: 200px;
+    height: 240px;
 
   }
 
@@ -3526,8 +3587,8 @@ body {
 
   .text_9 {
 
-    font-size: 23.2px;
-    line-height: 23.2px;
+    font-size: 22px;
+    line-height: 37px;
     margin-top: 20px;
   }
 
@@ -3719,6 +3780,32 @@ body {
     margin-left: 27px;
   }
 
+}
+
+@media (min-width: 600px) and (max-width: 1050px) {
+  .header_big {
+    font-size: 80px;
+}
+.card_box_11 {
+  .row {
+      gap: 3px;
+  }
+}
+.box_111 {
+  width: 125px;
+}
+.pic_111 {
+  width: 123px;
+}
+.entry {
+  margin-left: 18px;
+}
+.header_11 {
+  line-height: 22px;
+}
+.pic_11 {
+  width: 143px;
+}
 }
 
 @media (min-width: 600px) and (max-width: 1100px) {
