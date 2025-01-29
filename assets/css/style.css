@@ -281,6 +281,7 @@ body {
   height: 100vh;
   margin: 0 40px;
   position: relative;
+  overflow: hidden;
 }
 
 .text1 {
