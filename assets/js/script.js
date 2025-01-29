@@ -709,7 +709,7 @@ const caseStudies = [
     description: "stylish mini-split that heats + cools your home room by room",
     investment: {
       details:
-        "Met Jonathan (CEO) 18 months before incorporation.Invested $422K (Fund I + LP SPV) at Seed (zero revenue).",
+        "Met Paul (CEO) in 2010. Committed pre-Incorporation.Invested $100K at Pre-Seed (Fund I) + $100K at Seed (LP SPV)",
       followOn: "Gradient, Lowercarbon, EIP, Galvanize",
     },
     support:
