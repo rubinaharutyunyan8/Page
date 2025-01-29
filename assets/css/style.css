@@ -1403,7 +1403,7 @@ body {
   position: absolute;
   z-index: 2;
   margin-top: 360px;
-  margin-left: 0px;
+  margin-left: 35px;
 }
 
 .pic_9_1 {
@@ -1681,6 +1681,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 
   .header {
     font-family: "RM Mono";
