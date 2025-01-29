@@ -284,7 +284,7 @@ third_block_data3.map((item, index) => {
 
   text4.classList.add("text_4");
   text4.style.lineHeight = "30px";
-  text4.style.marginTop = "30px";
+  text4.style.marginTop = "60px";
   text4.style.marginBottom = "-10px";
   text4.innerHTML = item.disc3.replace("\n", "<br>");
 
@@ -301,7 +301,7 @@ third_block_data3.map((item, index) => {
 
     text5.classList.add("text_4");
     text5.style.lineHeight = "35px";
-    text5.style.marginTop = "30px";
+    text5.style.marginTop = "66px";
     text5.style.marginBottom = "-10px";
     text5.innerHTML = item.disc4.replace("\n", "<br>");
 
@@ -324,104 +324,104 @@ third_block_data3.map((item, index) => {
   container4.appendChild(itemDiv1);
 });
 
-const Block5_content = [
-  {
-    disc1: "ASSOCIATE",
-    text1: "Deep Tech Specialist",
-    disc2: "VENTURE PARTNER",
-    text2: "2x Founder + Bio PhD",
-    disc3: "PLUS A \n STAR-STUDDED CREW",
-    text3: "",
-    disc4: "CREATIVE DIRECTOR",
-    text4: "Emmy Member",
-    disc5: "ART DIRECTOR",
-    text5: "Design Professor",
-  },
-];
+// const Block5_content = [
+//   {
+//     disc1: "ASSOCIATE",
+//     text1: "Deep Tech Specialist",
+//     disc2: "VENTURE PARTNER",
+//     text2: "2x Founder + Bio PhD",
+//     disc3: "PLUS A \n STAR-STUDDED CREW",
+//     text3: "",
+//     disc4: "CREATIVE DIRECTOR",
+//     text4: "Emmy Member",
+//     disc5: "ART DIRECTOR",
+//     text5: "Design Professor",
+//   },
+// ];
 
-Block5_content.map((item, index) => {
-  const itemDiv2 = document.createElement("div");
-  itemDiv2.classList.add("box_4_bottom");
+// Block5_content.map((item, index) => {
+  // const itemDiv2 = document.createElement("div");
+  // itemDiv2.classList.add("box_4_bottom");
 
-  const boxText1 = document.createElement("div");
-  boxText1.classList.add("text_box_bottom");
+  // const boxText1 = document.createElement("div");
+  // boxText1.classList.add("text_box_bottom");
 
-  const disc1 = document.createElement("p");
-  disc1.classList.add("disc_4");
-  // disc1.style.marginBottom = '-10px'
+  // const disc1 = document.createElement("p");
+  // disc1.classList.add("disc_4");
+  // // disc1.style.marginBottom = '-10px'
 
-  disc1.innerHTML = item.disc1;
+  // disc1.innerHTML = item.disc1;
 
-  const text1 = document.createElement("p");
-  text1.classList.add("text_4");
+  // const text1 = document.createElement("p");
+  // text1.classList.add("text_4");
 
-  text1.innerHTML = item.text1;
+  // text1.innerHTML = item.text1;
 
-  boxText1.appendChild(disc1);
-  boxText1.appendChild(text1);
+  // boxText1.appendChild(disc1);
+  // boxText1.appendChild(text1);
 
-  const boxText2 = document.createElement("div");
-  boxText2.classList.add("text_box_bottom");
-  const disc2 = document.createElement("p");
+  // const boxText2 = document.createElement("div");
+  // boxText2.classList.add("text_box_bottom");
+  // const disc2 = document.createElement("p");
 
-  disc2.classList.add("disc_4");
-  // disc2.style.marginBottom = '-10px'
-  disc2.innerHTML = item.disc2;
+  // disc2.classList.add("disc_4");
+  // // disc2.style.marginBottom = '-10px'
+  // disc2.innerHTML = item.disc2;
 
-  const text2 = document.createElement("p");
-  text2.classList.add("text_4");
-  text2.innerHTML = item.text2;
+  // const text2 = document.createElement("p");
+  // text2.classList.add("text_4");
+  // text2.innerHTML = item.text2;
 
-  boxText2.appendChild(disc2);
-  boxText2.appendChild(text2);
+  // boxText2.appendChild(disc2);
+  // boxText2.appendChild(text2);
 
-  const boxText3 = document.createElement("div");
-  boxText3.classList.add("text_box_bottom");
-  const disc3 = document.createElement("p");
-  disc3.classList.add("text_4_diff");
-  disc3.classList.add("add_color");
+  // const boxText3 = document.createElement("div");
+  // boxText3.classList.add("text_box_bottom");
+  // const disc3 = document.createElement("p");
+  // disc3.classList.add("text_4_diff");
+  // disc3.classList.add("add_color");
 
-  disc3.innerHTML = item.disc3.replace("\n", "<br>");
+  // disc3.innerHTML = item.disc3.replace("\n", "<br>");
 
-  boxText3.appendChild(disc3);
+  // boxText3.appendChild(disc3);
 
-  const boxText4 = document.createElement("div");
-  boxText4.classList.add("text_box_bottom");
-  const disc4 = document.createElement("p");
+  // const boxText4 = document.createElement("div");
+  // boxText4.classList.add("text_box_bottom");
+  // const disc4 = document.createElement("p");
 
-  disc4.classList.add("disc_4");
-  // disc4.style.marginBottom = '-10px'
-  disc4.innerHTML = item.disc4;
+  // disc4.classList.add("disc_4");
+  // // disc4.style.marginBottom = '-10px'
+  // disc4.innerHTML = item.disc4;
 
-  const text4 = document.createElement("p");
-  text4.classList.add("text_4");
-  text4.innerHTML = item.text4;
+  // const text4 = document.createElement("p");
+  // text4.classList.add("text_4");
+  // text4.innerHTML = item.text4;
 
-  boxText4.appendChild(disc4);
-  boxText4.appendChild(text4);
+  // boxText4.appendChild(disc4);
+  // boxText4.appendChild(text4);
 
-  const boxText5 = document.createElement("div");
-  boxText5.classList.add("text_box_bottom");
-  const disc5 = document.createElement("p");
+  // const boxText5 = document.createElement("div");
+  // boxText5.classList.add("text_box_bottom");
+  // const disc5 = document.createElement("p");
 
-  disc5.classList.add("disc_4");
-  disc5.innerHTML = item.disc5;
+  // disc5.classList.add("disc_4");
+  // disc5.innerHTML = item.disc5;
 
-  const text5 = document.createElement("p");
-  text5.classList.add("text_4");
-  text5.innerHTML = item.text5;
+  // const text5 = document.createElement("p");
+  // text5.classList.add("text_4");
+  // text5.innerHTML = item.text5;
 
-  boxText5.appendChild(disc5);
-  boxText5.appendChild(text5);
+  // boxText5.appendChild(disc5);
+  // boxText5.appendChild(text5);
 
-  itemDiv2.appendChild(boxText1);
-  itemDiv2.appendChild(boxText2);
-  itemDiv2.appendChild(boxText3);
-  itemDiv2.appendChild(boxText4);
-  itemDiv2.appendChild(boxText5);
+  // itemDiv2.appendChild(boxText1);
+  // itemDiv2.appendChild(boxText2);
+  // itemDiv2.appendChild(boxText3);
+  // itemDiv2.appendChild(boxText4);
+  // itemDiv2.appendChild(boxText5);
 
-  container4.appendChild(itemDiv2);
-});
+  // container4.appendChild(itemDiv2);
+// });
 
 const data_section_4 = [
   { img: "assets/icons/4rd_Block/pic1.svg", text: "4X" },
@@ -488,7 +488,7 @@ data_section_6.map((item, index) => {
   const itemDiv = document.createElement("div");
   itemDiv.classList.add("card_3");
   itemDiv.style.justifyContent = "space-evenly";
- itemDiv.style.padding= "0px";
+  itemDiv.style.padding = "0px 30px";
   const img = document.createElement("img");
   const imgBox = document.createElement("div");
   imgBox.classList.add("pic_6");
@@ -501,7 +501,7 @@ data_section_6.map((item, index) => {
   icon.src = item.pic;
   icon.alt = `icon${index}`;
 
-  if(index === 1){
+  if (index === 1) {
     icon.classList.add("add_style_8");
   }
 
@@ -515,20 +515,20 @@ data_section_6.map((item, index) => {
   text.classList.add("disc");
   text.textContent = item.text;
 
-    const box = document.createElement("div");
-    box.classList.add("icon_6_box");
+  const box = document.createElement("div");
+  box.classList.add("icon_6_box");
 
-    if(index === 1){
-      box.classList.add("add_top_6");
-    }
+  if (index === 1) {
+    box.classList.add("add_top_6");
+  }
 
-    box.appendChild(icon);
-    box.appendChild(text);
+  box.appendChild(icon);
+  box.appendChild(text);
 
-    itemDiv.appendChild(header);
-    itemDiv.appendChild(imgBox);
-    itemDiv.appendChild(box);
-  
+  itemDiv.appendChild(header);
+  itemDiv.appendChild(imgBox);
+  itemDiv.appendChild(box);
+
 
   container_6.appendChild(itemDiv);
 });
@@ -536,7 +536,7 @@ data_section_6.map((item, index) => {
 const data_section_7 = [
   { img: "assets/images/7rd_Block/pic1.webp", header: "BRAND \n BOOK" },
 
-  { img: "assets/images/7rd_Block/pic2.webp", header: "pitchdeck \n framework" },
+  { img: "assets/images/7rd_Block/pic2.webp", header: "pitch deck \n framework" },
   {
     img: "assets/images/7rd_Block/pic3.webp",
     header: "storytelling workshops",
@@ -548,7 +548,7 @@ const container_7 = document.getElementById("seven_block_box");
 data_section_7.map((item, index) => {
   const itemDiv = document.createElement("div");
   itemDiv.classList.add("card_3");
-  itemDiv.style.padding= "0px 5px 0px";
+  itemDiv.style.padding = "0px 30px 0px";
   itemDiv.classList.add("add_box_7");
   itemDiv.style.justifyContent = "space-evenly";
 
@@ -560,23 +560,34 @@ data_section_7.map((item, index) => {
 
   img.src = item.img;
   img.alt = `pic${index}`;
+  const box = document.createElement("div")
+  box.classList.add("pic_6");
 
-const box = document.createElement("div")
-box.classList.add("pic_6");
-const imgLayerBox = document.createElement("div");
-imgLayerBox.classList.add("layer_img");
-imgLayerBox.style.bottom= "0";
-imgLayerBox.style.left = "0";
-imgLayerBox.style.height = "83%";
-imgLayerBox.style.width = "100%";
-const imgLayer = document.createElement("img");
-imgLayer.src = `assets/images/Third_block/layer2.webp`;
-imgLayer.alt = "layer7";
+  if(index < 2){
 
-imgLayerBox.appendChild(imgLayer)
+    box.appendChild(img)
+  }
+  
+  if(index === 2){
 
-box.appendChild(img)
-box.appendChild(imgLayerBox)
+    const imgLayerBox = document.createElement("div");
+    imgLayerBox.classList.add("layer_img");
+    imgLayerBox.style.bottom = "0";
+    imgLayerBox.style.left = "0";
+    imgLayerBox.style.height = "83%";
+    imgLayerBox.style.width = "100%";
+    const imgLayer = document.createElement("img");
+    imgLayer.src = `assets/images/Third_block/layer2.webp`;
+    imgLayer.alt = "layer7";
+  
+    imgLayerBox.appendChild(imgLayer)
+  
+    box.appendChild(img)
+    box.appendChild(imgLayerBox)
+
+
+  }
+ 
 
   const header = document.createElement("span");
   header.classList.add("header");
@@ -673,7 +684,7 @@ const caseStudies = [
     description: "100+ lab tests with insights from top doctors",
     investment: {
       details:
-        "Met Paul (CEO) in 2010. Committed pre-Incorporation.Invested $100K at Pre-Seed (Fund I) + $100K at Seed (LP SPV)",
+        "Met Jonathan (CEO) 18 months before incorporation.Invested $422K (Fund I + LP SPV) at Seed (zero revenue).",
       followOn: "a16z, Ari Emanuel, Blake Griffin, Kevin Hart, Matt Damon",
     },
     support:
@@ -698,7 +709,7 @@ const caseStudies = [
     description: "stylish mini-split that heats + cools your home room by room",
     investment: {
       details:
-        "Met Paul (CEO) in 2010. Committed pre-Incorporation.Invested $100K at Pre-Seed (Fund I) + $100K at Seed (LP SPV)",
+        "Met Jonathan (CEO) 18 months before incorporation.Invested $422K (Fund I + LP SPV) at Seed (zero revenue).",
       followOn: "Gradient, Lowercarbon, EIP, Galvanize",
     },
     support:
@@ -733,9 +744,8 @@ caseStudies.map((study) => {
               </div>
               <div style="display: flex; gap: 12px; align-items: flex-start;">
                 <p class="box_text1">${study.title}</p>
-                <div class="text_11" style="border: 0.897321px solid ${
-                  study.color
-                }; margin-top: 15px;">
+                <div class="text_11" style="border: 0.897321px solid ${study.color
+    }; margin-top: 15px;">
                   ${study.tag}
                 </div>
               </div>
@@ -751,9 +761,8 @@ caseStudies.map((study) => {
             <div class="investment-info-section">
               <div class="investment-details">
                 <p class="investment-title">INVESTMENT</p>
-                <p class="investment-description">${
-                  study.investment.details
-                }</p>
+                <p class="investment-description">${study.investment.details
+    }</p>
               </div>
               <div class="investors">
                 <p class="follow-on-title">FOLLOW-ON INVESTORS</p>
@@ -779,11 +788,11 @@ caseStudies.map((study) => {
           </div>
            <div class="box_images">
             ${study.images
-              .map(
-                (image, index) =>
-                  `<div class="${index === 0 ? "image_one" : "image_two"}" style="background-image: url(${image});"></div>`
-              )
-              .join("")}
+      .map(
+        (image, index) =>
+          `<div class="${index === 0 ? "image_one" : "image_two"}" style="background-image: url(${image});"></div>`
+      )
+      .join("")}
           </div>
         </div>
       </div>
@@ -798,7 +807,7 @@ const fundDetailsData = [
   { title: "~30", description: "Target Companies", class: "high" },
   {
     title: "$500K-1M",
-    description: "Initial Check Size<br>+ ~20% Reserves",
+    description: "Initial Check Size<br>+ ~30% Reserves",
     class: "high",
   },
   { title: "PRE/SEED", description: "Stage" },
@@ -829,14 +838,14 @@ fundDetailsData.map((item, index) => {
   const headingTag = item.class === "high" ? "h1" : "h2"
 
   let descriptionContent = "";
-  if (Array.isArray(item.description)) { 
+  if (Array.isArray(item.description)) {
     descriptionContent = item.description
       .map(
         (desc) => {
           return `<h4> 
             ${desc.title}
           </h4>
-          <p> ${desc.description}</p> </br> </br>`  
+          <p> ${desc.description}</p> </br> </br>`
         }
       )
       .join("");
@@ -854,7 +863,7 @@ fundDetailsData.map((item, index) => {
 
 // 17 section
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
 
   const items = document.querySelectorAll('.gallery-item');
@@ -863,25 +872,25 @@ document.addEventListener('DOMContentLoaded', function() {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-            const sequence = [
-              [2],             
-              [1, 3],       
-              [0, 4]          
-            ];
-            let delay = 0;
-            sequence.forEach(group => {
-              group.forEach(index => {
-                setTimeout(() => {
-                  items[index].classList.add('animate');
-                }, delay);
-              });
-              delay += 600; 
-            });   
-     
-        observer.unobserve(entry.target); 
+        const sequence = [
+          [2],
+          [1, 3],
+          [0, 4]
+        ];
+        let delay = 0;
+        sequence.forEach(group => {
+          group.forEach(index => {
+            setTimeout(() => {
+              items[index].classList.add('animate');
+            }, delay);
+          });
+          delay += 600;
+        });
+
+        observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 });  
+  }, { threshold: 0.5 });
   gallery.forEach(card => {
     observer.observe(card);
   });
@@ -896,55 +905,54 @@ const button = document.getElementById("button");
 
 const orientationEvent = () => {
   const section0 = document.getElementById("section_0");
-  const mobile = document.getElementById("mobile");  
+  const mobile = document.getElementById("mobile");
   const sectionAll = document.getElementById("section_all");
 
   section0.style.display = "none";
-  const { orientation: { angle }, availWidth } = screen;   
+  const { orientation: { angle }, availWidth } = screen;
   const viewport = document.querySelector("meta[name=viewport]");
 
-  
-  if (availWidth > 768 ) {   
+
+  if (availWidth > 768) {
     if (viewport) {
       viewport.parentNode.removeChild(viewport);
     }
     var newViewport = document.createElement('meta');
     newViewport.name = "viewport";
-    newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";    
+    newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";
     document.head.appendChild(newViewport);
   }
 
+  if (availWidth <= 768) {
 
-  if (availWidth  <= 768) {
-     
     if (angle === 90) {
       sectionAll.style.display = "block";
-      mobile.style.display = "none";      
+      mobile.style.display = "none";
       if (viewport) {
         viewport.parentNode.removeChild(viewport);
       }
-      var newViewport = document.createElement('meta');
+      const newViewport = document.createElement('meta');
       newViewport.name = "viewport";
-      newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";     
+      newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";
       document.head.appendChild(newViewport);
-  
+
     } else {
       mobile.style.display = "flex";
-      sectionAll.style.display = "none";      
+      sectionAll.style.display = "none";
       if (viewport) {
         viewport.parentNode.removeChild(viewport);
       }
       var newViewport = document.createElement('meta');
       newViewport.name = "viewport";
       newViewport.content = "width=device-width, initial-scale=1, maximum-scale=1, interactive-widget=resizes-content";
-      document.head.appendChild(newViewport);        
-      
+      document.head.appendChild(newViewport);
+
     }
   } else {
     sectionAll.style.display = "block";
-    mobile.style.display = "none";    
-    if (viewport) {
-      viewport.parentNode?.removeChild(viewport);
+    mobile.style.display = "none";
+    if (viewport?.parentNode) {
+      viewport.parentNode.removeChild(viewport);
     }
     var newViewport = document.createElement('meta');
     newViewport.name = "viewport";
@@ -964,18 +972,19 @@ screen.orientation.addEventListener('change', orientationEvent)
 // Video animations
 
 document.addEventListener("DOMContentLoaded", function () {
-  const videos = document.querySelectorAll(".video video"); 
-  let isScrolling = false; 
-  let scrollTimeout = null; 
+  const videos = document.querySelectorAll(".video video");
+  let isScrolling = false;
+  let scrollTimeout = null;
 
   const handleVideoPlayPause = () => {
     videos.forEach((video) => {
       if (video.getAttribute('id') === 'video') return video.play();
       if (video.getAttribute('id') === 'video_last') return video.play();
       if (video.getAttribute('id') === 'video_mobile') return video.play();
+      if (video.getAttribute('id') === 'video_13') return video.play();
 
       const videoRect = video.getBoundingClientRect();
-      const isInViewport = videoRect.top < window.innerHeight && videoRect.bottom > 0; 
+      const isInViewport = videoRect.top < window.innerHeight && videoRect.bottom > 0;
 
       if (isInViewport && isScrolling) {
         if (video.paused) {
@@ -984,10 +993,10 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         if (!video.paused) {
           setTimeout(() => {
-            if (!isScrolling) { 
+            if (!isScrolling) {
               video.pause();
             }
-          }, 400); 
+          }, 400);
         }
       }
     });
@@ -997,7 +1006,7 @@ document.addEventListener("DOMContentLoaded", function () {
     isScrolling = true;
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(() => {
-      isScrolling = false; 
+      isScrolling = false;
       handleVideoPlayPause();
     }, 200);
 
@@ -1016,30 +1025,30 @@ document.addEventListener("DOMContentLoaded", function () {
     (entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("in-view"); 
-          observer.unobserve(entry.target); 
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target);
         }
       });
     },
     { threshold: 1 }
-  ); 
+  );
   paragraphs.forEach(p => {
     observer.observe(p);
   });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-   const paragraphs = document.querySelectorAll(".header5");
+  const paragraphs = document.querySelectorAll(".header5");
   const observer = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("in-view1");
-          observer.unobserve(entry.target); 
+          observer.unobserve(entry.target);
         }
       });
     },
-    { threshold: 1 } 
+    { threshold: 1 }
   );
 
   paragraphs.forEach(p => {
@@ -1056,12 +1065,12 @@ document.addEventListener("DOMContentLoaded", function () {
     (entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("in-view"); 
-          observer.unobserve(entry.target); 
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.1 } 
+    { threshold: 0.1 }
   );
 
   paragraphs.forEach(p => {
@@ -1076,9 +1085,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const cards = document.querySelectorAll(".card_1");
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {   
-        entry.target.classList.add("in-view"); 
-        observer.unobserve(entry.target); 
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.5 });
@@ -1095,11 +1104,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("in-view"); 
-        observer.unobserve(entry.target); 
+        entry.target.classList.add("in-view");
+        observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 }); 
+  }, { threshold: 0.5 });
 
   cards.forEach(card => {
     observer.observe(card);
@@ -1114,18 +1123,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-       
-        entry.target.classList.add("in-view"); 
+
+        entry.target.classList.add("in-view");
         const fifthBlockBox = document.getElementById("fifth_block_box");
 
         setTimeout(() => {
           fifthBlockBox.querySelector(".box_4_upper").classList.add("animate-side-by-side");
-        }, 600); 
-        observer.unobserve(entry.target); 
+        }, 600);
+        observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 }); 
- 
+  }, { threshold: 0.1 });
+
   cards.forEach(card => {
     observer.observe(card);
   });
@@ -1137,12 +1146,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-      
-        entry.target.classList.add("in-view"); 
-        observer.unobserve(entry.target); 
+
+        entry.target.classList.add("in-view");
+        observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });  
+  }, { threshold: 0.1 });
   cards.forEach(card => {
     observer.observe(card);
   });
@@ -1152,11 +1161,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // 5 section animations
 document.addEventListener("DOMContentLoaded", function () {
-  const cont2 = document.querySelector(".cont2"); 
+  const cont2 = document.querySelector(".cont2");
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-       
+
         entry.target.classList.add("animate-background");
       }
     });
@@ -1172,14 +1181,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("in-view"); 
-        observer.unobserve(entry.target); 
+        entry.target.classList.add("in-view");
+        observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 }); 
+  }, { threshold: 0.5 });
 
   cards.forEach(card => {
-    observer.observe(card); 
+    observer.observe(card);
   });
 });
 
@@ -1191,14 +1200,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("in-view"); 
+        entry.target.classList.add("in-view");
         observer.unobserve(entry.target);
       }
     });
   }, { threshold: 1 });
 
   cards.forEach(card => {
-    observer.observe(card); 
+    observer.observe(card);
   });
 });
 
@@ -1215,7 +1224,7 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 }); 
+  }, { threshold: 0.5 });
   rows.forEach(row => {
     observer.observe(row);
   });
@@ -1233,7 +1242,7 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.2 }); 
+  }, { threshold: 0.2 });
   rows.forEach(row => {
     observer.observe(row);
   });
@@ -1251,7 +1260,7 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 }); 
+  }, { threshold: 0.5 });
 
   rows.forEach(row => {
     observer.observe(row);
@@ -1265,13 +1274,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("in-view"); 
-        observer.unobserve(entry.target); 
+        entry.target.classList.add("in-view");
+        observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 1 }); 
+  }, { threshold: 1 });
   boxes.forEach(box => {
-    observer.observe(box); 
+    observer.observe(box);
   });
 });
 
@@ -1283,14 +1292,35 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("in-view"); 
-        observer.unobserve(entry.target); 
+        entry.target.classList.add("in-view");
+        observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 }); 
+  }, { threshold: 0.5 });
 
   details.forEach(detail => {
-    observer.observe(detail); 
+    observer.observe(detail);
+  });
+
+
+});
+
+
+// 0 section animations
+document.addEventListener("DOMContentLoaded", function () {
+  const details = document.querySelectorAll(".content_0");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  details.forEach(detail => {
+    observer.observe(detail);
   });
 
 
@@ -1303,9 +1333,71 @@ window.addEventListener('scroll', () => {
   parallaxedItems.forEach(item => {
     const offset = (window.pageYOffset * .5);
     item.style.transform = `translate(-50%, -50%) translateY(${offset}px)`;
-   })
+  })
 })
 
+const isMobile = {
+  Android: function () {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function () {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function () {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function () {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function () {
+    return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+  },
+  any: function () {
+    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+  }
+};
+
+function scaleContent() {
+  if (window.innerWidth < 1920 && window.innerWidth > 1280 && !isMobile.any()) {
+    // const scale = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+    // const adjustedScale = scale * ((window.innerWidth - 40) / window.innerWidth); // Adjust for 20px left/right spacing
+    const scale = window.innerWidth / 1920;
+    console.log('scale => ', scale)
+    document.documentElement.style.setProperty('--scale', scale > 1 ? 1 : scale);
+  } else {
+    document.documentElement.style.setProperty('--scale', 1);
+  }
+}
+
+window.addEventListener('resize', scaleContent)
+document.addEventListener('DOMContentLoaded', scaleContent)
+
+
+// checkbox
+
+const checkbox = document.getElementById("check-box"); 
+const popup = document.getElementById("popup");
+const overlay = document.getElementById("popupOverlay");
+const closePopup = document.getElementById("closePopup");
+
+popup.style.display = "none";
+overlay.style.display = "none";
+
+checkbox.addEventListener("click", function() {
+    popup.style.display = "flex";
+    overlay.style.display = "flex";
+});
+
+
+closePopup.addEventListener("click", function() {
+    popup.style.display = "none";
+    overlay.style.display = "none";
+});
+
+overlay.addEventListener("click", function() {
+    popup.style.display = "none";
+    overlay.style.display = "none";
+});
 
 
 
