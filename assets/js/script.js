@@ -1359,10 +1359,7 @@ const isMobile = {
 
 function scaleContent() {
   if (window.innerWidth < 1920 && window.innerWidth > 1280 && !isMobile.any()) {
-    // const scale = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
-    // const adjustedScale = scale * ((window.innerWidth - 40) / window.innerWidth); // Adjust for 20px left/right spacing
     const scale = window.innerWidth / 1920;
-    console.log('scale => ', scale)
     document.documentElement.style.setProperty('--scale', scale > 1 ? 1 : scale);
   } else {
     document.documentElement.style.setProperty('--scale', 1);
