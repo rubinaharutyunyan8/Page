@@ -1766,21 +1766,6 @@ body {
 }
 
 
-/* .back_img1 {
-  background-image: url("../images/13_Block/1.webp");
-  background-position: right;
-  background-size: cover;
-  background-repeat: no-repeat; 
-  height: 809px;
-}
-
-.back_img2 {
-  background-image: url("../images/13_Block/2.webp");
-  background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 809px;
-} */
 
 .bottom_box {
   padding: 30px;
@@ -4062,9 +4047,6 @@ height: 630px;
     padding: 0px 50px;
   }
 
-  .text_box {
-    padding: 0px;
-  }
 
   .text2 {
     font-size: 20px;
