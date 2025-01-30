@@ -1080,6 +1080,13 @@ body {
   line-height: 40px;
   color: #ffffff;
 }
+.header_5_1 {
+  font-family: "Druk Wide Bold";
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
+
+}
 
 .cont2 {
   display: flex;
@@ -3802,7 +3809,7 @@ height: 630px;
 
   .pic_4 {
     img {
-      width: 73%;
+      width: 43%;
     }
   }
 
@@ -3814,7 +3821,7 @@ height: 630px;
   .card_text {
 
 
-    min-width: 208px;
+    min-width: 211px;
   }
 
   .card_header {

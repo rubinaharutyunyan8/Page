@@ -1,6 +1,6 @@
 <?php
 // Secure Access with a Password
-$admin_password = "0$ZQS>ie986#";
+$admin_password = 'TVCT3q$AyV4z';
 
 if (!isset($_GET['password']) || $_GET['password'] !== $admin_password) {
     die("Unauthorized Access");
