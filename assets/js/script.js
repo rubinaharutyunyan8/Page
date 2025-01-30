@@ -1407,6 +1407,25 @@ function eraseCookie(name) {
 
 
 // Subscribe functionallity
+const clearMesageResponse = () => {
+  const responseMessage = document.getElementById("responseMessage");
+  setTimeout(() => {
+    responseMessage.textContent = "";
+    responseMessage.style.color = "white";
+    responseMessage.style.display = "contents";
+    orientationEvent()
+  }, 1500);
+}
+const handleErrorResponse = () => {
+  const responseMessage = document.getElementById("responseMessage");
+
+  responseMessage.textContent = "Something went wrong";
+  responseMessage.style.color = "red";
+  responseMessage.style.display = "contents";
+  eraseCookie('_cc_gcqrtc')
+
+  clearMesageResponse()
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   const emailInput = document.getElementById("emailInput");
@@ -1414,8 +1433,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const submitButton = document.getElementById("submitButton");
   const form = document.getElementById("subscribeForm");
   const responseMessage = document.getElementById("responseMessage");
-  const sectionAll = document.getElementById("section_all");
-  const sectionZero = document.getElementById("section_0");
   
   function validateEmail(email) {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -1456,25 +1473,12 @@ document.addEventListener("DOMContentLoaded", function () {
           agreeCheckbox.checked = false;
           updateButtonState();
           setCookie('_cc_gcqrtc', '_tgs', 365)
-          setTimeout(() => {
-            responseMessage.textContent = "";
-            responseMessage.style.color = "white";
-            responseMessage.style.display = "contents";
-            orientationEvent()
-          }, 1500);
-        } else {
-          responseMessage.textContent = "Something went wrong";
-          responseMessage.style.color = "red";
-          responseMessage.style.display = "contents";
-          eraseCookie('_cc_gcqrtc')
-        }
+          setTimeout(() => clearMesageResponse(), 1500);
+        } else handleErrorResponse()
       })
       .catch(error => {
         console.log('error => ', error)
-        responseMessage.textContent = "Something went wrong";
-        responseMessage.style.color = "red";
-        responseMessage.style.display = "contents";
-        eraseCookie('_cc_gcqrtc')
+        handleErrorResponse()
       });
   });
 });
