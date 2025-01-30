@@ -1080,13 +1080,6 @@ body {
   line-height: 40px;
   color: #ffffff;
 }
-.header_5_1 {
-  font-family: "Druk Wide Bold";
-  font-size: 40px;
-  line-height: 40px;
-  color: #ffffff;
-
-}
 
 .cont2 {
   display: flex;
@@ -3808,7 +3801,7 @@ height: 630px;
   }
 
   .pic_4 {
-    img {
+    img {  
       width: 73%;
     }
   }
