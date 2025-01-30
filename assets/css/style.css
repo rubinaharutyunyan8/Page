@@ -3248,9 +3248,29 @@ height: 630px;
 
 
 @media (min-width: 1280px ) and (max-width: 1600px) {
+  .card_1 {
+ 
+    height: 550px;
+  
+  }
+
+  .card_3 {
+    height: 650px;
+  }
+  .block_5 {
+    height: 830px; 
+  }
+
+  .header33 {
+
+    font-size: 30px;
+    line-height: 30px;
+
+}
 
   .card_text {
-    font-size: 28px; 
+    font-size: 28px;
+    line-height: 30px; 
   }
 
   .disc33 {
@@ -3312,6 +3332,7 @@ height: 630px;
 .icon_6_box {
   .disc {
       font-size: 24px;
+      line-height: 26px;
   }
 }
 .card_5 span:first-child {
