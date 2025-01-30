@@ -2719,6 +2719,10 @@ body {
     color: white;
     font-size: 40px;
     font-family: "PP Mori";
+    padding: 5px 15px;
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
   }
 
   input:focus {

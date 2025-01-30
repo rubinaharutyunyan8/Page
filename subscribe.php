@@ -22,19 +22,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if (file_put_contents($file, $entry, FILE_APPEND | LOCK_EX)) {
 
-         // Send to Zapier Webhook
-         $zapierWebhook = "https://hooks.zapier.com/hooks/catch/21508435/2fkewht";
-         $zapierData = json_encode(["email" => $email]);
- 
-         $ch = curl_init($zapierWebhook);
-         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-         curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
-         curl_setopt($ch, CURLOPT_POST, 1);
-         curl_setopt($ch, CURLOPT_POSTFIELDS, $zapierData);
-         curl_exec($ch);
-         curl_close($ch);
+        // Send to Zapier Webhook
+        $zapierWebhook = "https://hooks.zapier.com/hooks/catch/21508435/2fkewht";
+        $zapierData = json_encode(["email" => $email]);
 
-        echo "Subscription successful!";
+        $ch = curl_init($zapierWebhook);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $zapierData);
+        curl_exec($ch);
+        curl_close($ch);
+
+        echo json_encode(["status" => "success", "message" => "Subscription successful!"]);
     } else {
         echo json_encode(["status" => "error", "message" => "Failed to save email. Try again later."]);
     }

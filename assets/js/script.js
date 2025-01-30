@@ -874,8 +874,23 @@ document.addEventListener('DOMContentLoaded', function () {
 //Navigation
 
 const button = document.getElementById("button");
+const validatePermissions = () => {
+  const sectionZero = document.getElementById("section_0");
+  const sectionAll = document.getElementById("section_all");
+  const isValidated = getCookie('_cc_gcqrtc') === "_tgs"
+  if (isValidated) {
+    sectionAll.style.display = 'block'
+    sectionZero.style.display = 'none'
+  } else {
+    eraseCookie('_cc_gcqrtc')
+    sectionAll.style.display = 'none'
+    sectionZero.style.display = 'flex'
+  }
 
+  return isValidated;
+}
 const orientationEvent = () => {
+  
   const section0 = document.getElementById("section_0");
   const mobile = document.getElementById("mobile");
   const sectionAll = document.getElementById("section_all");
@@ -883,7 +898,6 @@ const orientationEvent = () => {
   section0.style.display = "none";
   const { orientation: { angle }, availWidth } = screen;
   const viewport = document.querySelector("meta[name=viewport]");
-
 
   if (availWidth > 768) {
     if (viewport) {
@@ -898,7 +912,6 @@ const orientationEvent = () => {
   if (availWidth <= 768) {
 
     if (angle === 90) {
-      sectionAll.style.display = "block";
       mobile.style.display = "none";
       if (viewport) {
         viewport.parentNode.removeChild(viewport);
@@ -907,9 +920,10 @@ const orientationEvent = () => {
       newViewport.name = "viewport";
       newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";
       document.head.appendChild(newViewport);
-
+      validatePermissions()
     } else {
-      mobile.style.display = "flex";
+      const isValidated = validatePermissions()
+      if (isValidated) mobile.style.display = "flex";
       sectionAll.style.display = "none";
       if (viewport) {
         viewport.parentNode.removeChild(viewport);
@@ -921,7 +935,7 @@ const orientationEvent = () => {
 
     }
   } else {
-    sectionAll.style.display = "block";
+    validatePermissions()
     mobile.style.display = "none";
     if (viewport?.parentNode) {
       viewport.parentNode.removeChild(viewport);
@@ -1432,21 +1446,28 @@ document.addEventListener("DOMContentLoaded", function () {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({ email })
     })
-      .then(response => response.text())
+      .then(response => response.json())
       .then(data => {
-        responseMessage.textContent = data;
-        responseMessage.style.display = "block";
-        emailInput.value = "";
-        agreeCheckbox.checked = false;
-        updateButtonState();
-        setCookie('_cc_gcqrtc', '_tgs', 365)
-        setTimeout(() => {
-          responseMessage.textContent = "";
-          responseMessage.style.color = "white";
+        const { status, message = '' } = data;
+        if (status === 200 || status === 'success') {
+          responseMessage.textContent = message;
+          responseMessage.style.display = "block";
+          emailInput.value = "";
+          agreeCheckbox.checked = false;
+          updateButtonState();
+          setCookie('_cc_gcqrtc', '_tgs', 365)
+          setTimeout(() => {
+            responseMessage.textContent = "";
+            responseMessage.style.color = "white";
+            responseMessage.style.display = "contents";
+            orientationEvent()
+          }, 1500);
+        } else {
+          responseMessage.textContent = "Something went wrong";
+          responseMessage.style.color = "red";
           responseMessage.style.display = "contents";
-          sectionAll.style.display = 'block'
-          sectionZero.style.display = 'none'
-        }, 1500);
+          eraseCookie('_cc_gcqrtc')
+        }
       })
       .catch(error => {
         console.log('error => ', error)
@@ -1458,16 +1479,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const sectionAll = document.getElementById("section_all");
-  const sectionZero = document.getElementById("section_0");
-  orientationEvent()
-  if (getCookie('_cc_gcqrtc') === "_tgs") {
-    sectionAll.style.display = 'block'
-    sectionZero.style.display = 'none'
-  } else {
-    eraseCookie('_cc_gcqrtc')
-    sectionAll.style.display = 'none'
-    sectionZero.style.display = 'flex'
-  }
-})
+document.addEventListener("DOMContentLoaded", () => orientationEvent())
