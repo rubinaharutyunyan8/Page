@@ -1,7 +1,7 @@
 const second_block_data = [
   {
     header: "AI",
-    disc: "We all live 100 healthy years",
+    disc: "We all live 100 healthy years.",
     img: "assets/images/Second_block/logo1.webp",
     pic: "assets/images/Second_block/pic1.webp",
   },
@@ -14,7 +14,7 @@ const second_block_data = [
   },
   {
     header: "Aerospace",
-    disc: "We unlock the scale of space",
+    disc: "We unlock the scale of space.",
     img: "assets/images/Second_block/logo3.webp",
     pic: "assets/images/Second_block/pic3.webp",
   },
@@ -340,87 +340,87 @@ third_block_data3.map((item, index) => {
 // ];
 
 // Block5_content.map((item, index) => {
-  // const itemDiv2 = document.createElement("div");
-  // itemDiv2.classList.add("box_4_bottom");
+// const itemDiv2 = document.createElement("div");
+// itemDiv2.classList.add("box_4_bottom");
 
-  // const boxText1 = document.createElement("div");
-  // boxText1.classList.add("text_box_bottom");
+// const boxText1 = document.createElement("div");
+// boxText1.classList.add("text_box_bottom");
 
-  // const disc1 = document.createElement("p");
-  // disc1.classList.add("disc_4");
-  // // disc1.style.marginBottom = '-10px'
+// const disc1 = document.createElement("p");
+// disc1.classList.add("disc_4");
+// // disc1.style.marginBottom = '-10px'
 
-  // disc1.innerHTML = item.disc1;
+// disc1.innerHTML = item.disc1;
 
-  // const text1 = document.createElement("p");
-  // text1.classList.add("text_4");
+// const text1 = document.createElement("p");
+// text1.classList.add("text_4");
 
-  // text1.innerHTML = item.text1;
+// text1.innerHTML = item.text1;
 
-  // boxText1.appendChild(disc1);
-  // boxText1.appendChild(text1);
+// boxText1.appendChild(disc1);
+// boxText1.appendChild(text1);
 
-  // const boxText2 = document.createElement("div");
-  // boxText2.classList.add("text_box_bottom");
-  // const disc2 = document.createElement("p");
+// const boxText2 = document.createElement("div");
+// boxText2.classList.add("text_box_bottom");
+// const disc2 = document.createElement("p");
 
-  // disc2.classList.add("disc_4");
-  // // disc2.style.marginBottom = '-10px'
-  // disc2.innerHTML = item.disc2;
+// disc2.classList.add("disc_4");
+// // disc2.style.marginBottom = '-10px'
+// disc2.innerHTML = item.disc2;
 
-  // const text2 = document.createElement("p");
-  // text2.classList.add("text_4");
-  // text2.innerHTML = item.text2;
+// const text2 = document.createElement("p");
+// text2.classList.add("text_4");
+// text2.innerHTML = item.text2;
 
-  // boxText2.appendChild(disc2);
-  // boxText2.appendChild(text2);
+// boxText2.appendChild(disc2);
+// boxText2.appendChild(text2);
 
-  // const boxText3 = document.createElement("div");
-  // boxText3.classList.add("text_box_bottom");
-  // const disc3 = document.createElement("p");
-  // disc3.classList.add("text_4_diff");
-  // disc3.classList.add("add_color");
+// const boxText3 = document.createElement("div");
+// boxText3.classList.add("text_box_bottom");
+// const disc3 = document.createElement("p");
+// disc3.classList.add("text_4_diff");
+// disc3.classList.add("add_color");
 
-  // disc3.innerHTML = item.disc3.replace("\n", "<br>");
+// disc3.innerHTML = item.disc3.replace("\n", "<br>");
 
-  // boxText3.appendChild(disc3);
+// boxText3.appendChild(disc3);
 
-  // const boxText4 = document.createElement("div");
-  // boxText4.classList.add("text_box_bottom");
-  // const disc4 = document.createElement("p");
+// const boxText4 = document.createElement("div");
+// boxText4.classList.add("text_box_bottom");
+// const disc4 = document.createElement("p");
 
-  // disc4.classList.add("disc_4");
-  // // disc4.style.marginBottom = '-10px'
-  // disc4.innerHTML = item.disc4;
+// disc4.classList.add("disc_4");
+// // disc4.style.marginBottom = '-10px'
+// disc4.innerHTML = item.disc4;
 
-  // const text4 = document.createElement("p");
-  // text4.classList.add("text_4");
-  // text4.innerHTML = item.text4;
+// const text4 = document.createElement("p");
+// text4.classList.add("text_4");
+// text4.innerHTML = item.text4;
 
-  // boxText4.appendChild(disc4);
-  // boxText4.appendChild(text4);
+// boxText4.appendChild(disc4);
+// boxText4.appendChild(text4);
 
-  // const boxText5 = document.createElement("div");
-  // boxText5.classList.add("text_box_bottom");
-  // const disc5 = document.createElement("p");
+// const boxText5 = document.createElement("div");
+// boxText5.classList.add("text_box_bottom");
+// const disc5 = document.createElement("p");
 
-  // disc5.classList.add("disc_4");
-  // disc5.innerHTML = item.disc5;
+// disc5.classList.add("disc_4");
+// disc5.innerHTML = item.disc5;
 
-  // const text5 = document.createElement("p");
-  // text5.classList.add("text_4");
-  // text5.innerHTML = item.text5;
+// const text5 = document.createElement("p");
+// text5.classList.add("text_4");
+// text5.innerHTML = item.text5;
 
-  // boxText5.appendChild(disc5);
-  // boxText5.appendChild(text5);
+// boxText5.appendChild(disc5);
+// boxText5.appendChild(text5);
 
-  // itemDiv2.appendChild(boxText1);
-  // itemDiv2.appendChild(boxText2);
-  // itemDiv2.appendChild(boxText3);
-  // itemDiv2.appendChild(boxText4);
-  // itemDiv2.appendChild(boxText5);
+// itemDiv2.appendChild(boxText1);
+// itemDiv2.appendChild(boxText2);
+// itemDiv2.appendChild(boxText3);
+// itemDiv2.appendChild(boxText4);
+// itemDiv2.appendChild(boxText5);
 
-  // container4.appendChild(itemDiv2);
+// container4.appendChild(itemDiv2);
 // });
 
 const data_section_4 = [
@@ -562,33 +562,7 @@ data_section_7.map((item, index) => {
   img.alt = `pic${index}`;
   const box = document.createElement("div")
   box.classList.add("pic_6");
-
-  if(index < 2){
-
-    box.appendChild(img)
-  }
-  
-  if(index === 2){
-
-    const imgLayerBox = document.createElement("div");
-    imgLayerBox.classList.add("layer_img");
-    imgLayerBox.style.bottom = "0";
-    imgLayerBox.style.left = "0";
-    imgLayerBox.style.height = "83%";
-    imgLayerBox.style.width = "100%";
-    const imgLayer = document.createElement("img");
-    imgLayer.src = `assets/images/Third_block/layer2.webp`;
-    imgLayer.alt = "layer7";
-  
-    imgLayerBox.appendChild(imgLayer)
-  
-    box.appendChild(img)
-    box.appendChild(imgLayerBox)
-
-
-  }
- 
-
+  box.appendChild(img)
   const header = document.createElement("span");
   header.classList.add("header");
   header.style.marginBottom = "0px";
@@ -897,8 +871,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
 //Navigation
 
 const button = document.getElementById("button");
@@ -964,9 +936,6 @@ const orientationEvent = () => {
 button?.addEventListener("click", orientationEvent);
 
 screen.orientation.addEventListener('change', orientationEvent)
-
-
-
 
 
 // Video animations
@@ -1296,7 +1265,7 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.1 });
 
   details.forEach(detail => {
     observer.observe(detail);
@@ -1372,29 +1341,133 @@ document.addEventListener('DOMContentLoaded', scaleContent)
 
 // checkbox
 
-const checkbox = document.getElementById("check-box"); 
+const checkbox = document.getElementById("check-box");
 const popup = document.getElementById("popup");
 const overlay = document.getElementById("popupOverlay");
 const closePopup = document.getElementById("closePopup");
 
 popup.style.display = "none";
-overlay.style.display = "none";
-
-checkbox.addEventListener("click", function() {
+if (overlay) {
+  overlay.style.display = "none";
+  checkbox.addEventListener("click", function () {
     popup.style.display = "flex";
     overlay.style.display = "flex";
-});
+  });
 
 
-closePopup.addEventListener("click", function() {
+  closePopup.addEventListener("click", function () {
     popup.style.display = "none";
     overlay.style.display = "none";
-});
+  });
 
-overlay.addEventListener("click", function() {
+  overlay.addEventListener("click", function () {
     popup.style.display = "none";
     overlay.style.display = "none";
+  });
+}
+
+// cookies
+
+function setCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+function eraseCookie(name) {
+  document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
+
+// Subscribe functionallity
+
+document.addEventListener("DOMContentLoaded", function () {
+  const emailInput = document.getElementById("emailInput");
+  const agreeCheckbox = document.getElementById("agreeCheckbox");
+  const submitButton = document.getElementById("submitButton");
+  const form = document.getElementById("subscribeForm");
+  const responseMessage = document.getElementById("responseMessage");
+  const sectionAll = document.getElementById("section_all");
+  const sectionZero = document.getElementById("section_0");
+  
+  function validateEmail(email) {
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailPattern.test(email);
+  }
+
+  function updateButtonState() {
+    const isEmailValid = validateEmail(emailInput.value);
+    const isCheckboxChecked = agreeCheckbox.checked;
+    submitButton.disabled = !isEmailValid || !isCheckboxChecked;
+  }
+
+  emailInput.addEventListener("input", updateButtonState);
+  agreeCheckbox.addEventListener("change", updateButtonState);
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const email = emailInput.value;
+    if (!email.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
+      responseMessage.textContent = "Please enter a valid email.";
+      responseMessage.style.color = "red";
+      return;
+    }
+
+    fetch("subscribe.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({ email })
+    })
+      .then(response => response.text())
+      .then(data => {
+        responseMessage.textContent = data;
+        responseMessage.style.display = "block";
+        emailInput.value = "";
+        agreeCheckbox.checked = false;
+        updateButtonState();
+        setCookie('_cc_gcqrtc', '_tgs', 365)
+        setTimeout(() => {
+          responseMessage.textContent = "";
+          responseMessage.style.color = "white";
+          responseMessage.style.display = "contents";
+          sectionAll.style.display = 'block'
+          sectionZero.style.display = 'none'
+        }, 1500);
+      })
+      .catch(error => {
+        console.log('error => ', error)
+        responseMessage.textContent = "Something went wrong";
+        responseMessage.style.color = "red";
+        responseMessage.style.display = "contents";
+        eraseCookie('_cc_gcqrtc')
+      });
+  });
 });
 
-
-
+document.addEventListener("DOMContentLoaded", function () {
+  const sectionAll = document.getElementById("section_all");
+  const sectionZero = document.getElementById("section_0");
+  orientationEvent()
+  if (getCookie('_cc_gcqrtc') === "_tgs") {
+    sectionAll.style.display = 'block'
+    sectionZero.style.display = 'none'
+  } else {
+    eraseCookie('_cc_gcqrtc')
+    sectionAll.style.display = 'none'
+    sectionZero.style.display = 'flex'
+  }
+})

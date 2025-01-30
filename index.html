@@ -5,11 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Spacecadet : Fund II : 2050</title>
-  <meta name="description" content="2050 could be a dream or disaster. We dare to dream by investing in Spacecadets + marketing their moonshots." />
+  <meta name="description"
+    content="2050 could be a dream or disaster. We dare to dream by investing in Spacecadets + marketing their moonshots." />
   <meta property="og:image" content="..." />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXKV1RC4C5"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
-  gtag('config', 'G-XXKV1RC4C5'); </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXKV1RC4C5"></script>
+  <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date());
+    gtag('config', 'G-XXKV1RC4C5'); </script>
   <!-- Link to CSS -->
 </head>
 
@@ -55,7 +58,7 @@
       <div class="box _scaled _container">
         <div class="">
           <p class="second_block_header add_pad">
-             pre/seed spacecadets <br> are building a dream 2050 <br> with deep tech
+            pre/seed spacecadets <br> are building a dream 2050 <br> with deep tech
           </p>
         </div>
         <div class="second_block_text_box">
@@ -73,7 +76,7 @@
       <div class="box _container">
         <div class="_scaled">
           <p class="second_block_header">
-            but deep tech has a <br>  major marketing problem...
+            but deep tech has a <br> major marketing problem...
           </p>
         </div>
 
@@ -133,7 +136,7 @@
       <div class="box _container">
         <div class="_scaled">
           <p class="second_block_header second_block_header_removed">
-            we bridge big brand marketing + <br>  DEEP TECH like no one else
+            we bridge big brand marketing + <br> DEEP TECH like no one else
           </p>
         </div>
 
@@ -169,7 +172,7 @@
         <div class="box _container _scaled">
           <div class="">
             <p class="second_block_header">
-              SPACECADETS are already <br>  changing our fortunes
+              SPACECADETS are already <br> changing our fortunes
             </p>
           </div>
           <div class='second_block_box column _grided'>
@@ -294,7 +297,7 @@
           <div class="second_block _container _scaled">
 
             <p class="second_block_header"> <span style="text-decoration: underline;">winning</span> tomorrow’s <br>
-           
+
               top deals with <br>
               story support
             </p>
@@ -540,7 +543,7 @@
                       </picture>
                     </div>
                     <div class="box_111">
-                      <span class="header_11">Giant Satellite Buses11</span>
+                      <span class="header_11">Giant Satellite Buses</span>
                       <div class="add_top_11">
                         <span class="text_11">AEROSPACE</span>
                       </div>
@@ -861,7 +864,7 @@
                       </picture>
                     </div>
                     <div class="box_111">
-                      <span class="header_11">Metabolic health Optimization</span>
+                      <span class="header_11">Metabolic Health Optimization</span>
                       <div class="add_top_11">
                         <span class="text_11 add_color_6">AI</span>
                       </div>
@@ -911,7 +914,7 @@
                       </picture>
                     </div>
                     <div class="box_111">
-                      <span class="header_11">Post_Secondary, Online</span>
+                      <span class="header_11">Post Secondary, Online</span>
                       <div class="add_top_11">
                         <span class="text_11 add_color_2">EDTECH</span>
                       </div>
@@ -1331,33 +1334,31 @@
   <!-- 0 section-->
 
   <section class='section_0' id="section_0">
-
-    <div class="content_0">
+    <form id="subscribeForm" class="content_0">
       <div class="mobile_flex">
-        <span class="header">enter email for access </span>
+        <span class="header">Enter email for access</span>
         <div class="box_0">
-          <input type="email" /> <button id="button" class="button">ACCESS</button>
+          <input type="email" id="emailInput" name="email" required placeholder="Enter your email">
+          <button id="submitButton" class="button" type="submit" disabled>ACCESS</button>
         </div>
       </div>
       <div class="box_checkbox">
         <div class="box_icons">
-          <img class="icon2" src="assets/images/0_Block/icon2.webp" />
-          <img class="icon1" src="assets/images/0_Block/icon1.webp" />
+          <img class="icon2" src="assets/images/0_Block/icon2.webp">
+          <img class="icon1" src="assets/images/0_Block/icon1.webp">
         </div>
-        <div class="custom-checkbox">
-          <input type="checkbox" name="agree">
+        <label for="agreeCheckbox" class="custom-checkbox">
+          <input type="checkbox" id="agreeCheckbox" name="agree">
           <span class="checkbox"></span>
-          <label class="text_0">Agree to <span id="check-box" class="underline">terms</span></label>
-        </div>
-
-
-        <!-- Popup content -->
-        <div class="overlay" id="popupOverlay"></div>
-
+          <p class="text_0">Agree to <span onclick="event.preventDefault()" id="check-box"
+              class="underline">terms</span></p>
+        </label>
       </div>
-
-    </div>
+      <p id="responseMessage" class="responseMessage"></p>
+    </form>
   </section>
+  <!-- Popup content -->
+  <div class="overlay" id="popupOverlay" style="display: none;"></div>
 
   <!-- Mobile section-->
 
@@ -1374,7 +1375,7 @@
     <span class="text">WARNING: <br> LANDSCAPE ONLY</span>
   </section>
 
-  <div class="popup _scaled" id="popup">
+  <div class="popup _scaled" id="popup" style="display: none;">
     <span class="header0 "> DISCLAIMER</span>
     <div class="text0 _customYScrollbar">
       <p>This presentation is strictly confidential and is intended for authorized recipients

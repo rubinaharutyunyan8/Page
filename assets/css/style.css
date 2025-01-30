@@ -218,10 +218,10 @@ input {
     font-size: clamp(17px, calc(1.0625rem + ((1vw - 12.8px) * 2.0313)), 30px);
     line-height: clamp(17px, calc(1.0625rem + ((1vw - 12.8px) * 2.0313)), 30px);
   }
-  .text_small {
+  /* .text_small {
     font-size: clamp(13px, calc(0.8125rem + ((1vw - 12.8px) * 1.7188)), 24px);
     line-height: clamp(15px, calc(0.8125rem + ((1vw - 12.8px) * 1.7188)), 35px);
-  }
+  } */
   /* .pic_4 {
     height: clamp(20px, calc(1.625rem + ((1vw - 12.8px) * 3.125)), 46px);
   } */
@@ -625,11 +625,12 @@ body {
 
 .header33 {
   font-family: "Druk Wide";
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 40px;
+  line-height: 40px;
   text-align: center;
   color: white;
   text-transform: uppercase;
+  min-width: max-content;
 
 }
 
@@ -898,7 +899,7 @@ body {
   }
 
   .flex_box .line {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .flex_box:first-child {
@@ -1365,6 +1366,7 @@ body {
   text-align: left;
   color: white;
   margin-top: 20px;
+
 }
 
 .to_right {
@@ -1426,7 +1428,7 @@ body {
 
 .header_10 {
   font-family: "PP Mori";
-  font-size: 30px;
+  font-size: 34px;
   line-height: 34px;
   text-align: left;
   color: white;
@@ -1457,12 +1459,12 @@ body {
   padding: 30px 0 30px 0;
 
   .row {
-    width: 724px;
-    height: 579px;
+    width: 100%;
+    /* height: 579px; */
   }
 
   .row_box {
-    width: 724px;
+    width: 93%;
     height: 579px;
     border: 1.5px solid #D9D9D9;
   }
@@ -1480,7 +1482,7 @@ body {
 
 .text_10_1 {
   font-family: "PP Mori";
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 300;
   line-height: 60px;
   color: white;
@@ -2552,7 +2554,6 @@ body {
   line-height: 22px;
   color: white;
   margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .block_video_18 {
@@ -2571,7 +2572,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  height: 820px;
   border-radius: 30px;
   background: rgba(0, 0, 0, 0.7);
   border: 1.5px solid rgba(255, 255, 255, 0.5);
@@ -2739,6 +2740,13 @@ body {
     border: none;
     margin-left: 26px;
     cursor: pointer;
+
+    &:disabled,
+    &[disabled] {
+      opacity: .5;
+      cursor: default;
+      background-color: lightgray;
+    }
   }
 }
 
@@ -2771,11 +2779,23 @@ margin-left: 32px;
 cursor: pointer;
 
 }
+.responseMessage {
+  font-family: "PP Mori";
+  font-size: 23.2px;
+  font-weight: 400;
+  line-height: 28.08px;
+  text-align: left;
+  color: white;
+  margin-top: 32px;
+  display: contents;
+}
 .underline {
   text-decoration: underline;
   cursor: pointer;
 }
-
+.custom-checkbox {
+  user-select: none;
+}
 .custom-checkbox input {
 
 box-sizing: border-box;
@@ -2972,6 +2992,13 @@ margin-top: 64px;
 
 
 
+
+
+
+
+
+
+
 @media (min-width: 1280px ) and (max-width: 1440px) {
   .add_top {
     margin-top: 40px;
@@ -2982,6 +3009,12 @@ margin-top: 64px;
   .add_top {
     margin-top: 40px;
   }
+  .card_box_4_first {
+    .flex_box .line {
+        margin-top: 45px;
+    }
+  }
+
 }
 
 @media screen and (max-width: 1470px) {
@@ -3061,7 +3094,7 @@ margin-top: 64px;
 @media screen and (max-width: 1700px) {
   
   .entry {
-    margin-left: 25px;
+    margin-left: 32px;
   }
 
 }
@@ -3131,6 +3164,12 @@ height: 630px;
 
 @media screen and (max-width: 1890px) {
 
+  .card_box_4_first {
+    .flex_box .line {
+        margin-top: 21px;
+    }
+  }
+
 
   .add_2_12 {
     transform: translateX(-59px);
@@ -3159,7 +3198,7 @@ height: 630px;
   }
 
   .add_3 {
-    transform: translateX(-11px);
+    transform: translateX(-25px);
   }
 
   .add_2 {
@@ -3167,7 +3206,7 @@ height: 630px;
   }
 
   .box_111 {
-    width: 250px;
+    width: 227px;
   }
 
   .header_big {
@@ -3188,11 +3227,11 @@ height: 630px;
   }
 
   .add_4 {
-    transform: translateX(-81px);
+    transform: translateX(-91px);
   }
 
   .add_3 {
-    transform: translateX(-12px);
+    transform: translateX(-21px);
   }
 
   .add_2 {
@@ -3200,15 +3239,294 @@ height: 630px;
   }
 
 
+
 }
 
-@media screen and (max-width: 1500px) {
 
-  .text_9 {
+@media (min-width: 1280px ) and (max-width: 1600px) {
 
-    line-height: 45px;
+  .card_text {
+    font-size: 28px; 
+  }
+
+  .disc33 {
+    font-size: 24px;
+    line-height: 26px;
+   }
+   .card_3 {
+    .header {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+  .disc1 {  
+    font-size: 24px;
+    line-height: 26px;
+  }
+.box_4_content {
+  .header_4 {
+
+    font-size: 30px;
+    line-height: 30px;
 
   }
+}
+.disc_4 {
+
+  font-size: 24px;
+  line-height: 26px;
+ 
+}
+.text_4_diff {
+ 
+  font-size: 18px;
+  
+}
+.card_box_4 {
+  .text {
+    font-size: 24px;
+    line-height: 26px;
+      
+  }
+}
+.text_small {
+  font-size: 16px;
+}
+.header_5 {
+
+  font-size: 30px;
+  line-height: 30px;
+  
+}
+
+.text_cont3 {
+
+  font-size: 24px;
+  line-height: 26px;
+
+}
+.icon_6_box {
+  .disc {
+      font-size: 24px;
+  }
+}
+.card_5 span:first-child {
+
+  font-size: 30px;
+  line-height: 30px;
+
+}
+
+.card_5_box span:first-child {
+
+  font-size: 24px;
+  line-height: 26px;
+}
+.header_10_1 {
+  font-size: 30px;
+  line-height: 30px;
+
+}
+.text_10_1 {
+
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: 15px;
+
+
+}
+.text_10 {
+
+  font-size: 28px;
+  line-height: 28px;
+
+}
+.header_10 {
+
+  font-size: 28px;
+  line-height: 28px;
+
+}
+
+
+}
+
+
+
+@media screen and (max-width: 1600px) {
+
+  .detail>p {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .investment-details {
+    font-size: 24px;
+    line-height: 26px;
+
+}
+  .investment-author {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+  .investment-comment {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+  .portfolio-title {
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.tag {
+  margin-top: 4px;
+
+}
+
+  .portfolio-question {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+
+  .portfolio-title {
+  
+    font-size: 24px;
+    line-height: 26px;
+
+}
+  .company-name {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+
+  .card_box_14 {
+    .investment-description, .investor-list:last-child {
+      font-size: 24px;
+      line-height: 26px;
+    }
+}
+
+  .card_box_14 {
+    .testimonial-text {
+      font-size: 20px;
+      line-height: 22px;
+    }
+}
+
+  .card_box_14 {
+    .testimonial-author {
+      font-size: 20px;
+      line-height: 22px;
+    }
+}
+
+  .card_box_14 {
+    .investment-description, .investor-list {
+      font-size: 24px;
+      line-height: 26px;
+    }
+}
+
+  .card_box_14 {
+    .investment-title, .follow-on-title {
+      font-size: 18px;
+      line-height: 18px;
+    }
+}
+
+  .card_box_14 {
+    .investment-title, .follow-on-title {
+      font-size: 18px;
+      line-height: 18px;
+    }
+}
+
+
+  .card_box_14 .box_14 {
+    & .box_info {
+        .box_text3 {
+          font-size: 18px;
+          line-height: 18px;
+        }
+    }
+}
+  .card_box_14 .box_14 {
+    & .box_info {
+        .box_text2 {
+
+          font-size: 28px;
+          line-height: 28px;
+ 
+        }
+    }
+}
+
+  .card_box_14 .box_14 {
+    & .box_info {
+        .box_text1 {
+
+            font-size: 48px;
+            line-height: 48px;
+        
+    }
+}
+  }
+
+  .header_9 {
+
+    font-size: 28px;
+    line-height: 30px;
+  
+  }
+  
+  .text_9 {
+    
+    font-size: 24px;
+    line-height: 26px;
+    display: block;
+    margin-top: 9px;
+   
+  }
+  .header_11 {
+
+    font-size: 20px;
+    line-height: 22px;
+  
+  }
+  .entry {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .text_13_center {
+
+    font-size: 30px;
+    line-height: 30px;
+
+}
+.text_13 {
+
+  font-size: 24px;
+  line-height: 26px;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 1500px) {
+  .card_box_4_first {
+    .flex_box .line {
+        margin-top: 38px;
+    }
+  }
+
+
 
   .icon_6_box{
     .add_style_8 {
@@ -3390,11 +3708,6 @@ height: 630px;
     }
   }
 
-  .card_3 {
-    .header {
-      font-size: 32px;
-    }
-  }
 
   .add_4 {
     transform: translateX(-70px);
@@ -3410,7 +3723,8 @@ height: 630px;
 
   .box_4_upper {
 
-    padding: 14px 0px;
+    padding: 19px 17px;
+    width: 440px;
   }
 
   .flex_box_18 {
@@ -3430,10 +3744,9 @@ height: 630px;
     margin-top: -2.5rem
   }
 
-  .portfolio-question {
-    margin-bottom: 0px;
-    font-size: 32px;
-  }
+
+  
+
 
   .detail>h1 {
     font-size: 131px;
@@ -3461,11 +3774,7 @@ height: 630px;
   .bottom_box {
     padding: 0 30px;
   }
-
-  .header_11 {
-    font-size: 20px;
-  }
-
+  
 
   .box_111 {
     width: 165px;
@@ -3523,20 +3832,22 @@ height: 630px;
   }
 
 }
-
-@media screen and (max-width: 1350px) {
-
-  .header_9 {
-  font-size: 35px;
-  }
-
-  .text_9 {
-    font-size: 21px;
+@media screen and (max-width: 1470px) {
+  .card_box_4_first {
+    .flex_box .line {
+        margin-top: 75px;
+    }
   }
 
 }
 
+
+
 @media (max-width: 1279px) {
+
+
+
+
 .box_icons {
   margin-bottom:20px;
 }
@@ -3740,7 +4051,7 @@ height: 630px;
   }
 
   .add_pad_4 {
-    padding-top: 109px;
+    padding-top: 26px;
   }
 
   .pic_box {
@@ -3856,11 +4167,6 @@ height: 630px;
     width: 80%;
   }
 
-  .text_13_center {
-    font-size: 30px;
-    line-height: 30px;
-
-  }
 
   .text_13 {
     font-size: 25px;
@@ -3892,9 +4198,7 @@ height: 630px;
       margin-top: 15px;
     }
   }
-  .header_11 {
-    font-size: 17px;
-  }
+
   .text_small {
 
     font-size: 19px;
@@ -3909,18 +4213,11 @@ height: 630px;
     width: 293.05px;
   }
 
-  .text_9 {
 
-    font-size: 22px;
-    line-height: 37px;
-    margin-top: 20px;
-  }
+  
 
-  .header_9 {
 
-    font-size: 35px;
-    line-height: 35.6px;
-  }
+  
 
   .card_5_box {
     height: 184px;
