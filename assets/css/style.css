@@ -43,6 +43,19 @@ input {
 
 /* ------------------------------- DRUK FONT -------------------------------  */
 
+
+
+/* DRUK HEAVY */
+@font-face {
+  font-family: "Druk Heavy";
+  src: url("../fonts/DRUK-Heavy/Druk-Heavy.otf") format("opentype");
+  font-weight: bold;
+}
+
+
+
+
+
 /* DRUK REGULAR */
 @font-face {
   font-family: "Druk";
@@ -2654,28 +2667,82 @@ body {
 /* 0 section */
 
 .section_0 {
-  background-image: url("../images/0_Block/1.webp");
-  background-position: center;
-  background-size: cover;
+  background-color: #000;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  position: relative;
 
-  .icon2 {
+ .icon2 {
     width: 342.88px;
     height: 45.45px;
   }
 
   .box_icons {
    
-
     .icon1 {
       width: 27.62px;
       height: 27.62px;
       transform: translate(-5px, -20px);
     }
+  }
+}
+
+.cont_animation {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transform: rotate(-18deg);
+  justify-content: center;
+  align-items: center;
+}
+
+.pic_anim {
+  font-family: "Druk Heavy";
+  font-size: 467px;
+  line-height: 467px;
+  color: white;
+  margin-left:20px;
+  display: inline-block; 
+  white-space: nowrap;
+  margin-bottom: -46px;
+  word-spacing: 50px;
+}
+
+.line1 {
+  animation: moveLeftCycle 30s linear infinite; 
+}
+
+.line2 {
+  animation: moveRightCycle 30s linear infinite; 
+}
+
+
+@keyframes moveLeftCycle {
+  0% {
+    transform: translateX(100vw); 
+  }
+  50% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-100vw); 
+  }
+}
+
+@keyframes moveRightCycle {
+  0% {
+    transform: translateX(-100vw);
+  }
+  50% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(100vw); 
   }
 }
 
