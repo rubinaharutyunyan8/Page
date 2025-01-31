@@ -11,14 +11,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $date = date("M d, Y");
     $entry = "$date | $email" . PHP_EOL;
 
-    if (file_exists($file)) {
-        $subscribers = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-        foreach ($subscribers as $subscriber) {
-            if (strpos($subscriber, $email) !== false) {
-                die(json_encode(["status" => "error", "message" => "Email already subscribed."]));
-            }
-        }
-    }
+    // uniqure email
+    // if (file_exists($file)) {
+    //     $subscribers = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    //     foreach ($subscribers as $subscriber) {
+    //         if (strpos($subscriber, $email) !== false) {
+    //             die(json_encode(["status" => "error", "message" => "Email already subscribed."]));
+    //         }
+    //     }
+    // }
 
     if (file_put_contents($file, $entry, FILE_APPEND | LOCK_EX)) {
 

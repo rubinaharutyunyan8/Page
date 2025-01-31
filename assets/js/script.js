@@ -875,19 +875,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const button = document.getElementById("button");
 const validatePermissions = () => {
-  const sectionZero = document.getElementById("section_0");
-  const sectionAll = document.getElementById("section_all");
-  const isValidated = getCookie('_cc_gcqrtc') === "_tgs"
-  if (isValidated) {
-    sectionAll.style.display = 'block'
-    sectionZero.style.display = 'none'
-  } else {
-    eraseCookie('_cc_gcqrtc')
-    sectionAll.style.display = 'none'
-    sectionZero.style.display = 'flex'
-  }
+  // const sectionZero = document.getElementById("section_0");
+  // const sectionAll = document.getElementById("section_all");
+  // const isValidated = getCookie('_cc_gcqrtc') === "_tgs"
+  // if (isValidated) {
+  //   sectionAll.style.display = 'block'
+  //   sectionZero.style.display = 'none'
+  // } else {
+  //   eraseCookie('_cc_gcqrtc')
+  //   sectionAll.style.display = 'none'
+  //   sectionZero.style.display = 'flex'
+  // }
 
-  return isValidated;
+  // return isValidated;
+  return true;
 }
 const orientationEvent = () => {
   
@@ -921,6 +922,8 @@ const orientationEvent = () => {
       newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";
       document.head.appendChild(newViewport);
       validatePermissions()
+      sectionAll.style.display = 'block'
+      // HERE PERMISSION
     } else {
       const isValidated = validatePermissions()
       if (isValidated) mobile.style.display = "flex";
@@ -936,6 +939,8 @@ const orientationEvent = () => {
     }
   } else {
     validatePermissions()
+    sectionAll.style.display = 'block'
+    // HERE PERMISSION
     mobile.style.display = "none";
     if (viewport?.parentNode) {
       viewport.parentNode.removeChild(viewport);
