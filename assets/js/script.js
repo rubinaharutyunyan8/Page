@@ -890,13 +890,15 @@ const validatePermissions = () => {
   // return isValidated;
   return true;
 }
+isSubmitted = false
 const orientationEvent = () => {
   
   const section0 = document.getElementById("section_0");
   const mobile = document.getElementById("mobile");
   const sectionAll = document.getElementById("section_all");
-
-  section0.style.display = "none";
+  
+  if (isSubmitted) section0.style.display = "none";
+  
   const { orientation: { angle }, availWidth } = screen;
   const viewport = document.querySelector("meta[name=viewport]");
 
@@ -939,7 +941,7 @@ const orientationEvent = () => {
     }
   } else {
     validatePermissions()
-    sectionAll.style.display = 'block'
+    if (isSubmitted) sectionAll.style.display = 'block'
     // HERE PERMISSION
     mobile.style.display = "none";
     if (viewport?.parentNode) {
@@ -1478,7 +1480,10 @@ document.addEventListener("DOMContentLoaded", function () {
           agreeCheckbox.checked = false;
           updateButtonState();
           setCookie('_cc_gcqrtc', '_tgs', 365)
-          setTimeout(() => clearMesageResponse(), 1500);
+          setTimeout(() => {
+            clearMesageResponse()
+            isSubmitted = true;
+          }, 1500);
         } else handleErrorResponse()
       })
       .catch(error => {
