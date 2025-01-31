@@ -928,7 +928,7 @@ const orientationEvent = () => {
       // HERE PERMISSION
     } else {
       const isValidated = validatePermissions()
-      if (isValidated) mobile.style.display = "flex";
+      if (isValidated && isSubmitted) mobile.style.display = "flex";
       sectionAll.style.display = "none";
       if (viewport) {
         viewport.parentNode.removeChild(viewport);

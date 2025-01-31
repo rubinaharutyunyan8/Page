@@ -2,6 +2,7 @@
 $file = "/home/p9sbav7hz4ag/subscribers.txt";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    
     $email = trim($_POST['email']);
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
