@@ -623,7 +623,7 @@ data_section_8.map((item, index) => {
 const caseStudies = [
   {
     id: "001",
-    moic: "9.59x MOIC",
+    moic: "9.62x MOIC",
     title: "K2 SPACE",
     tag: "AEROSPACE",
     color: "#FF6F00",
@@ -632,7 +632,7 @@ const caseStudies = [
       "high capability satellites at the price and speed of small sats",
     investment: {
       details:
-        "Invested 58 days after incorporation.$100K at Pre-Seed (Fund I) & $100K at Seed (LP SPV).",
+        "Invested 58 days after incorporation. $100K at Pre-Seed (Fund I) & $100K at Seed (LP SPV).",
       followOn: "Altimeter, Valor, Lightspeed",
     },
     support:
@@ -658,7 +658,7 @@ const caseStudies = [
     description: "100+ lab tests with insights from top doctors",
     investment: {
       details:
-        "Met Jonathan (CEO) 18 months before incorporation.Invested $422K (Fund I + LP SPV) at Seed (zero revenue).",
+        "Met Jonathan (CEO) 18 months before incorporation. Invested $422K (Fund I + LP SPV) at Seed (zero revenue).",
       followOn: "a16z, Ari Emanuel, Blake Griffin, Kevin Hart, Matt Damon",
     },
     support:
@@ -683,14 +683,14 @@ const caseStudies = [
     description: "stylish mini-split that heats + cools your home room by room",
     investment: {
       details:
-        "Met Paul (CEO) in 2010. Committed pre-Incorporation.Invested $100K at Pre-Seed (Fund I) + $100K at Seed (LP SPV)",
+        "Met Paul (CEO) in 2010. Committed pre-Incorporation. Invested $100K at Pre-Seed (Fund I) + $100K at Seed (LP SPV)",
       followOn: "Gradient, Lowercarbon, EIP, Galvanize",
     },
     support:
       "Crafted narrative for Seed + Series A deck. Introduced Seed lead investor (Gradient).",
     traction: "$5M revenue run rate. Raised $33M Series A led by EIP.  ",
     testimonial: {
-      text: "“Thanks for being my first real commit on this new company.Means a lot :) I’m excited to work with you on our story/marketing!“",
+      text: "“Thanks for being my first real commit on this new company. Means a lot :) I’m excited to work with you on our story/marketing!“",
       author: "- Paul Lambert @ Quilt",
     },
     images: [
@@ -1326,6 +1326,10 @@ window.addEventListener('scroll', () => {
   })
 })
 
+
+
+// section_0
+
 const isMobile = {
   Android: function () {
     return navigator.userAgent.match(/Android/i);
@@ -1494,3 +1498,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => orientationEvent())
+
+
