@@ -949,6 +949,9 @@ const orientationEvent = () => {
 
       
     } else {
+
+     
+       
       const isValidated = validatePermissions()
       if (isValidated) {
         mobile.style.display = "flex";
