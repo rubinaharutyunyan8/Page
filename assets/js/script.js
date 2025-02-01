@@ -627,7 +627,7 @@ const caseStudies = [
     title: "K2 SPACE",
     tag: "AEROSPACE",
     color: "#FF6F00",
-    highlight: "GIANT SATTELITE BUSES",
+    highlight: "GIANT SATELLITE BUSES",
     description:
       "high capability satellites at the price and speed of small sats",
     investment: {
@@ -1507,8 +1507,8 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(data => {
         const { status, message = '' } = data;
         if (status === 200 || status === 'success') {
-          responseMessage.textContent = message;
-          responseMessage.style.display = "block";
+          // responseMessage.textContent = message;
+          // responseMessage.style.display = "block";
           emailInput.value = "";
           agreeCheckbox.checked = false;
           updateButtonState();
