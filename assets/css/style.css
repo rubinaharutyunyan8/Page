@@ -781,7 +781,7 @@ body {
 .text_4 {
   font-family: "PP Mori";
   font-size: 30px;
-  line-height: 25px;
+  line-height: 30px;
   color: white;
 }
 
@@ -1012,6 +1012,12 @@ body {
 }
 
 .header_big {
+  font-family: "Druk";
+  font-size: 200px;
+  color: #ffffff; 
+}
+
+.header_big_8 {
   font-family: "Druk";
   font-size: 200px;
   color: #ffffff; 
@@ -3142,7 +3148,7 @@ margin-top: 64px;
 
 @media screen and (max-width: 1800px) {
   .portfolio-survey {
-    height: 884px;
+    height: 957px;
   }
   .portfolio-response {
   line-height: 200px;
@@ -3188,7 +3194,7 @@ margin-top: 64px;
 
   .gallery-item-5 {
     width: 340px;
-    height: 547px;
+    height: 480px;
 
   }
 
@@ -3302,12 +3308,8 @@ height: 630px;
   }
 
   .add_4_12 {
-    transform: translateX(-59px);
+    transform: translateX(-68px);
   }
-
-
-
-
 
   .card_box_4 {
     .text:last-child {
@@ -3366,6 +3368,67 @@ height: 630px;
 
 
 @media (min-width: 1280px ) and (max-width: 1600px) {
+
+  .box_0 {
+    input {
+   
+        font-size: 18px;
+         }
+}
+
+  .portfolio-survey {
+  
+    height: 788px;
+}
+
+
+  .portfolio-response {
+    font-size: 180px;
+    width: max-content;
+}
+
+  .card_3 {
+    ._arrow {
+       
+        left: -52px;
+        height: 15%;
+    }
+}
+
+
+  .arrow-icon {
+ 
+    height: 67%;
+}
+
+
+  .detail {
+    height: 280px;
+  }
+
+  .detail_height {
+    height: 200px;
+  }
+  
+
+.disc_13 { 
+  font-size: 24px;
+  line-height: 26px;
+}
+  .card_5_box {
+
+    
+    height: 260px;
+ 
+    
+  }
+
+  .text_4 {
+  
+    font-size: 24px;  
+    line-height: 26px;
+    
+}
   .card_1 {
  
     height: 550px;
@@ -3735,6 +3798,7 @@ height: 630px;
   .gallery-item-5 {
     width: 388px;
     height: 357px;
+    margin-left: -34px;
 
   }
 
@@ -3899,7 +3963,7 @@ height: 630px;
   .portfolio-survey {
     align-items: center;
     width: 50%;
-    height: 884px;
+   
 
   }
 

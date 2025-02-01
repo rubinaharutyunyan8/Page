@@ -233,7 +233,7 @@ third_block_data3.map((item, index) => {
   header2.innerHTML = item.header1.replace("\n", "<br>");
 
   text2.classList.add("text_4");
-  text2.style.lineHeight = "30px";
+  // text2.style.lineHeight = "30px";
   text2.style.marginBottom = "-10px";
   text2.innerHTML = item.disc1.replace("\n", "<br>");
 
@@ -258,8 +258,8 @@ third_block_data3.map((item, index) => {
   const text3_diff = document.createElement("p");
 
   text3.classList.add("text_4");
-  text3.style.lineHeight = "35px";
-  text3.style.lineHeight = "30px";
+  // text3.style.lineHeight = "35px";
+  // text3.style.lineHeight = "30px";
   text3.style.marginTop = "30px";
   text3.style.marginBottom = "-10px";
   text3.innerHTML = item.disc2.replace("\n", "<br>");
@@ -283,7 +283,7 @@ third_block_data3.map((item, index) => {
   const text4_diff = document.createElement("p");
 
   text4.classList.add("text_4");
-  text4.style.lineHeight = "30px";
+  // text4.style.lineHeight = "30px";
   text4.style.marginTop = "60px";
   text4.style.marginBottom = "-10px";
   text4.innerHTML = item.disc3.replace("\n", "<br>");
@@ -300,7 +300,7 @@ third_block_data3.map((item, index) => {
     const text5_diff = document.createElement("p");
 
     text5.classList.add("text_4");
-    text5.style.lineHeight = "35px";
+    // text5.style.lineHeight = "35px";
     text5.style.marginTop = "66px";
     text5.style.marginBottom = "-10px";
     text5.innerHTML = item.disc4.replace("\n", "<br>");
@@ -592,7 +592,7 @@ const data_section_8 = [
     text: "20",
   },
   {
-    header: "films + viral drops",
+    header: `films + \n viral drops`,
     text: "16",
   },
 ];
@@ -606,7 +606,7 @@ data_section_8.map((item, index) => {
   itemDiv.classList.add("card_5_box");
 
   const text = document.createElement("span");
-  text.classList.add("header_big");
+  text.classList.add("header_big_8");
   text.textContent = item.text;
 
   const header = document.createElement("span");
@@ -810,6 +810,15 @@ fundDetailsData.map((item, index) => {
 
   const isArray = Array.isArray(item.description)
   const headingTag = item.class === "high" ? "h1" : "h2"
+
+
+  if(headingTag === "h2") {
+
+    detailDiv.classList.add("detail_height");       
+
+
+  }
+
 
   let descriptionContent = "";
   if (Array.isArray(item.description)) {
