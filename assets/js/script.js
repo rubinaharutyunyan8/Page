@@ -924,11 +924,27 @@ const orientationEvent = () => {
       newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";
       document.head.appendChild(newViewport);
       validatePermissions()
-      sectionAll.style.display = 'block'
+      // sectionAll.style.display = 'block'
       // HERE PERMISSION
+
+        
+      if (!isSubmitted) {       
+        sectionAll.style.display = "none";
+        section0.style.display = "flex";
+      }
+      
+      if(isSubmitted) {
+        sectionAll.style.display = "block";
+        section0.style.display = "none";
+      }
+
+      
     } else {
       const isValidated = validatePermissions()
-      if (isValidated && isSubmitted) mobile.style.display = "flex";
+      if (isValidated) {
+        mobile.style.display = "flex";
+        section0.style.display = "none"
+      }
       sectionAll.style.display = "none";
       if (viewport) {
         viewport.parentNode.removeChild(viewport);
@@ -942,6 +958,7 @@ const orientationEvent = () => {
   } else {
     validatePermissions()
     if (isSubmitted) sectionAll.style.display = 'block'
+    else section0.style.display = 'flex'
     // HERE PERMISSION
     mobile.style.display = "none";
     if (viewport?.parentNode) {
