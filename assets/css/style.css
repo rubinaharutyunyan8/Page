@@ -2692,7 +2692,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
   background-color: #000;
   width: 100%;
   height: 100vh;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   overflow: hidden;
