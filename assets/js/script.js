@@ -1517,27 +1517,33 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
+    emailInput.value = "";
+    agreeCheckbox.checked = false;
+    updateButtonState();
+    clearMesageResponse()
+    isSubmitted = true;
+    
     fetch("subscribe.php", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({ email })
     })
       .then(response => response.json())
-      .then(data => {
-        const { status, message = '' } = data;
-        if (status === 200 || status === 'success') {
-          // responseMessage.textContent = message;
-          // responseMessage.style.display = "block";
-          emailInput.value = "";
-          agreeCheckbox.checked = false;
-          updateButtonState();
-          setCookie('_cc_gcqrtc', '_tgs', 365)
-          setTimeout(() => {
-            clearMesageResponse()
-            isSubmitted = true;
-          }, 1500);
-        } else handleErrorResponse()
-      })
+      // .then(data => {
+      //   const { status, message = '' } = data;
+      //   if (status === 200 || status === 'success') {
+      //     // responseMessage.textContent = message;
+      //     // responseMessage.style.display = "block";
+      //     emailInput.value = "";
+      //     agreeCheckbox.checked = false;
+      //     updateButtonState();
+      //     setCookie('_cc_gcqrtc', '_tgs', 365)
+      //     setTimeout(() => {
+      //       clearMesageResponse()
+      //       isSubmitted = true;
+      //     }, 1500);
+      //   } else handleErrorResponse()
+      // })
       .catch(error => {
         console.log('error => ', error)
         handleErrorResponse()
