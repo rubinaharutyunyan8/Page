@@ -1325,6 +1325,25 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+// cont_anim
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cont = document.querySelector(".cont_animation");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {      
+        entry.target.classList.add("in-view");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  observer.observe(cont);
+});
+
+
+
+
 // 0 section animations
 document.addEventListener("DOMContentLoaded", function () {
   const details = document.querySelectorAll(".content_0");

@@ -211,12 +211,12 @@ input {
     line-height: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 5.4688)), 80px) !important;
    }
 
-  .second_block_header {
-    font-size: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 2.3438)), 60px) !important;
-    line-height: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 2.3438)), 60px) !important;
-    /* padding: 0 clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 16.4063)), 150px) !important; */
+  /* .second_block_header {
+    font-size: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 2.3438)), 60px) ;
+    line-height: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 2.3438)), 60px) ;
+  
     
-  }
+  } */
 
   .text1 {
     font-size: clamp(60px, calc(3.75rem + ((1vw - 12.8px) * 6.25)), 100px) !important;
@@ -2507,7 +2507,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
   font-size: 36px;
   line-height: 1;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #D4D4D4;
   margin: 0;
 }
 
@@ -2736,6 +2736,13 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
   transform: rotate(-18deg);
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+.cont_animation.in-view {
+  opacity: 1; 
 }
 
 .pic_anim {
@@ -3121,21 +3128,6 @@ margin-top: 64px;
 }
 
 
-/* .gallery-item::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);  
-  pointer-events: none; 
-} */
-
-
-
-
-
 
 @media (min-width: 1280px ) and (max-width: 1440px) {
   .add_top {
@@ -3357,6 +3349,10 @@ height: 630px;
 
 @media screen and (max-width: 1665px) {
 
+  .second_block_header br {
+    display: none;
+  }
+
   .card_box_11 {
     .row {
 
@@ -3383,6 +3379,8 @@ height: 630px;
 
 
 @media (min-width: 1280px ) and (max-width: 1600px) {
+
+
 
   .box_0 {
     input {
@@ -3572,9 +3570,25 @@ height: 630px;
 
 }
 
+@media screen and (min-width: 1601px) {
 
 
+      .second_block_header {
+        font-size: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 2.3438)), 60px) ;
+        line-height: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 2.3438)), 60px) ;
+        /* padding: 0 clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 16.4063)), 150px) !important; */
+        
+      }
+    
+  
+
+}
 @media screen and (max-width: 1600px) {
+
+  .second_block_header {
+    font-size: 40px;
+    line-height: 40px;
+  }
 
   .cont2 {
     width: 590px;
@@ -4615,11 +4629,6 @@ height: 630px;
     min-width: 166px;
   }
 
-  .second_block_header {
-    font-size: 45px;
-    line-height: 45px;
-    padding: 0px 50px;
-  }
 
 
 
