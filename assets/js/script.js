@@ -923,7 +923,7 @@ const orientationEvent = () => {
 
   if (availWidth <= 768) {
 
-    if (angle === 90) {
+    if (screen.orientation.type.includes("landscape")) {
       mobile.style.display = "none";
       if (viewport) {
         viewport.parentNode.removeChild(viewport);

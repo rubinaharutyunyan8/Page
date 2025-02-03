@@ -247,14 +247,14 @@ video.loaded {
 
 
   .header5 {
-    font-size: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 5.4688)), 80px) !important;
-    line-height: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 5.4688)), 80px) !important;
+    font-size: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 5.4688)), 80px);
+    line-height: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 5.4688)), 80px);
    }
 
   /* .second_block_header {
     font-size: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 2.3438)), 60px) ;
     line-height: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 2.3438)), 60px) ;
-  
+  Nar avtomat resize a anum senc cher petq?
     
   } */
 
@@ -1492,11 +1492,14 @@ body {
   z-index: 2;
   margin-top: 401px;
   margin-left: 35px;
+  width: auto;
 }
 
 .pic_9_1 {
   height: 350px;
-  width: 388.05px;
+  width: 388.05px; 
+
+
 }
 
 /* 10 section */
@@ -1669,7 +1672,7 @@ body {
   flex: 2;
   margin-left: 40px;
   width: 90px;
-  min-width: 90px;
+  min-width: max-content;
 }
 
 .pic_11_2 {
@@ -1807,15 +1810,15 @@ body {
 
 
 .add_2_12 {
-  transform: translateX(-74px);
+  transform: translateX(-84px);
 }
 
 .add_3_12 {
-  transform: translateX(40px);
+  transform: translateX(22px);
 }
 
 .add_4_12 {
-  transform: translateX(-39px);
+  transform: translateX(-56px);
 }
 
 .add_margin {
@@ -2137,6 +2140,12 @@ body {
   column-gap: 65px;
   max-width: 1860px;
   text-align: left;
+}
+
+.fund-details .detail:nth-child(1),
+.fund-details .detail:nth-child(2),
+.fund-details .detail:nth-child(3) {
+  height: 341px;
 }
 
 .fund-details .detail {
@@ -3349,11 +3358,11 @@ height: 630px;
   }
 
   .add_3_12 {
-    transform: translateX(-9px);
+    transform: translateX(-23px);
   }
 
   .add_4_12 {
-    transform: translateX(-68px);
+    transform: translateX(-78px);
   }
 
   .card_box_4 {
@@ -3417,6 +3426,18 @@ height: 630px;
 
 
 @media (min-width: 1280px ) and (max-width: 1600px) {
+
+
+
+  .add_4_12 {
+    transform: translateX(-70px);
+}
+
+
+  .add_3_12 {
+    transform: translateX(-12px);
+}
+
   .card_4 {
     height: 654px;
   }
@@ -3511,6 +3532,11 @@ height: 630px;
   .detail {
     height: 280px;
   }
+  .fund-details .detail:nth-child(1),
+.fund-details .detail:nth-child(2),
+.fund-details .detail:nth-child(3) {
+  height: 280px;
+}
 
   .detail_height {
     height: 200px;
@@ -3665,6 +3691,17 @@ height: 630px;
 
 @media screen and (min-width: 1601px) {
 
+  .header5 {
+    font-size: clamp(45px, calc(2.8125rem +((1vw - 12.8px)* 5.4688)), 80px) !important;
+    line-height: clamp(45px, calc(2.8125rem +((1vw - 12.8px)* 5.4688)), 80px) !important;
+    }
+  .header5 br {
+    display: none;
+  }
+
+
+
+
 
       .second_block_header {
         font-size: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 2.3438)), 60px) ;
@@ -3677,6 +3714,11 @@ height: 630px;
 
 }
 @media screen and (max-width: 1600px) {
+  
+  .header5 {
+    font-size: 40px !important;
+    line-height: 40px !important;
+}
 
   .box_images {
     .image_two {
@@ -4620,11 +4662,11 @@ height: 630px;
     line-height: 30px;
 
   }
-  .header5 {
+  /* .header5 {
     font-size: 45px;
     line-height: 45px;
 
-  }
+  } */
   /* .card_box_4 {
     width: 28%;   
 
