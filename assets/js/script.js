@@ -1548,3 +1548,34 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", () => orientationEvent())
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const videos = document.getElementById('video');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+    
+        const video = entry.target;
+        const source = video.querySelector('source');
+
+        // Check if the source element has the 'data-src' attribute
+        if (source && source.dataset.src) {
+         
+          source.src = source.dataset.src;
+
+       
+          video.load();
+
+        
+          video.classList.add('loaded');
+        }
+
+     
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 }); 
+
+
+  videos.forEach((video) => observer.observe(video));
+});

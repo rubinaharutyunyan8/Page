@@ -186,6 +186,46 @@ input {
 
 
 
+.skeleton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite ease-in-out;
+}
+
+@keyframes loading {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+video.loaded {
+  opacity: 1; 
+}
+
+video.loaded {
+  opacity: 1; /* Fade in video once it's loaded */
+}
+
+/* Optionally, you can hide skeleton loader once video is ready */
+.video-container .skeleton {
+  display: block;
+}
+
+.video-container video.loaded + .skeleton {
+  display: none;
+}
+
+
+
+
 ._container {
   max-width: 1920px;
   margin: 0 auto;
@@ -4084,20 +4124,6 @@ height: 630px;
     font-size: 131px;
   }
 
-  .box_images {
-    /* gap: 50px; */
-
-    /* .image_one {
-      height: 600px;
-    } */
-  }
-
-
-  .box_images {
-    /* .image_two {
-      height: 600px;
-    } */
-  }
 
   .box_4_bottom {
     width: 84%;
