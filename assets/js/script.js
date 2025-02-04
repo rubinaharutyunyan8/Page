@@ -1089,7 +1089,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     },
-    { threshold: 0.1 }
+    { threshold: 0 }
   );
 
   paragraphs.forEach(p => {
@@ -1584,4 +1584,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   videos.forEach((video) => observer.observe(video));
+});
+
+
+//changes styles in back video in mobile
+
+function isMobile1() {
+  return /Mobi|Android|iPhone/i.test(navigator.userAgent);
+}
+document.addEventListener("DOMContentLoaded", function () {
+  if (isMobile1()) {
+    const textBox = document.querySelector(".text_box_2");
+    const textBox1 = document.querySelector(".text_box_1");
+
+    if (textBox) {
+    textBox.style.transform= 'translateY(40px)';
+    }
+    if (textBox1) {
+      textBox1.style.marginTop ='100px';
+    }
+  }
 });
