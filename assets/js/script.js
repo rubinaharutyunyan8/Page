@@ -1590,8 +1590,12 @@ document.addEventListener("DOMContentLoaded", function () {
 //changes styles in back video in mobile
 
 function isMobile1() {
-  return /Mobi|Android|iPhone/i.test(navigator.userAgent);
+  return (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone|Opera Mini|IEMobile|Mobile|Kindle|Silk|Palm/i.test(navigator.userAgent) ||
+    (navigator.maxTouchPoints > 0 && /iPad|Macintosh/.test(navigator.userAgent))
+  );
 }
+
 document.addEventListener("DOMContentLoaded", function () {
   if (isMobile1()) {
     const textBox = document.querySelector(".text_box_2");
