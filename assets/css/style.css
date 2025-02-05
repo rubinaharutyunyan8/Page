@@ -211,10 +211,9 @@ video.loaded {
 }
 
 video.loaded {
-  opacity: 1; /* Fade in video once it's loaded */
+  opacity: 1; 
 }
 
-/* Optionally, you can hide skeleton loader once video is ready */
 .video-container .skeleton {
   display: block;
 }
@@ -251,13 +250,6 @@ video.loaded {
     line-height: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 5.4688)), 80px);
    }
 
-  /* .second_block_header {
-    font-size: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 2.3438)), 60px) ;
-    line-height: clamp(45px, calc(2.8125rem + ((1vw - 12.8px) * 2.3438)), 60px) ;
-  Nar avtomat resize a anum senc cher petq?
-    
-  } */
-
   .text1 {
     font-size: clamp(60px, calc(3.75rem + ((1vw - 12.8px) * 6.25)), 100px) !important;
     line-height: clamp(60px, calc(3.75rem + ((1vw - 12.8px) * 6.25)), 100px) !important;
@@ -283,13 +275,7 @@ video.loaded {
     font-size: clamp(17px, calc(1.0625rem + ((1vw - 12.8px) * 2.0313)), 30px);
     line-height: clamp(17px, calc(1.0625rem + ((1vw - 12.8px) * 2.0313)), 30px);
   }
-  /* .text_small {
-    font-size: clamp(13px, calc(0.8125rem + ((1vw - 12.8px) * 1.7188)), 24px);
-    line-height: clamp(15px, calc(0.8125rem + ((1vw - 12.8px) * 1.7188)), 35px);
-  } */
-  /* .pic_4 {
-    height: clamp(20px, calc(1.625rem + ((1vw - 12.8px) * 3.125)), 46px);
-  } */
+
   .card_box_4, .card_box_4_big {
     padding: clamp(20px, calc(1.25rem + ((1vw - 12.8px) * 1.5625)), 30px);
   }
@@ -316,8 +302,7 @@ body {
 .main {
   background-color: black;
   overflow-x: hidden;
-  /* transform: scale(var(--scale)); */
-  /* transform-origin: top center; */
+
 }
 
 .flex_center {
@@ -494,7 +479,6 @@ body {
   text-decoration-skip-ink: none;
   color: var(--text-color);
   text-transform: uppercase;
-  /* padding: 0 200px; */
   margin-top: 200px;
   margin-bottom: 70px;
   opacity: 0;
@@ -1490,14 +1474,14 @@ body {
 .pic_9 {
   position: absolute;
   z-index: 2;
-  margin-top: 401px;
+  margin-top: 395px;
   margin-left: 35px;
   width: auto;
 }
 
 .pic_9_1 {
-  height: 350px;
-  width: 388.05px; 
+  height: 408px;
+  width: 442.05px;
 
 
 }
@@ -3175,7 +3159,6 @@ margin-top: 64px;
 }
 
 
-
 @media (min-width: 1280px ) and (max-width: 1440px) {
   .add_top {
     margin-top: 40px;
@@ -3213,7 +3196,6 @@ margin-top: 64px;
     margin-bottom: 0px;
   }
 }
-
 
 @media screen and (max-width: 1750px) {
 
@@ -3267,7 +3249,6 @@ margin-top: 64px;
   }
 }
 
-
 @media screen and (max-width: 1700px) {
   
   .entry {
@@ -3289,8 +3270,6 @@ margin-top: 64px;
 
 }
 
-
-
 @media screen and (max-width: 1280px) {
 
     .add_style_8 {
@@ -3303,7 +3282,6 @@ margin-top: 64px;
     height: 951px;
   }
 }
-
 
 @media screen and (max-width: 1400px) {
 
@@ -3334,7 +3312,6 @@ height: 630px;
     height: 530px;
       }  
 }
-
 
 @media screen and (max-width: 1815px) {
 
@@ -3393,7 +3370,6 @@ height: 630px;
 
 }
 
-
 @media screen and (max-width: 1665px) {
 
   .second_block_header br {
@@ -3423,7 +3399,6 @@ height: 630px;
 
 
 }
-
 
 @media (min-width: 1280px ) and (max-width: 1600px) {
 
@@ -3744,15 +3719,6 @@ height: 630px;
     }
 }
   
-/* .block_video_13 {
-
-  height: 654px;
-  object-fit: contain;
-
-
-
-} */
-
   .second_block_header {
     font-size: 40px;
     line-height: 40px;
@@ -3767,8 +3733,8 @@ height: 630px;
      margin-left: 22px;
   }
   .pic_9_1 {
-    height: 264px;
-    width: 281px;
+    height: 282px;
+    width: 322px;
 }
 
   .card_9 {
@@ -3942,8 +3908,6 @@ height: 630px;
 }
 
 
-
-
 @media screen and (max-width: 1500px) {
   .card_box_4_first {
     .flex_box .line {
@@ -4004,9 +3968,6 @@ height: 630px;
     font-size: 22px;
 
   }
-
-
-
 
   .pic_11 {
     width: 176px;
@@ -4252,8 +4213,6 @@ height: 630px;
   }
 
 }
-
-
 
 @media (max-width: 1279px) {
 
@@ -4626,11 +4585,6 @@ height: 630px;
   }
 
 
-  
-
-
-  
-
   .card_5_box {
     height: 184px;
 
@@ -4674,15 +4628,7 @@ height: 630px;
     line-height: 30px;
 
   }
-  /* .header5 {
-    font-size: 45px;
-    line-height: 45px;
 
-  } */
-  /* .card_box_4 {
-    width: 28%;   
-
-  } */
 
   .header_4 {
 
@@ -4693,8 +4639,7 @@ height: 630px;
 
 
   .pic_4 {
-    /* width: 161px;
-    height: 175px; */
+
   }
 
   .text {
@@ -4841,7 +4786,6 @@ height: 630px;
     }
   }
 }
-
 
 @media (min-width: 600px) and (max-width: 768px) {
   .img {

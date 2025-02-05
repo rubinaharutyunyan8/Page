@@ -233,7 +233,6 @@ third_block_data3.map((item, index) => {
   header2.innerHTML = item.header1.replace("\n", "<br>");
 
   text2.classList.add("text_4");
-  // text2.style.lineHeight = "30px";
   text2.style.marginBottom = "-10px";
   text2.innerHTML = item.disc1.replace("\n", "<br>");
 
@@ -258,8 +257,6 @@ third_block_data3.map((item, index) => {
   const text3_diff = document.createElement("p");
 
   text3.classList.add("text_4");
-  // text3.style.lineHeight = "35px";
-  // text3.style.lineHeight = "30px";
   text3.style.marginTop = "30px";
   text3.style.marginBottom = "-10px";
   text3.innerHTML = item.disc2.replace("\n", "<br>");
@@ -283,7 +280,6 @@ third_block_data3.map((item, index) => {
   const text4_diff = document.createElement("p");
 
   text4.classList.add("text_4");
-  // text4.style.lineHeight = "30px";
   text4.style.marginTop = "60px";
   text4.style.marginBottom = "-10px";
   text4.innerHTML = item.disc3.replace("\n", "<br>");
@@ -300,7 +296,6 @@ third_block_data3.map((item, index) => {
     const text5_diff = document.createElement("p");
 
     text5.classList.add("text_4");
-    // text5.style.lineHeight = "35px";
     text5.style.marginTop = "66px";
     text5.style.marginBottom = "-10px";
     text5.innerHTML = item.disc4.replace("\n", "<br>");
@@ -324,104 +319,6 @@ third_block_data3.map((item, index) => {
   container4.appendChild(itemDiv1);
 });
 
-// const Block5_content = [
-//   {
-//     disc1: "ASSOCIATE",
-//     text1: "Deep Tech Specialist",
-//     disc2: "VENTURE PARTNER",
-//     text2: "2x Founder + Bio PhD",
-//     disc3: "PLUS A \n STAR-STUDDED CREW",
-//     text3: "",
-//     disc4: "CREATIVE DIRECTOR",
-//     text4: "Emmy Member",
-//     disc5: "ART DIRECTOR",
-//     text5: "Design Professor",
-//   },
-// ];
-
-// Block5_content.map((item, index) => {
-// const itemDiv2 = document.createElement("div");
-// itemDiv2.classList.add("box_4_bottom");
-
-// const boxText1 = document.createElement("div");
-// boxText1.classList.add("text_box_bottom");
-
-// const disc1 = document.createElement("p");
-// disc1.classList.add("disc_4");
-// // disc1.style.marginBottom = '-10px'
-
-// disc1.innerHTML = item.disc1;
-
-// const text1 = document.createElement("p");
-// text1.classList.add("text_4");
-
-// text1.innerHTML = item.text1;
-
-// boxText1.appendChild(disc1);
-// boxText1.appendChild(text1);
-
-// const boxText2 = document.createElement("div");
-// boxText2.classList.add("text_box_bottom");
-// const disc2 = document.createElement("p");
-
-// disc2.classList.add("disc_4");
-// // disc2.style.marginBottom = '-10px'
-// disc2.innerHTML = item.disc2;
-
-// const text2 = document.createElement("p");
-// text2.classList.add("text_4");
-// text2.innerHTML = item.text2;
-
-// boxText2.appendChild(disc2);
-// boxText2.appendChild(text2);
-
-// const boxText3 = document.createElement("div");
-// boxText3.classList.add("text_box_bottom");
-// const disc3 = document.createElement("p");
-// disc3.classList.add("text_4_diff");
-// disc3.classList.add("add_color");
-
-// disc3.innerHTML = item.disc3.replace("\n", "<br>");
-
-// boxText3.appendChild(disc3);
-
-// const boxText4 = document.createElement("div");
-// boxText4.classList.add("text_box_bottom");
-// const disc4 = document.createElement("p");
-
-// disc4.classList.add("disc_4");
-// // disc4.style.marginBottom = '-10px'
-// disc4.innerHTML = item.disc4;
-
-// const text4 = document.createElement("p");
-// text4.classList.add("text_4");
-// text4.innerHTML = item.text4;
-
-// boxText4.appendChild(disc4);
-// boxText4.appendChild(text4);
-
-// const boxText5 = document.createElement("div");
-// boxText5.classList.add("text_box_bottom");
-// const disc5 = document.createElement("p");
-
-// disc5.classList.add("disc_4");
-// disc5.innerHTML = item.disc5;
-
-// const text5 = document.createElement("p");
-// text5.classList.add("text_4");
-// text5.innerHTML = item.text5;
-
-// boxText5.appendChild(disc5);
-// boxText5.appendChild(text5);
-
-// itemDiv2.appendChild(boxText1);
-// itemDiv2.appendChild(boxText2);
-// itemDiv2.appendChild(boxText3);
-// itemDiv2.appendChild(boxText4);
-// itemDiv2.appendChild(boxText5);
-
-// container4.appendChild(itemDiv2);
-// });
 
 const data_section_4 = [
   { img: "assets/icons/4rd_Block/pic1.svg", text: "4X" },
@@ -933,7 +830,7 @@ const orientationEvent = () => {
       newViewport.content = "width=1280, initial-scale=0.4, maximum-scale=0.4, user-scalable=no";
       document.head.appendChild(newViewport);
       validatePermissions()
-      // sectionAll.style.display = 'block'
+    
       // HERE PERMISSION
 
         
