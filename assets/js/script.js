@@ -361,7 +361,7 @@ const data_section_6 = [
   {
     img: "assets/images/6rd_Block/pic1.webp",
     header: "PRODUCTS",
-    text: "2K + SHARES",
+    text: "2K+ SHARES",
     pic: "assets/icons/6rd_Block/icon1.svg",
   },
 
@@ -369,12 +369,12 @@ const data_section_6 = [
     img: "assets/images/6rd_Block/pic2.webp",
     header: "GIFTS",
     pic: "assets/icons/6rd_Block/icon3.svg",
-    text: "1MM+ VIEWS",
+    text: "1M+ VIEWS",
   },
   {
     img: "assets/images/6rd_Block/pic3.webp",
     header: "VIDEOS",
-    text: "3MM+ VIEWS",
+    text: "3M+ VIEWS",
     pic: "assets/icons/6rd_Block/icon2.svg",
   },
 ];
